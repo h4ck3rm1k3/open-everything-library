@@ -1,6 +1,6 @@
 #  Aspects of Openness
 
-  * inclusionality or open access
+  * inclusionality or [open access](Open Access)
   * permission-less contributions
   * full transparency of that process
   * full share-ability and ‘changeability’ of the common material. 
