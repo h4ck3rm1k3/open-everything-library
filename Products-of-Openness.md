@@ -6,4 +6,4 @@
   * Open source software
   * Open course ware
   * Open library collection data
-
+  * [[PatentLeft]]
