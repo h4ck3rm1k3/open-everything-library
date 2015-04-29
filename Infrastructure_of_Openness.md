@@ -1,0 +1,10 @@
+# Infrastructure of Openness
+
+  * open platforms, both virtual and physical, which allow us to produce in a open way: 
+  * open collaborative technical platforms, 
+  * open places where we can gather
+  * open media and communication infrastructures we can use
+  * open and free software knowledge and scientific data
+  * ability to live in open and free villages and urban spaces, which connect local production with global open design communities.
+Source: [http://blog.p2pfoundation.net/open-everything-mindmap-and-visualization/2009/09/08](http://blog.p2pfoundation.net/open-everything-mindmap-and-visualization/2009/09/08)
+
