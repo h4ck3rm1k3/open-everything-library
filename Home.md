@@ -1,12 +1,14 @@
 * [[Open Everything]]
 * [[Open source]]
 * [[Openness]]
-* [[Aspects of Openness]]
-* [[Enablers of Openness]]
-* [[Infrastructure of Openness]]
-* [[Practices of Openness]]
-* [[Products of Openness]]
-* [[Domains of Openness]]
+
+  * [[Aspects of Openness]]
+  * [[Enablers of Openness]]
+  * [[Infrastructure of Openness]]
+  * [[Practices of Openness]]
+  * [[Products of Openness]]
+  * [[Domains of Openness]]
+
 * [[Social peer-to-peer processes]]
 * [[Open-source software]]
 * [[Four Freedoms]]
@@ -18,7 +20,8 @@
 
 * [[Open Source Hardware]]
 * [[Open Source Ecology]]
-* [[OpenContent]]
+* [[Open Content]]
+
 * [[Open Infrastructure]]
 
   * [[Archive.org]]
