@@ -1,4 +1,4 @@
-* [Open_Everything]
+* [[Open_Everything]]
 * [Open_source]
 * [Openness]
 * [Aspects_of_Openness]
