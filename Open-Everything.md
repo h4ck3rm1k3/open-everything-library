@@ -2,11 +2,11 @@
 
 ## [Source](Open Source), 
 
-## Knowledge,
+## [Knowledge](Open Knowlege),
 
-## Access,
+## [Access](Open Access), 
 
-## and Government
+## and [Government](Domain : Government)
 
 ### And what that means to you
 James Michael DuPont
