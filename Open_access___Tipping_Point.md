@@ -1,1 +1,0 @@
-[[Open access : Tipping Point]]

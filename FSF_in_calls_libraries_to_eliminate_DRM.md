@@ -1,8 +1,0 @@
-# FSF in calls libraries to eliminate DRM
-
-## Join the FSF in calling on libraries to eliminate DRM
-
-  * [http://www.fsf.org/news/DRMLibraryAction.html](http://www.fsf.org/news/DRMLibraryAction.html)
-  * ”There is another, deeper issue at stake here. The tendency of digitalization is to convert public libraries into retail stores for vendors of digital works. The choice to distribute information in a secret format--information designed to evaporate and become unreadable--is the antithesis of the spirit of the public library.”
-  * [http://www.defectivebydesign.org/LetterToLibraries](http://www.defectivebydesign.org/LetterToLibraries)
-

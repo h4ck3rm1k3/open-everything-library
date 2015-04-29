@@ -1,6 +1,0 @@
-# Open source
-
-  * In production and development, open source as a development model promotes a universal access via a free license to a product's design or blueprint, and universal redistribution of that design or blueprint, including subsequent improvements to it by anyone.
-
-Source : [http://en.wikipedia.org/wiki/Open_source](http://en.wikipedia.org/wiki/Open_source)
-

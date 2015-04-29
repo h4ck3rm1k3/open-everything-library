@@ -1,7 +1,0 @@
-# Domain : Music
-
-## Sheet music
-
-  * [http://www.gutenberg.org/wiki/Gutenberg:The_Sheet_Music_Project](http://www.gutenberg.org/wiki/Gutenberg:The_Sheet_Music_Project)
-  * [http://imslp.org/](http://imslp.org/)
-
