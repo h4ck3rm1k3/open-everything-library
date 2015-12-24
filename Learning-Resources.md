@@ -50,4 +50,4 @@ http://one.laptop.org/ One Laptop per child
 
 http://www.labdoo.org/ Labdoo 
 
-[[Free Geek]]
+[[FreeGeek.org]]
