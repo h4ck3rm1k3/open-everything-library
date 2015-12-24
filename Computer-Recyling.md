@@ -1,0 +1,10 @@
+
+#Recycling Projects
+
+http://www.reglue.org/ The helios project (texas)
+
+http://one.laptop.org/ One Laptop per child
+
+http://www.labdoo.org/ Labdoo 
+
+[[FreeGeek.org]]
