@@ -4,3 +4,12 @@
 
 Source: [http://en.wikipedia.org/wiki/Wikimedia_Foundation](http://en.wikipedia.org/wiki/Wikimedia_Foundation)
 
+## Wikidata
+
+https://en.wikipedia.org/wiki/Wikidata
+
+> Wikidata is a collaboratively edited knowledge base operated by the Wikimedia
+> Foundation. It is intended to provide a common source of certain data types
+> (for example, birth dates) which can be used by Wikimedia projects such as
+> Wikipedia.
+
