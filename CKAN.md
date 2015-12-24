@@ -1,0 +1,2 @@
+http://ckan.org/
+> CKAN is the world’s leading open-source data portal platform. It is a complete out-of-the-box software solution that makes data accessible – by providing tools to streamline publishing, sharing, finding and using data. CKAN is aimed at data publishers (national and regional governments, companies and organizations) wanting to make their data open and available. A slide-deck overview of CKAN can be found here. - See more at: http://ckan.org/about/#sthash.b4dEjKpR.dpuf
