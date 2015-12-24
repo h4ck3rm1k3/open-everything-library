@@ -7,6 +7,10 @@ https://www.openhub.net/
 
 https://openhatch.org
 
+https://www.apache.org/
+
+http://www.eclipse.org/
+
 Popular project lists
 
 http://www.datamation.com/open-source/open-source-software-list-2015-ultimate-list-1.html
