@@ -1,5 +1,7 @@
-Resources Available
-#Courseware for running training 
+
+#Resources Available
+
+## Courseware for running training 
 
 Entire course on free software http://ftacademy.org/
 
@@ -13,7 +15,8 @@ Linux Certification https://www.lpi.org/exam-preparation/self-study
 
 Training for wikipedia http://en.wikiversity.org/wiki/Wikipedia
 
-#Open Courses that we can redistribute on DVD with no Internet
+# Open Courses that we can redistribute on DVD with no Internet
+
 https://www.coursera.org
 
 http://en.wikiversity.org/wiki/Wikiversity:Main_Page
@@ -22,7 +25,7 @@ http://en.wikiversity.org/wiki/Wikiversity:Main_Page
 
 http://en.wikiversity.org/wiki/TAO/Wikimedia_Seniors_Outreach
         
-#Minature PCS running linux
+## Minature PCS running linux
 
 http://www.raspberrypi.org/
 
@@ -31,13 +34,20 @@ http://www.lemaker.org/
 many others http://www.treehugger.com/slideshows/gadgets/8-alternatives-raspberry-pi/page/3/#slide-top
         
 # Entire Operating system and programs 
+
 http://www.linuxmint.com/
+
 http://www.ubuntu.com/
+
 http://fedoraproject.org/
 
         
 #Recylying Projects to 
+
 http://www.reglue.org/ The helios project (texas)
+
 http://one.laptop.org/ One Laptop per child
+
 http://www.labdoo.org/ Labdoo 
-[FreeGeek]
+
+[[FreeGeek]]
