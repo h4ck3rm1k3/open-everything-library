@@ -4,3 +4,4 @@
 
 Source: [http://en.wikipedia.org/wiki/Open-source_hardware](http://en.wikipedia.org/wiki/Open-source_hardware)
 
+Stallman's view on free hardware: https://www.gnu.org/philosophy/free-hardware-designs.html
