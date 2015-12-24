@@ -73,24 +73,23 @@ apple / swift The Swift Programming Language C++
 * Apache OpenOffice
 * Clonezilla Clonezilla is a partition and disk imaging/cloning program similar
 * Eclipse Checkstyle Plug-in
-* Hibernate An object relational-mapping (ORM) library for Java
-* Nagios Nagios is a powerful, enterprise-class host, service, application, and network monitoring program. * OpenProj  - Project Management : Open Source desktop project management
+* Hibernate - An object relational-mapping (ORM) library for Java
+* Nagios - Nagios is a powerful, enterprise-class host, service, application, and network monitoring program. 
+* see also Icinga
+* OpenProj  - Project Management : Open Source desktop project management
 * eXo Platform - Social Collaboration The open source, enterprise social platform
-* gSOAP Toolkit Development toolkit for Web Services and XML data bindings for C & C++
+* gSOAP - Toolkit Development toolkit for Web Services and XML data bindings for C & C++
 * LogicalDOC Document Management - DMS smart and open source document management system
-* Moodle A free course management system (CMS) to create online learning sites
-* Bonita BPM A Business Process Mangement (BPM) Suite and workflow engine
-* Convertigo MBaaS and Mobile Application Development Platform for Enterprises
-* GroundWork Monitor 
+* Moodle - A free course management system (CMS) to create online learning sites
+* Bonita BPM - A Business Process Mangement (BPM) Suite and workflow engine https://en.wikipedia.org/wiki/Bonita_BPM
+* Convertigo - Enterprises Mobile Application Development - http://www.convertigo.com/
+* GroundWork Monitor - monitoring, automation, and analysis for DevOps  http://www.gwos.com/
 * BIRT Report Designer Open Source Reporting & Data Visualization Platform
-* HPCC Systems
-* Microsoft's TrueType core fonts
 * Notepad++ Plugin Manager
-* egbucket
-* FileZilla A fast cross-platform FTP client
-* Ubuntuzilla: Mozilla Software Installer APT repository for Mozilla software releases
-* Scrollout F1 An easy-to-use anti-spam email gateway
-* Anti-Spam SMTP Proxy Server Anti-Spam SMTP Proxy Server implements multiple spam filters
+* FileZilla - A fast cross-platform FTP client
+* Ubuntuzilla -  Mozilla Software Installer APT repository for Mozilla software releases
+* Scrollout F1 - An easy-to-use anti-spam email gateway
+* Anti-Spam SMTP - Proxy Server Anti-Spam SMTP Proxy Server implements multiple spam filters
 * AutoAP A script to find open Wi-Fi connections and the strongest signal
 * SAP NetWeaver Server Adapter for Eclipse Integrates Eclipse with the SAP NetWeaver Application Server
 * Audacity A free multi-track audio editor and recorder
