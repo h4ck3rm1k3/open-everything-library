@@ -21,33 +21,10 @@ https://www.coursera.org
 
 http://en.wikiversity.org/wiki/Wikiversity:Main_Page
 
-#Senior Outreach
+http://flossmanuals.net/
 
-http://en.wikiversity.org/wiki/TAO/Wikimedia_Seniors_Outreach
-        
-## Minature PCS running linux
 
-http://www.raspberrypi.org/
-
-http://www.lemaker.org/ 
-
-many others http://www.treehugger.com/slideshows/gadgets/8-alternatives-raspberry-pi/page/3/#slide-top
-        
-# Entire Operating system and programs 
-
-http://www.linuxmint.com/
-
-http://www.ubuntu.com/
-
-http://fedoraproject.org/
 
         
-#Recycling Projects to 
+      
 
-http://www.reglue.org/ The helios project (texas)
-
-http://one.laptop.org/ One Laptop per child
-
-http://www.labdoo.org/ Labdoo 
-
-[[FreeGeek.org]]
