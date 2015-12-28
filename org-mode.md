@@ -1,0 +1,6 @@
+- [[http://orgmode.org/][Org mode for Emacs – Your Life in Plain Text]]
+- [[http://orgmode.org/org.html#toc_Introduction][The Org Manual]]
+- [[http://orgmode.org/guide/Activation.html#Activation][Activation - The compact Org-mode Guide]]
+- [[https://en.wikipedia.org/wiki/Org-mode][org-mode - Wikipedia, the free encyclopedia]]
+- [[http://chadok.info/firefox-org-capture/][Org-capture for Firefox]]
+- [[https://addons.mozilla.org/en-US/firefox/addon/copy-as-org-mode/?src=api][Copy as Org-mode :: Add-ons for Firefox]]

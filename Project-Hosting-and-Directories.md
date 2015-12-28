@@ -7,9 +7,9 @@ https://www.openhub.net/
 
 https://openhatch.org
 
-https://www.apache.org/
+https://www.apache.org/ https://projects.apache.org/
 
 http://www.eclipse.org/
 
-
-
+http://www.outercurve.org/
+http://opensource.org/
