@@ -1,5 +1,8 @@
-# Ubunutu In Libraries
+Ubunutu In Libraries
+====================
 
-  * [https://wiki.ubuntu.com/UbuntuInLibraries](https://wiki.ubuntu.com/UbuntuInLibraries)
-  * Produce a simple guide to approach local libraries to accept donations of professionally / home-produced CD-ROM images of Ubuntu's various distributions (initially, i386, PPC and AMD64) 
+-   <https://wiki.ubuntu.com/UbuntuInLibraries>
+-   Produce a simple guide to approach local libraries to accept
+    donations of professionally / home-produced CD-ROM images of
+    Ubuntu's various distributions (initially, i386, PPC and AMD64)
 

@@ -1,5 +1,9 @@
-# Libraries are making scholarship accessible to all
+Libraries are making scholarship accessible to all
+==================================================
 
-  * [http://americanlibrariesmagazine.org/2013/12/23/open-access-everything/](http://americanlibrariesmagazine.org/2013/12/23/open-access-everything/)
-  * Libraries have spearheaded many projects designed to improve or transform publishing. Individually, they are simply intriguing; when viewed together they indicate a growing movement to help make publishing sustainable and research accessible.
+-   <http://americanlibrariesmagazine.org/2013/12/23/open-access-everything/>
+-   Libraries have spearheaded many projects designed to improve or
+    transform publishing. Individually, they are simply intriguing; when
+    viewed together they indicate a growing movement to help make
+    publishing sustainable and research accessible.
 

@@ -1,2 +1,3 @@
-* http://lanyrd.com/
-* http://eventifier.com/
+-   <http://lanyrd.com/>
+-   <http://eventifier.com/>
+

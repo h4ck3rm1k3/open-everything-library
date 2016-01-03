@@ -1,1 +1,1 @@
-http://www.owe.com/resources/legalities/20-working-childrens-artwork/
+<http://www.owe.com/resources/legalities/20-working-childrens-artwork/>

@@ -1,2 +1,2 @@
-Nonprofit_Technology_Resources
-http://www.ntrweb.org/ https://en.wikipedia.org/wiki/Nonprofit_Technology_Resources
+Nonprofit\_Technology\_Resources <http://www.ntrweb.org/>
+[https://en.wikipedia.org/wiki/Nonprofit\\\_Technology\\\_Resources](https://en.wikipedia.org/wiki/Nonprofit\_Technology\_Resources)

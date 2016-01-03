@@ -1,13 +1,18 @@
-# Open Everything
+Open Everything
+===============
 
-## [Source](Open Source), 
+*Source*,
+---------
 
-## [Knowledge](Open Knowlege),
+*Knowledge*,
+------------
 
-## [Access](Open Access), 
+*Access*,
+---------
 
-## and [Government](Domain : Government)
+and *Government*
+----------------
 
 ### And what that means to you
-James Michael DuPont
-https://twitter.com/h4ck3rm1k3
+
+James Michael DuPont <https://twitter.com/h4ck3rm1k3>

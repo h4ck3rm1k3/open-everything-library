@@ -1,1 +1,1 @@
-https://www.gnu.org/philosophy/opposing-drm.html
+<https://www.gnu.org/philosophy/opposing-drm.html>

@@ -1,9 +1,10 @@
-# Practices of Openness
+Practices of Openness
+=====================
 
-  * Open Knowledge and Science
-  * Open and Free Software
-  * Open Designs
-  * Open Hardware
-  * Open Currencies
-  * Open Capital
+-   Open Knowledge and Science
+-   Open and Free Software
+-   Open Designs
+-   Open Hardware
+-   Open Currencies
+-   Open Capital
 

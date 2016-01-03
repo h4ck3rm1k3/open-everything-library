@@ -1,8 +1,9 @@
-# Domains of Openness
+Domains of Openness
+===================
 
-  * Open Hardware
-  * Open Government
-  * Open street map
-  * Wikipedia
-  * Open Libraries
+-   Open Hardware
+-   Open Government
+-   Open street map
+-   Wikipedia
+-   Open Libraries
 

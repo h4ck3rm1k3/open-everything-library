@@ -1,30 +1,28 @@
+Resources Available
+===================
 
-#Resources Available
+Courseware for running training
+-------------------------------
 
-## Courseware for running training 
+Entire course on free software <http://ftacademy.org/>
 
-Entire course on free software http://ftacademy.org/
+Linux Foundation Intro to Linux
+<https://www.edx.org/course/linuxfoundationx/linuxfoundationx-lfs101x-introduction-1621>
 
-Linux Foundation Intro to Linux https://www.edx.org/course/linuxfoundationx/linuxfoundationx-lfs101x-introduction-1621
+How to build a linux based startup
+<https://class.coursera.org/startup-001/lecture>
 
-How to build a linux based startup https://class.coursera.org/startup-001/lecture
+Free Programming Books <https://github.com/vhf/free-programming-books>
 
-Free Programming Books https://github.com/vhf/free-programming-books
+Linux Certification <https://www.lpi.org/exam-preparation/self-study>
 
-Linux Certification https://www.lpi.org/exam-preparation/self-study
+Training for wikipedia <http://en.wikiversity.org/wiki/Wikipedia>
 
-Training for wikipedia http://en.wikiversity.org/wiki/Wikipedia
+Open Courses that we can redistribute on DVD with no Internet
+=============================================================
 
-# Open Courses that we can redistribute on DVD with no Internet
+<https://www.coursera.org>
 
-https://www.coursera.org
+[http://en.wikiversity.org/wiki/Wikiversity:Main\\\_Page](http://en.wikiversity.org/wiki/Wikiversity:Main\_Page)
 
-http://en.wikiversity.org/wiki/Wikiversity:Main_Page
-
-http://flossmanuals.net/
-
-
-
-        
-      
-
+<http://flossmanuals.net/>

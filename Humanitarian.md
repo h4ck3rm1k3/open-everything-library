@@ -1,2 +1,1 @@
-http://www.hfoss.org/
-https://hotosm.org/
+<http://www.hfoss.org/> <https://hotosm.org/>
