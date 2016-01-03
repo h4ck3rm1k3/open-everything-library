@@ -13,3 +13,6 @@
    Access to Knowledge in the Sciences and Humanities.
 
 Source : [[http://en.wikipedia.org/wiki/Open_access]]
+
+** Paperity
+http://paperity.org/about/
