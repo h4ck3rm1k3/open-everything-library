@@ -1,4 +1,0 @@
-Senior Outreach
-===============
-
-[http://en.wikiversity.org/wiki/TAO/Wikimedia\\\_Seniors\\\_Outreach](http://en.wikiversity.org/wiki/TAO/Wikimedia\_Seniors\_Outreach)

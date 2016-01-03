@@ -1,3 +1,0 @@
-Reddit source code is open, the data is not.
-<https://github.com/reddit/reddit> It is however collaborative and open
-in many ways.

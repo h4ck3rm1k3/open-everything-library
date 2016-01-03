@@ -1,1 +1,0 @@
-<http://www.hfoss.org/> <https://hotosm.org/>
