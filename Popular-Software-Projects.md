@@ -162,8 +162,11 @@ LogicalDOC Document Management - DMS smart and open source document management s
 Mifos
 -----
 
-Moodle - A free course management system (CMS) to create online learning sites
-------------------------------------------------------------------------------
+Moodle
+------
+
+A free course management system (CMS) to create online learning sites
+<https://moodle.org/>
 
 Neovim
 ------
@@ -240,6 +243,22 @@ php
 
 ruby
 ----
+
+R
+-
+
+statistics <https://www.r-project.org/>
+
+Processing
+----------
+
+Processing is an open source programming language and integrated
+development environment (IDE) built for the electronic arts, new media
+art, and visual design communities with the purpose of teaching the
+fundamentals of computer programming in a visual context, and to serve
+as the foundation for electronic sketchbooks.
+
+<http://p5js.org/> <https://processing.org/>
 
 automation
 ==========
@@ -351,9 +370,6 @@ gazebosim
 <https://github.com/kdzwinel/betwixt> ⚡Web Debugging Proxy based on Chrome DevTools Network panel.
 --------------------------------------------------------------------------------------------------
 
-<https://github.com/letsencrypt/letsencrypt> This Let's Encrypt repo is an ACME client that can obtain certs and extensibly update server configurations (currently supports Apache on .deb based systems, nginx support coming soon) Python
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 <https://github.com/oneuijs/You-Dont-Need-jQuery> Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript. JavaScript
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -390,6 +406,27 @@ tmux
 Business
 ========
 
+jboss
+-----
+
+### Artifact, metadata, and information repository
+
+<http://artificer.jboss.org/>
+
+Openprodoc - Document Management System
+---------------------------------------
+
+<http://jhierrot.github.io/openprodoc/>
+
+Surveys
+-------
+
+### Opina
+
+online surveys <http://opinahq.com/>
+
+### LimeSurvey
+
 Mautic
 ------
 
@@ -406,9 +443,15 @@ GNU Cash
 <http://xtuple.com/> <http://www.openbravo.com/>
 <http://www.opentaps.org/> <http://www.timetrex.com/> Sugar Forks :
 <http://suitecrm.com/> <http://suitecrm.com/> <https://www.vtiger.com/>
-crm <http://www.orangehrm.com/> time tracking <http://magento.com/>
-ecommerce <http://www.alfresco.com/> content (sharepoint)
-<http://civicrm.org/>
+crm
+
+Orange HRM
+----------
+
+<http://www.orangehrm.com/> time tracking
+
+<http://magento.com/> ecommerce <http://www.alfresco.com/> content
+(sharepoint) <http://civicrm.org/>
 
 Bonita BPM - A Business Process Mangement (BPM) Suite and workflow engine
 -------------------------------------------------------------------------
@@ -425,8 +468,17 @@ process design
 pentaho
 -------
 
-<https://www.prestashop.com/>
------------------------------
+<http://community.pentaho.com/> <https://github.com/pentaho>
+
+PrestaShop - free, scalable, Open-source e-commerce solution
+------------------------------------------------------------
+
+<https://www.prestashop.com/> <https://github.com/PrestaShop/PrestaShop>
+
+Phrasenet - open source solution for digital asset management
+=============================================================
+
+<https://www.phraseanet.com/en/>
 
 <http://www.idempiere.org/> ERP/CRM/SCM
 ---------------------------------------
@@ -462,6 +514,22 @@ media publishing
 mediagoblin
 -----------
 
+EnterMedia
+----------
+
+Media Database <http://entermediadb.org/>
+
+Opencast
+--------
+
+automated video capture and distribution
+<http://www.opencast.org/software>
+
+kaltura video server
+--------------------
+
+<https://github.com/kaltura/server>
+
 openshot video editor
 ---------------------
 
@@ -489,9 +557,22 @@ static
 
 ### dynamic
 
-#### wordpress
+### Rubedo
 
-#### joomla
+<http://www.rubedo-project.org/en/> Open-source CMS/eCommerce platform -
+Multi-sites, Responsive, Big Data, Personnalization - PHP, MongoDB,
+Elasticsearch, AngularJS
+
+### ProcessWire
+
+<https://processwire.com/>
+
+#### Wordpress
+
+#### Joomla!
+
+PHP <https://www.joomla.org/about-joomla.html>
+<https://github.com/joomla/joomla-cms>
 
 #### drupal
 
@@ -527,6 +608,10 @@ Android
 
 <https://en.wikipedia.org/wiki/F-Droid>
 
+### Fossdroid
+
+<https://fossdroid.com/>
+
 ### Free and open android software
 
 <https://en.wikipedia.org/wiki/Category:Free_and_open-source_Android_software>
@@ -537,10 +622,20 @@ project management
 OpenProj - Project Management : Open Source desktop project management
 ----------------------------------------------------------------------
 
-ProjectLibre <http://www.projectlibre.org/> Open Source desktop project
------------------------------------------------------------------------
+ProjectLibre
+------------
 
-management <http://collabtive.o-dyn.de/>
+<http://www.projectlibre.org/> Open Source desktop project management
+
+Collabtive - web-based project management
+-----------------------------------------
+
+<http://collabtive.o-dyn.de/>
+
+Project Open
+------------
+
+<http://www.project-open.com/>
 
 Media HUB
 =========
@@ -558,3 +653,138 @@ MythTV
 
 Geexbox <http://www.geexbox.org/>
 =================================
+
+Visualization
+=============
+
+slicer
+------
+
+<http://www.slicer.org/pages/Introduction>
+
+weave
+-----
+
+<http://oicweave.org/> Weave: Web-based Analysis and Visualization
+Environment requires flex (non free)
+
+Web site archiving
+==================
+
+<https://www.wallabag.org/>
+
+Testing
+=======
+
+squash TM
+---------
+
+is an open source tool for test repository management: requirements
+management, test cases, campaign <http://www.squashtest.org/en>
+
+Testlink
+--------
+
+<http://testlink.org/>
+
+Encryption
+==========
+
+Let's Encrypt
+-------------
+
+<https://github.com/letsencrypt/letsencrypt> ACME client that can obtain
+certs and extensibly update server configurations (currently supports
+Apache on .deb based systems, nginx support coming soon) Python
+
+Seafile - Cloud storage with client-side Encryption
+---------------------------------------------------
+
+<https://www.seafile.com/en/home/>
+
+Hardware
+========
+
+Coder
+-----
+
+web on RaspPi <https://github.com/googlecreativelab/coder/>
+
+pour over
+=========
+
+filtering and sorting of collections in the browser
+<http://nytimes.github.io/pourover/>
+<https://github.com/NYTimes/pourover>
+
+Small Startup Tools
+===================
+
+Inkscape
+--------
+
+Gimp/Gimpshop
+-------------
+
+Wordpress
+---------
+
+Libreoffice/Openoffice
+----------------------
+
+Clamwin Antivirus
+-----------------
+
+Filezilla
+---------
+
+Freemind
+--------
+
+VirtualBOX
+----------
+
+Blender
+-------
+
+Dia
+---
+
+Scribus
+-------
+
+VLC
+---
+
+Audacity
+--------
+
+GNU Cash
+--------
+
+Communication
+=============
+
+Mumble
+------
+
+multi user voice chat system, teamspeak
+<http://wiki.mumble.info/wiki/Main_Page>
+
+TOX <https://github.com/irungentoo/toxcore>
+-------------------------------------------
+
+Bitchat <https://bitchat.im/>
+-----------------------------
+
+KIAX2 <http://www.forschung-direkt.eu/kiax2/>
+---------------------------------------------
+
+voicechatter <http://sourceforge.net/projects/voicechatter/>
+------------------------------------------------------------
+
+<https://github.com/umurmur/umurmur>
+------------------------------------
+
+<https://github.com/krobelus/cyanide>
+-------------------------------------
