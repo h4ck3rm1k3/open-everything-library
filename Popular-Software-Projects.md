@@ -238,7 +238,17 @@ https://github.com/TryGhost/Ghost
 * mobile
 ** Apache Cordova 
 ** Android
-*** Replicant 
+
+*** Operating System 
+**** Replicant 
+**** CyanogenMod https://en.wikipedia.org/wiki/CyanogenMod
+
+*** FDroid 
+    https://en.wikipedia.org/wiki/F-Droid
+
+*** Free and open android software
+    https://en.wikipedia.org/wiki/Category:Free_and_open-source_Android_software
+
 
 * project management 
 
@@ -246,3 +256,14 @@ https://github.com/TryGhost/Ghost
 ** ProjectLibre http://www.projectlibre.org/  Open Source desktop project
 management
 http://collabtive.o-dyn.de/
+
+
+* Media HUB
+
+* KODI TV 
+  http://kodi.tv/ Kodi is a free and open-source media-player and entertainment
+  hub
+* MythTV  
+  http://www.mythbuntu.org/home
+
+* Geexbox http://www.geexbox.org/
