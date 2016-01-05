@@ -1,0 +1,12 @@
+* Requirements 
+** access
+*** Source code
+*** Metadata
+**** Documentation
+**** Bug reports
+**** Mailing lists
+     We need to be able to download and scan the mailing list archives for a
+     deeper understanding.
+     There are mail box archives of many groups that can be downloaded.
+**** News group interface
+     Debian provides access to 

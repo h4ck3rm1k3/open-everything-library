@@ -1,634 +1,637 @@
 * December 2015
+** graphics
 
-* graphics
+*** GIMP
 
-** GIMP
+*** Gimpshop
 
-** Gimpshop
+*** Inkscape
 
-** Inkscape
+*** blender
 
-** blender
+** filesharing
 
-* filesharing
+*** Bittorrent
 
-** Bittorrent
+** media player
 
-* media player
+*** vlc
 
-** vlc
+*** Xvid
 
-** Xvid
+** databases
 
-* databases
+*** CockroachDB scalability, survivability and transactionality db
 
-** CockroachDB scalability, survivability and transactionality db
+*** mysql
 
-** mysql
+**** mariadb
 
-*** mariadb
+*** MongoDB
 
-** MongoDB
+*** Hadoop
 
-** Hadoop
+** unsorted
 
-* unsorted
+*** [[https:/github.com/AllThingsSmitty/css-protips]] A collection of
+ tips to help take your CSS skills pro
 
-** [[https:/github.com/AllThingsSmitty/css-protips]] A collection of
-tips to help take your CSS skills pro
+*** Anti-Spam SMTP 
+- Proxy Server Anti-Spam SMTP Proxy Server implements
+ multiple spam filters
+http://sourceforge.net/projects/assp/
+*** Apache OpenOffice/Libre Office
+**** open/office
+**** libre/office
+*** Firefox
+*** Chromium
 
-** Anti-Spam SMTP - Proxy Server Anti-Spam SMTP Proxy Server implements
-multiple spam filters
+*** TOR
 
-** Apache OpenOffice/Libre Office
+*** Freedombox
 
-** Firefox
+*** Freenas
 
-** Chromium
+*** Java
 
-** TOR
+*** Audacity A free multi-track audio editor and recorder
 
-** Freedombox
+*** AutoAP A script to find open Wi-Fi connections and the strongest
+ signal
 
-** Freenas
+*** BIRT Report Designer Open Source Reporting & Data Visualization
+ Platform
 
-** Java
+*** BleachBit
 
-** Audacity A free multi-track audio editor and recorder
+*** Clonezilla Clonezilla is a partition and disk imaging/cloning program
+ similar
 
-** AutoAP A script to find open Wi-Fi connections and the strongest
-signal
+*** CodeCombat learn coding with fun
 
-** BIRT Report Designer Open Source Reporting & Data Visualization
-Platform
+*** Convertigo - Enterprises Mobile Application Development -
+ [[http://www.convertigo.com/]]
 
-** BleachBit
+*** CyanogenMod
 
-** Clonezilla Clonezilla is a partition and disk imaging/cloning program
-similar
+*** DebOps Debian base + Ansible playbooks
 
-** CodeCombat learn coding with fun
+*** Django
 
-** Convertigo - Enterprises Mobile Application Development -
-[[http://www.convertigo.com/]]
+*** Drone setting up development environments
 
-** CyanogenMod
+*** DrupalConsole
 
-** DebOps Debian base + Ansible playbooks
+*** Eclipse Checkstyle Plug-in
 
-** Django
+*** Fig orchestrate Docker via yml
 
-** Drone setting up development environments
+*** FileZilla - A fast cross-platform FTP client
 
-** DrupalConsole
+*** [[https:/github.com/FreeCodeCamp/FreeCodeCamp]] The
+ [[http://FreeCodeCamp.com]] open source codebase and curriculum. Learn
+ to code and help nonprofits. JavaScript
 
-** Eclipse Checkstyle Plug-in
+*** GHC
+*** GNU Mailman
 
-** Fig orchestrate Docker via yml
+*** GroundWork Monitor - monitoring, automation, and analysis for DevOps
+ [[http://www.gwos.com/]]
 
-** FileZilla - A fast cross-platform FTP client
+*** Hibernate - An object relational-mapping (ORM) library for Java
 
-** [[https:/github.com/FreeCodeCamp/FreeCodeCamp]] The
-[[http://FreeCodeCamp.com]] open source codebase and curriculum. Learn
-to code and help nonprofits. JavaScript
+*** IPFS InterPlanetary File System p2p distributed fs
 
-** GHC
+*** IPython
 
-** GHC
+*** [[https://github.com/JoelBesada/activate-power-mode]] Atom package -
+ Activate POWER MODE to write your code in style. CoffeeScript
 
-** GNU Mailman
+*** Kubernetes Docker Google tools
 
-** GroundWork Monitor - monitoring, automation, and analysis for DevOps
-[[http://www.gwos.com/]]
+*** LogicalDOC Document Management - DMS smart and open source document
+ management system
 
-** Hibernate - An object relational-mapping (ORM) library for Java
+*** [[https:/github.com/Microsoft/vscode]] Visual Studio Code TypeScript
 
-** IPFS InterPlanetary File System p2p distributed fs
+*** Mifos
 
-** IPython
+*** Moodle
 
-** [[https://github.com/JoelBesada/activate-power-mode]] Atom package -
-Activate POWER MODE to write your code in style. CoffeeScript
+ A free course management system (CMS) to create online learning sites
+ [[https://moodle.org/]]
 
-** Kubernetes Docker Google tools
+*** Neovim
 
-** LogicalDOC Document Management - DMS smart and open source document
-management system
+*** Notepad++ Plugin Manager
 
-** [[https:/github.com/Microsoft/vscode]] Visual Studio Code TypeScript
+*** OLPC
 
-** Mifos
+*** Open edX
 
-** Moodle
+*** OpenBazaar BitTorent, bitcoin, = censorship resistant trading
+ platform
 
-A free course management system (CMS) to create online learning sites
-[[https://moodle.org/]]
+** Virtualization
 
-** Neovim
+*** KVM
 
-** Notepad++ Plugin Manager
+*** ZEN
 
-** OLPC
+ [[http://blog.smartbear.com/open-source/xen-and-the-art-of-project-management/]]
 
-** Open edX
+*** Software defined network
 
-** OpenBazaar BitTorent, bitcoin, = censorship resistant trading
-platform
+**** open daylight
 
-* Virtualization
+ [[http://blog.smartbear.com/open-source/opendaylight-open-source-programming-to-the-software-defined-network/]]
 
-** KVM
+*** Docker
 
-** ZEN
+*** Cloud
 
-[[http://blog.smartbear.com/open-source/xen-and-the-art-of-project-management/]]
+**** Ceph : Storage for cloud
 
-** Software defined network
+**** OpenNebula
 
-*** open daylight
+**** Eucalyptus
 
-[[http://blog.smartbear.com/open-source/opendaylight-open-source-programming-to-the-software-defined-network/]]
+**** Openshift (redhat)
 
-** Docker
+**** Apache Cloudstack
 
-** Cloud
+**** Mesos
 
-*** Ceph : Storage for cloud
+**** OpenStack
 
-*** OpenNebula
+ [[https://www.openstack.org/]]
 
-*** Eucalyptus
+***** OpenStack dashboard (Horizon)
 
-*** Openshift (redhat)
+** desktop
 
-*** Apache Cloudstack
+**** KDE
 
-*** Mesos
+**** Gnome
 
-*** OpenStack
+** languages
 
-[[https://www.openstack.org/]]
+*** Python
 
-**** OpenStack dashboard (Horizon)
+*** php
 
-* desktop
+*** ruby
 
-*** KDE
+*** R
 
-*** Gnome
+ statistics [[https://www.r-project.org/]]
 
-* languages
+*** Processing
 
-** Python
+ Processing is an open source programming language and integrated
+ development environment (IDE) built for the electronic arts, new media
+ art, and visual design communities with the purpose of teaching the
+ fundamentals of computer programming in a visual context, and to serve
+ as the foundation for electronic sketchbooks.
 
-** php
+ [[http://p5js.org/]]
 
-** ruby
+ [[https://processing.org/]]
 
-** R
+** automation
 
-statistics [[https://www.r-project.org/]]
+**** Saltstack
 
-** Processing
+**** Puppet
 
-Processing is an open source programming language and integrated
-development environment (IDE) built for the electronic arts, new media
-art, and visual design communities with the purpose of teaching the
-fundamentals of computer programming in a visual context, and to serve
-as the foundation for electronic sketchbooks.
+**** Chef
 
-[[http://p5js.org/]] [[https://processing.org/]]
+**** Ansible
 
-* automation
+*** Koha Library system
 
-*** Saltstack
+*** Trinket - learn in the browser [[https://trinket.io/]]
 
-*** Puppet
+*** [[https://github.com/PerfectlySoft/Perfect]] Server-side Swift. The
+ Perfect library, application server, connectors and example apps. (For
+ mobile back-end development, website and web app development, and
+ more...) Swift
 
-*** Chef
+*** Piwik
 
-*** Ansible
+*** [[https:/github.com/Quartz/bad-data-guide]] An exhaustive reference
+ to problems seen in real-world data along with suggestions on how to
+ resolve them.
 
-** Koha Library system
+*** Ruby on Rails [[http://rubyonrails.org/]]
 
-** Trinket - learn in the browser [[https://trinket.io/]]
+*** SAP NetWeaver Server Adapter for Eclipse Integrates Eclipse with the
+ SAP NetWeaver Application Server
 
-** [[https://github.com/PerfectlySoft/Perfect]] Server-side Swift. The
-Perfect library, application server, connectors and example apps. (For
-mobile back-end development, website and web app development, and
-more...) Swift
+*** SCons
 
-** Piwik
+*** Scrapy
 
-** [[https:/github.com/Quartz/bad-data-guide]] An exhaustive reference
-to problems seen in real-world data along with suggestions on how to
-resolve them.
+*** Scrollout F1 - An easy-to-use anti-spam email gateway
 
-** Ruby on Rails [[http://rubyonrails.org/]]
+*** Storj peer-to-peer cloud storage network
 
-** SAP NetWeaver Server Adapter for Eclipse Integrates Eclipse with the
-SAP NetWeaver Application Server
+*** SymPy
 
-** SCons
+*** Terraform.io DevOps codifying datacenter build
 
-** Scrapy
+*** Traq
 
-** Scrollout F1 - An easy-to-use anti-spam email gateway
+*** Ubuntuzilla - Mozilla Software Installer APT repository for Mozilla
+ software releases
 
-** Storj peer-to-peer cloud storage network
+*** [[https:/github.com/airbnb/enzyme]] JavaScript Testing utilities for
+ React
 
-** SymPy
+*** ankidroid
 
-** Terraform.io DevOps codifying datacenter build
+*** swift
 
-** Traq
+**** [[https:/github.com/apple/swift]] The Swift Programming Language C++
 
-** Ubuntuzilla - Mozilla Software Installer APT repository for Mozilla
-software releases
+**** [[https:/github.com/apple/swift-evolution]] This maintains proposals
+ for changes and user-visible enhancements to the Swift Programming
+ Language.
 
-** [[https:/github.com/airbnb/enzyme]] JavaScript Testing utilities for
-React
+**** [[https:/github.com/apple/swift-package-manager]] The Package
+ Manager for the Swift Programming Language Swift
 
-** ankidroid
+*** cAdvisor container-based perf data
 
-** swift
+*** eXo Platform - Social Collaboration The open source, enterprise
+ social platform
 
-*** [[https:/github.com/apple/swift]] The Swift Programming Language C++
+*** [[https:/github.com/facebook/react]] A declarative, efficient, and
+ flexible JavaScript library for building user interfaces. JavaScript
 
-*** [[https:/github.com/apple/swift-evolution]] This maintains proposals
-for changes and user-visible enhancements to the Swift Programming
-Language.
+*** [[https:/github.com/facebook/react-native]] A framework for building
+ native apps with React. JavaScript
 
-*** [[https:/github.com/apple/swift-package-manager]] The Package
-Manager for the Swift Programming Language Swift
+*** fast-classpath-scanner
 
-** cAdvisor container-based perf data
+*** gCube
 
-** eXo Platform - Social Collaboration The open source, enterprise
-social platform
+*** gSOAP - Toolkit Development toolkit for Web Services and XML data
+ bindings for C & C++
 
-** [[https:/github.com/facebook/react]] A declarative, efficient, and
-flexible JavaScript library for building user interfaces. JavaScript
+*** gazebosim
 
-** [[https:/github.com/facebook/react-native]] A framework for building
-native apps with React. JavaScript
+*** [[https:/github.com/google/git-appraise]] Distributed code review
+ system for Git repos Go
 
-** fast-classpath-scanner
+*** [[https:/github.com/howdyai/botkit]] Botkit is a toolkit for making
+ bot applications JavaScript
 
-** gCube
+*** [[https:/github.com/hsavit1/Awesome-Swift-Education]] All the
+ resources for Learning About Swift Swift
 
-** gSOAP - Toolkit Development toolkit for Web Services and XML data
-bindings for C & C++
+*** [[https://github.com/ibireme/YYKit]] A collection of iOS components.
+ Objective-C
 
-** gazebosim
+*** [[https://github.com/kdzwinel/betwixt]] ⚡Web Debugging Proxy based on
+ Chrome DevTools Network panel.
 
-** [[https:/github.com/google/git-appraise]] Distributed code review
-system for Git repos Go
+*** [[https://github.com/oneuijs/You-Dont-Need-jQuery]] Examples of how
+ to do query, style, dom, ajax, event etc like jQuery with plain
+ javascript. JavaScript
 
-** [[https:/github.com/howdyai/botkit]] Botkit is a toolkit for making
-bot applications JavaScript
+*** [[https://github.com/openalpr/openalpr]] Automatic License Plate
+ Recognition library C++
 
-** [[https:/github.com/hsavit1/Awesome-Swift-Education]] All the
-resources for Learning About Swift Swift
+*** pandas
 
-** [[https://github.com/ibireme/YYKit]] A collection of iOS components.
-Objective-C
+*** [[https://github.com/phanan/koel]] A personal music streaming server
+ that works.
 
-** [[https://github.com/kdzwinel/betwixt]] ⚡Web Debugging Proxy based on
-Chrome DevTools Network panel.
+*** [[https://github.com/tensorflow/tensorflow]] Open source software
+ library for numerical computation using data flow graphs. C++
 
-** [[https://github.com/oneuijs/You-Dont-Need-jQuery]] Examples of how
-to do query, style, dom, ajax, event etc like jQuery with plain
-javascript. JavaScript
+*** [[https://github.com/twbs/bootstrap]] The most popular HTML, CSS, and
+ JavaScript framework for developing responsive, mobile first projects on
+ the web. CSS
 
-** [[https://github.com/openalpr/openalpr]] Automatic License Plate
-Recognition library C++
+*** wkhtmltopdf
 
-** pandas
+*** xfstests
 
-** [[https://github.com/phanan/koel]] A personal music streaming server
-that works.
+*** owncloud
 
-** [[https://github.com/tensorflow/tensorflow]] Open source software
-library for numerical computation using data flow graphs. C++
+** server
 
-** [[https://github.com/twbs/bootstrap]] The most popular HTML, CSS, and
-JavaScript framework for developing responsive, mobile first projects on
-the web. CSS
+*** tmux
 
-** wkhtmltopdf
+** Business
 
-** xfstests
+*** jboss
 
-** owncloud
+**** Artifact, metadata, and information repository
 
-* server
+ [[http://artificer.jboss.org/]]
 
-** tmux
+*** Openprodoc - Document Management System
 
-* Business
+ [[http://jhierrot.github.io/openprodoc/]]
 
-** jboss
+*** Surveys
 
-*** Artifact, metadata, and information repository
+**** Opina
 
-[[http://artificer.jboss.org/]]
+ online surveys [[http://opinahq.com/]]
 
-** Openprodoc - Document Management System
+**** LimeSurvey
 
-[[http://jhierrot.github.io/openprodoc/]]
+*** Mautic
 
-** Surveys
+ -  [[https://www.mautic.org/][Open Source Marketing Automation: Mautic]]
+    [[https://github.com/mautic/mautic]]
 
-*** Opina
+*** SimpleInvoices
 
-online surveys [[http://opinahq.com/]]
+*** GNU Cash
 
-*** LimeSurvey
+ [[https://erpnext.com/]] [[https://www.odoo.com/]] xTuple xTuple
+ [[http://xtuple.com/]] [[http://www.openbravo.com/]]
+ [[http://www.opentaps.org/]] [[http://www.timetrex.com/]] Sugar Forks :
+ [[http://suitecrm.com/]] [[http://suitecrm.com/]]
+ [[https://www.vtiger.com/]] crm
 
-** Mautic
+*** Orange HRM
 
--  [[https://www.mautic.org/][Open Source Marketing Automation: Mautic]]
-   [[https://github.com/mautic/mautic]]
+ [[http://www.orangehrm.com/]] time tracking
 
-** SimpleInvoices
+ [[http://magento.com/]] ecommerce [[http://www.alfresco.com/]] content
+ (sharepoint) [[http://civicrm.org/]]
 
-** GNU Cash
+*** Bonita BPM - A Business Process Mangement (BPM) Suite and workflow
+ engine
 
-[[https://erpnext.com/]] [[https://www.odoo.com/]] xTuple xTuple
-[[http://xtuple.com/]] [[http://www.openbravo.com/]]
-[[http://www.opentaps.org/]] [[http://www.timetrex.com/]] Sugar Forks :
-[[http://suitecrm.com/]] [[http://suitecrm.com/]]
-[[https://www.vtiger.com/]] crm
+ [[https://en.wikipedia.org/wiki/Bonita_BPM]]
+ [[http://www.bonitasoft.com/]] process design
 
-** Orange HRM
+*** [[http://camunda.com/]] BPM tool
 
-[[http://www.orangehrm.com/]] time tracking
+*** [[http://drools.jboss.org/]] rules engine
 
-[[http://magento.com/]] ecommerce [[http://www.alfresco.com/]] content
-(sharepoint) [[http://civicrm.org/]]
+*** pentaho
 
-** Bonita BPM - A Business Process Mangement (BPM) Suite and workflow
-engine
+ [[http://community.pentaho.com/]] [[https://github.com/pentaho]]
 
-[[https://en.wikipedia.org/wiki/Bonita_BPM]]
-[[http://www.bonitasoft.com/]] process design
+*** PrestaShop - free, scalable, Open-source e-commerce solution
 
-** [[http://camunda.com/]] BPM tool
+ [[https://www.prestashop.com/]]
+ [[https://github.com/PrestaShop/PrestaShop]]
 
-** [[http://drools.jboss.org/]] rules engine
+** Phrasenet - open source solution for digital asset management
 
-** pentaho
+ [[https://www.phraseanet.com/en/]]
 
-[[http://community.pentaho.com/]] [[https://github.com/pentaho]]
+*** [[http://www.idempiere.org/]] ERP/CRM/SCM
 
-** PrestaShop - free, scalable, Open-source e-commerce solution
+*** [[https://www.mautic.org/]] email campaign
 
-[[https://www.prestashop.com/]]
-[[https://github.com/PrestaShop/PrestaShop]]
+*** [[http://talend.com/]] ETL or EAI
 
-* Phrasenet - open source solution for digital asset management
+*** [[http://www.knime.org/]] predictive analytics.
 
-[[https://www.phraseanet.com/en/]]
+*** [[http://teiid.jboss.org/]] data virtualization
 
-** [[http://www.idempiere.org/]] ERP/CRM/SCM
+** nework monitoring
 
-** [[https://www.mautic.org/]] email campaign
+*** Observium
 
-** [[http://talend.com/]] ETL or EAI
+*** Nagios - Nagios is a powerful, enterprise-class host, service,
+ application,
 
-** [[http://www.knime.org/]] predictive analytics.
+ and network monitoring program.
 
-** [[http://teiid.jboss.org/]] data virtualization
+**** Icinga - Nagios fork
 
-* nework monitoring
+** media publishing
 
-** Observium
+*** mediagoblin
 
-** Nagios - Nagios is a powerful, enterprise-class host, service,
-application,
+*** EnterMedia
 
-and network monitoring program.
+ Media Database [[http://entermediadb.org/]]
 
-*** Icinga - Nagios fork
+*** Opencast
 
-* media publishing
+ automated video capture and distribution
+ [[http://www.opencast.org/software]]
 
-** mediagoblin
+*** kaltura video server
 
-** EnterMedia
+ [[https://github.com/kaltura/server]]
 
-Media Database [[http://entermediadb.org/]]
+*** openshot video editor
 
-** Opencast
+*** audacity audio editor
 
-automated video capture and distribution
-[[http://www.opencast.org/software]]
+*** #dyne:bolic [[https://www.dyne.org/software/dynebolic/]] multimedia
+ production
 
-** kaltura video server
+** diagramming
 
-[[https://github.com/kaltura/server]]
+*** freemind
 
-** openshot video editor
+** blogging
 
-** audacity audio editor
+*** static
 
-** #dyne:bolic [[https://www.dyne.org/software/dynebolic/]] multimedia
-production
+**** jekyll
 
-* diagramming
+**** getpelican
 
-** freemind
+**** dynamic
 
-* blogging
+**** Rubedo
 
-** static
+ [[http://www.rubedo-project.org/en/]] Open-source CMS/eCommerce platform
+ - Multi-sites, Responsive, Big Data, Personnalization - PHP, MongoDB,
+ Elasticsearch, AngularJS
 
-*** jekyll
+**** ProcessWire
 
-*** getpelican
+ [[https://processwire.com/]]
 
-*** dynamic
+***** Wordpress
 
-*** Rubedo
+***** Joomla!
 
-[[http://www.rubedo-project.org/en/]] Open-source CMS/eCommerce platform
-- Multi-sites, Responsive, Big Data, Personnalization - PHP, MongoDB,
-Elasticsearch, AngularJS
+ PHP [[https://www.joomla.org/about-joomla.html]]
+ [[https://github.com/joomla/joomla-cms]]
 
-*** ProcessWire
+***** drupal
 
-[[https://processwire.com/]]
+***** [[https://github.com/Automattic/wp-calypso]] The new JavaScript-
+ and API-powered WordPress.com
 
-**** Wordpress
+ JavaScript [[https://github.com/TryGhost/Ghost]]
 
-**** Joomla!
+** wiki
 
-PHP [[https://www.joomla.org/about-joomla.html]]
-[[https://github.com/joomla/joomla-cms]]
+*** MediaWiki
 
-**** drupal
+*** dokuwiki - no database, similar to mediwiki
 
-**** [[https://github.com/Automattic/wp-calypso]] The new JavaScript-
-and API-powered WordPress.com
+** mobile
 
-JavaScript [[https://github.com/TryGhost/Ghost]]
+*** Apache Cordova
 
-* wiki
+*** Android
 
-** MediaWiki
+**** Operating System
 
-** dokuwiki - no database, similar to mediwiki
+***** Replicant
 
-* mobile
+***** CyanogenMod [[https://en.wikipedia.org/wiki/CyanogenMod]]
 
-** Apache Cordova
+**** FDroid
 
-** Android
+ [[https://en.wikipedia.org/wiki/F-Droid]]
 
-*** Operating System
+**** Fossdroid
 
-**** Replicant
+ [[https://fossdroid.com/]]
 
-**** CyanogenMod [[https://en.wikipedia.org/wiki/CyanogenMod]]
+**** Free and open android software
 
-*** FDroid
+ [[https://en.wikipedia.org/wiki/Category:Free_and_open-source_Android_software]]
 
-[[https://en.wikipedia.org/wiki/F-Droid]]
+** project management
+*** Taskjuggler
+    :PROPERTIES:
+    :website: http://www.taskjuggler.org/
+    :END:
+*** OpenProj - Project Management : Open Source desktop project
+ management
 
-*** Fossdroid
+*** ProjectLibre
 
-[[https://fossdroid.com/]]
+ [[http://www.projectlibre.org/]] Open Source desktop project management
 
-*** Free and open android software
+*** Collabtive - web-based project management
 
-[[https://en.wikipedia.org/wiki/Category:Free_and_open-source_Android_software]]
+ [[http://collabtive.o-dyn.de/]]
 
-* project management
+*** Project Open
 
-** OpenProj - Project Management : Open Source desktop project
-management
+ [[http://www.project-open.com/]]
 
-** ProjectLibre
+** Media HUB
 
-[[http://www.projectlibre.org/]] Open Source desktop project management
+*** KODI TV
 
-** Collabtive - web-based project management
+  [[http://kodi.tv/]] Kodi is a free and open-source media-player and
+  entertainment hub
 
-[[http://collabtive.o-dyn.de/]]
+*** MythTV
 
-** Project Open
+  [[http://www.mythbuntu.org/home]]
 
-[[http://www.project-open.com/]]
+*** Geexbox [[http://www.geexbox.org/]]
 
-* Media HUB
+** Visualization
 
-* KODI TV
+*** slicer
 
-[[http://kodi.tv/]] Kodi is a free and open-source media-player and
-entertainment hub
+ [[http://www.slicer.org/pages/Introduction]]
 
-* MythTV
+*** weave
 
-[[http://www.mythbuntu.org/home]]
+ [[http://oicweave.org/]] Weave: Web-based Analysis and Visualization
+ Environment requires flex (non free)
 
-* Geexbox [[http://www.geexbox.org/]]
+** Web site archiving
 
-* Visualization
+ [[https://www.wallabag.org/]]
 
-** slicer
+** Testing
 
-[[http://www.slicer.org/pages/Introduction]]
+*** squash TM
 
-** weave
+ is an open source tool for test repository management: requirements
+ management, test cases, campaign [[http://www.squashtest.org/en]]
 
-[[http://oicweave.org/]] Weave: Web-based Analysis and Visualization
-Environment requires flex (non free)
+*** Testlink
 
-* Web site archiving
+ [[http://testlink.org/]]
 
-[[https://www.wallabag.org/]]
+** Encryption
 
-* Testing
+*** Let's Encrypt
 
-** squash TM
+ [[https://github.com/letsencrypt/letsencrypt]] ACME client that can
+ obtain certs and extensibly update server configurations (currently
+ supports Apache on .deb based systems, nginx support coming soon) Python
 
-is an open source tool for test repository management: requirements
-management, test cases, campaign [[http://www.squashtest.org/en]]
+*** Seafile - Cloud storage with client-side Encryption
 
-** Testlink
+ [[https://www.seafile.com/en/home/]]
 
-[[http://testlink.org/]]
+** Hardware
 
-* Encryption
+*** Coder
 
-** Let's Encrypt
+ web on RaspPi [[https://github.com/googlecreativelab/coder/]]
 
-[[https://github.com/letsencrypt/letsencrypt]] ACME client that can
-obtain certs and extensibly update server configurations (currently
-supports Apache on .deb based systems, nginx support coming soon) Python
+** Web Browser Technology
+*** pour over
 
-** Seafile - Cloud storage with client-side Encryption
+  filtering and sorting of collections in the browser
+  [[http://nytimes.github.io/pourover/]]
+  [[https://github.com/NYTimes/pourover]]
 
-[[https://www.seafile.com/en/home/]]
+** Small Startup Tools
 
-* Hardware
+*** Inkscape
 
-** Coder
+*** Gimp/Gimpshop
 
-web on RaspPi [[https://github.com/googlecreativelab/coder/]]
+*** Wordpress
 
-* pour over
+*** Libreoffice/Openoffice
 
-filtering and sorting of collections in the browser
-[[http://nytimes.github.io/pourover/]]
-[[https://github.com/NYTimes/pourover]]
+*** Clamwin Antivirus
 
-* Small Startup Tools
+*** Filezilla
 
-** Inkscape
+*** Freemind
 
-** Gimp/Gimpshop
+*** VirtualBOX
 
-** Wordpress
+*** Blender
 
-** Libreoffice/Openoffice
+*** Dia
 
-** Clamwin Antivirus
+*** Scribus
 
-** Filezilla
+*** VLC
 
-** Freemind
+*** Audacity
 
-** VirtualBOX
+*** GNU Cash
 
-** Blender
+** Communication
 
-** Dia
+*** Mumble
 
-** Scribus
+ multi user voice chat system, teamspeak
+ [[http://wiki.mumble.info/wiki/Main_Page]]
 
-** VLC
+*** TOX [[https://github.com/irungentoo/toxcore]]
 
-** Audacity
+*** Bitchat [[https://bitchat.im/]]
 
-** GNU Cash
+*** KIAX2 [[http://www.forschung-direkt.eu/kiax2/]]
 
-* Communication
+*** voicechatter [[http://sourceforge.net/projects/voicechatter/]]
 
-** Mumble
+*** [[https://github.com/umurmur/umurmur]]
 
-multi user voice chat system, teamspeak
-[[http://wiki.mumble.info/wiki/Main_Page]]
-
-** TOX [[https://github.com/irungentoo/toxcore]]
-
-** Bitchat [[https://bitchat.im/]]
-
-** KIAX2 [[http://www.forschung-direkt.eu/kiax2/]]
-
-** voicechatter [[http://sourceforge.net/projects/voicechatter/]]
-
-** [[https://github.com/umurmur/umurmur]]
-
-** [[https://github.com/krobelus/cyanide]]
+*** [[https://github.com/krobelus/cyanide]]
