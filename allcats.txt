@@ -1,0 +1,718 @@
+3D computer graphics software for Linux
+3D modeling software for Linux
+3D rendering software for Linux
+Access to Knowledge activists
+Accounting software for Linux
+ACD hub software for Linux
+ADC clients for Linux
+Advanced Linux Sound Architecture
+Albums free for download by copyright owner
+Android (operating system)
+Android (operating system) devices
+Android (operating system) games
+Antivirus software for Linux
+Antivirus software that uses GTK+
+Antivirus software that uses Qt
+Apache httpd modules
+Apache Software Foundation
+Apache Software Foundation members
+Apache Software Foundation projects
+Applications using D-Bus
+Arduino
+ARM Linux distributions
+Assistant Deputy Director of National Intelligence for Open Source
+Asterisk (PBX)
+Audio editing software for Linux
+Audio editing software that uses GTK+
+Audio editing software that uses Qt
+Audio player software for Linux
+Audio player software that uses GTK+
+Audio software for Linux
+Audio software that uses GTK+
+Audio software with JACK support
+Audio streaming software for Linux
+Backup software for Linux
+Bada games
+Berkeley Open Infrastructure for Network Computing projects
+Berkeley Software Distribution
+Bitcoin
+BitTorrent clients for Linux
+BitTorrent tracker for Linux
+Blender Foundation
+Books about Linux
+BSD people
+BSD software
+Business software for Linux
+Calligra Suite
+Cancelled Linux games
+Canonical Ltd.
+Catalan-language Linux distributions
+Chemistry software for Linux
+Chinese-language Linux distributions
+Citizen media
+Collaborative software for Linux
+Column-oriented DBMS software for Linux
+Commercial video games with freely available source code
+Computer-aided design software for Linux
+Computer-aided engineering software for Linux
+Computer-aided manufacturing software for Linux
+Computer algebra system software for Linux
+Computer-assisted translation software for Linux
+Computer-assisted translation software programmed in Java
+Computer-assisted translation software that uses GTK+
+Conary-based Linux distributions
+Concept- and mind-mapping software for Linux
+Concept- and mind-mapping software programmed in Java
+Concept- and mind-mapping software that uses GTK+
+Concept- and mind-mapping software that uses Qt
+Copyleft
+Copyleft media
+Creative Commons
+Creative Commons-licensed databases
+Creative Commons-licensed films
+Cross-platform free software
+Cross-platform web browsers
+CyanogenMod
+Database-related software for Linux
+DC clients for Linux
+DC hub software for Linux
+Debian
+Debian-based distributions
+Debian people
+Delayed open access journals
+Desktop publishing software for Linux
+Device mapper
+Digital audio editors for Linux
+Direct Rendering Infrastructure
+Discontinued Linux distributions
+Discontinued open-source software hosting facilities
+DMOZ
+DNS server software for Linux
+Donald Knuth
+Dota 2
+Dpkg
+E-democracy
+EDonkey Clients for Linux
+Educational software for Linux
+Educational software that uses GTK+
+Educational software that uses Qt
+Electronic design automation software for Linux
+Emacs
+Email client software for Linux
+Email clients that use GTK+
+Email clients that use Qt
+Email-related software for Linux
+Email server software for Linux
+Embedded Linux
+Embedded Linux distributions
+Enterprise Linux distributions
+Enterprise resource planning software for Linux
+Fangames
+Fedora Project
+File hosting for Linux
+File sharing software for Linux
+File sharing software that uses GTK+
+File sharing software that uses Qt
+File sharing software that uses wxWidgets
+Finite element software for Linux
+Firebird
+Firefox
+Firefox OS
+Firefox OS devices
+Firefox OS games
+Flash games
+Floppy-based Linux distributions
+Formerly proprietary software
+Free 2D animation software
+Free 3D graphics software
+Free accounting software
+Free and open-source Android software
+Free and open-source software licenses
+Free and open-source software organizations
+Free antivirus software
+Free application software
+Free artificial intelligence applications
+Free astronomy software
+Free audio codecs
+Free audio editors
+Free audio software
+Free audio software that uses SDL
+Free backup software
+Free Bayesian statistics software
+Free BibTeX software
+Free bioimaging software
+Free bioinformatics software
+Free biology software
+Free BIOS implementations
+Free biosimulation software
+Free biovisualization software
+Free BitTorrent clients
+Free boot loaders
+FreeBSD
+FreeBSD people
+Free business software
+Free calendaring software
+Free chemistry software
+Free chess software
+Free codecs
+Free collaborative software
+Free communication software
+Free compilers and interpreters
+Free computer-aided design software
+Free computer algebra systems
+Free computer libraries
+Free computer programming tools
+Free container formats
+Free content
+Free content licenses
+Free content management systems
+Free-content websites
+Free culture movement
+Free customer relationship management software
+Free data analysis software
+Free database management systems
+Free data compression software
+Free data visualization software
+Free desktop environments
+Freedesktop.org
+Freedesktop.org libraries
+Free desktop publishing software
+Free device drivers
+Free diagramming software
+Free DICOM server software
+Free DICOM software
+Free dictionary software
+Free-divers
+Free-diving
+Free documentation generators
+FreeDOS people
+Free DVD burning software
+Free e-books
+Free e-commerce software
+Free econometrics software
+Free editing software
+Free educational software
+Free electronic design automation software
+Free email server software
+Free email software
+Free emulation software
+Free encyclopedias
+Free entertainment software
+Free ERP software
+Free expression awards
+Free file comparison tools
+Free file managers
+Free file sharing software
+Free file transfer software
+Free finance software
+Free FTP clients
+Free game engines
+Free genealogy software
+Free GIS software
+Free graphics software
+Free groupware
+Free Haskell implementations
+Free healthcare software
+Free HTML editors
+Free human resource management software
+Free image galleries
+Free image organizers
+Free image viewers
+Free improvisation
+Free improvisation albums
+Free improvisation ensembles
+Free improvising musicians
+Free industrial software
+Free installation software
+Free instant messaging clients
+Free institutional repository software
+Free integrated development environments
+Free interactive geometry software
+Free Internet forum software
+Free Internet Relay Chat clients
+Free Internet suites
+Free jazz
+Free layout engines
+Free learning management systems
+Free learning support software
+Free library and information science software
+Free linguistic software
+Free Linux distributions
+Free mailing list software
+Free mathematics software
+Free media players
+Free medical software
+Free memory debuggers
+Free mobile software
+Free multilingual software
+Free multimedia codecs, containers, and splitters
+Free multimedia software
+Free music
+Free music download websites
+Free music software
+Free network management software
+Free network-related software
+Free news aggregators
+Free note-taking software
+Free office software
+Free operating system technology
+Free optical disc authoring software
+Free package management systems
+Free panorama software
+Free Pascal
+Free password managers
+Free PDF readers
+Free PDF software
+Free personal information managers
+Free photo software
+Free photo stitching software
+Free physics software
+Free plotting software
+Free presentation software
+Free printing software
+Free project management software
+Free proxy servers
+Free raster graphics editors
+Free raster to vector conversion software
+Free reference management software
+Free reporting software
+Free routing software
+Free R (programming language) software
+Free science software
+Free search engine software
+Free security software
+Free server software
+Free simulation software
+Free software
+Free software application servers
+Free-software awards
+Free software BOINC projects
+Free software by programming language
+Free software by type
+Free software companies
+Free-software conferences
+Free software culture and documents
+Free software distributions
+Free-software events
+Free software for cloud computing
+Free Software Foundation
+Free software lists and comparisons
+Free software movement
+Free software only Linux distributions
+Free software operating systems
+Free software people
+Free software primarily written in assembly language
+Free software programmed in C
+Free software programmed in C++
+Free software programmed in C Sharp
+Free software programmed in Delphi
+Free software programmed in Erlang
+Free software programmed in Go
+Free software programmed in Haskell
+Free software programmed in Java (programming language)
+Free software programmed in JavaScript
+Free software programmed in Objective-C
+Free software programmed in OCaml
+Free software programmed in Perl
+Free software programmed in PHP
+Free software programmed in Python
+Free software programmed in Ruby
+Free software programmed in Scala
+Free software programmed in Swift
+Free software programmed in Tcl
+Free software programmed in Vala
+Free software programmers
+Free software project foundations
+Free software projects
+Free software stubs
+Free software testing tools
+Free software that uses SDL
+Free software Unicode typefaces
+Free software webmail
+Free software websites
+Free special purpose file systems
+Free speech synthesis software
+Free spelling checking programs
+Free spreadsheet software
+Free statistical software
+Free storage software
+Free system administration tools
+Free system software
+Free task management software
+Free technical analysis software
+Free television software
+Free terminal emulators
+Free TeX editors
+Free TeX software
+Free text editors
+Free theorem provers
+Free transport software
+Free typesetting software
+Free typography software
+Free UML tools
+Free Usenet clients
+Free utility software
+Free vector graphics editors
+Free version control software
+Free video codecs
+Free video conversion software
+Free video software
+Free virtualization software
+Free VoIP software
+Free web analytics software
+Free web browsers
+Free web crawlers
+Free web development software
+Free web server software
+Free web software
+Free wiki software
+Free windowing systems
+Free word processors
+Free XMPP clients
+Free X window managers
+FTP server software for Linux
+Game engines for Linux
+Geeknet
+Gentoo Linux
+Gentoo Linux derivatives
+Gentoo Linux people
+GitHub
+GNOME
+GNOME companies
+GNOME Core Applications
+GNOME developers
+GNOME Games
+GNOME Kids
+GNOME stubs
+GNU GRUB
+GNU people
+GNU Project
+GNU Project software
+Government services portals
+Government services web portals in the United Kingdom
+Government services web portals in the United States
+GSM standard
+Hadoop
+Hadoop cluster administration
+Haiku (operating system)
+Hardware in Linux
+Healthcare software for Linux
+Heretic and Hexen
+History of free and open-source software
+Hybrid open access journals
+IA-32 Linux distributions
+IBM ESA/390 Linux distributions
+Id Tech
+Indira Gandhi National Open University
+Inferno (operating system)
+Instant messaging clients for Linux
+Instant messaging clients programmed in Java
+Instant messaging clients that use GTK+
+Instant messaging clients that use Qt
+Institutional repository software
+Interbase
+Interfaces of the Linux kernel
+Internet software for Linux
+Japanese-language Linux distributions
+Java platform games
+Joomla extensions
+KDE
+KDE Education Project
+KDE Frameworks
+KDE games
+KDE Platform
+KDE software
+KDE Software Compilation
+KDE stubs
+Language-specific Linux distributions
+Lego Mindstorms
+Libre art
+Libre culture
+LibreOffice
+Linspire
+Linux
+Linux APIs
+Linux archivers and compression-related utilities
+Linux audio podcasts
+Linux-based devices
+Linux companies
+Linux conferences
+Linux co-op games
+Linux distributions
+Linux distribution stubs
+Linux distributions used in appliances
+Linux documentation projects
+Linux drivers
+Linux DVD players
+Linux embedded-related software
+Linux file systems
+Linux Foundation
+Linux Foundation projects
+Linux game covers
+Linux game porters
+Linux games
+Linux integrated development environments
+Linux kernel
+Linux kernel-based operating systems
+Linux kernel features
+Linux kernel live patching
+Linux kernel process schedulers
+Linux kernel programmers
+Linux kernel-related software
+Linux kernel-supported distributed file systems
+Linux kernel-supported file systems
+Linux kernel-supported flash file systems
+Linux kernel-supported pseudo file systems
+Linux kernel-supported read-only file systems
+Linux kernel variant
+Linux library and information science software
+Linux magazines
+Linux malware
+Linux media creation distributions
+Linux media players
+Linux organizations
+Linux people
+Linux PMS graphical front-ends
+Linux programming tools
+Linux software
+Linux software projects
+Linux stubs
+Linux templates
+Linux TeX software
+Linux text editors
+Linux user groups
+Linux websites
+Linux word processors
+LXDE
+Maemo games
+Mailing list software for Linux
+Mandriva based devices
+Mandriva Linux
+Marathon (video game)
+MariaDB
+Mathematics software for Linux
+MediaWiki
+MeeGo
+MeeGo devices
+Members of the Free Software Foundation board of directors
+Members of the Open Source Initiative board of directors
+Minesweeper (video game)
+Mini Linux distributions
+Mobile Linux
+Modular design
+Motif
+Motion graphics software for Linux
+Mozilla
+Mozilla developers
+Multilingual Linux distributions
+Music software for Linux
+MySociety
+MySQL
+Nagios
+NetBSD
+Neverwinter Nights
+NSLU2-Linux
+Numerical analysis software for Linux
+Office suites for Linux
+Open access activists
+Open-access archives
+Open access journals
+Open access projects
+Open access publications
+Open access publishers
+Open access (publishing)
+OpenBSD
+OpenBSD people
+Open computers
+Open content
+Open content activists
+Open content films
+Open content projects
+Open content short films
+OpenCorporates groupings
+OpenCourseWare
+Open data
+Open data by location
+Open design
+Open educational resources
+Open formats
+Open Geospatial Consortium
+OpenGL
+Open government
+Open government activists
+Open government by location
+Open government in Canada
+Open government in the United Kingdom
+Open government in the United States
+Open Group standards
+Open hardware electronic devices
+Open hardware licenses
+Open hardware organizations and companies
+Open hardware vehicles
+Open microprocessors
+Open Mobile Alliance standards
+Openmoko
+OpenOffice
+Open Publication License-licensed works
+Open science
+OpenSolaris
+OpenSolaris-derived software distributions
+Open-source 3D video games
+Open source advocates
+Open-source cloud applications
+Open-source cloud hosting services
+Open Source computer aided engineering applications
+Open-source computing hardware
+Open-source educational video games
+Open-source games
+Open-source hardware
+Open-source hosted development tools
+Open-source intelligence
+Open-source intelligence in the United States
+Open-source mobile phones
+Open-source music hardware
+Open-source office suites
+Open source people
+Open source philosophy
+Open-source platform games
+Open-source puzzle video games
+Open-source racing video games
+Open-source robots
+Open-source roguelikes
+Open-source role-playing video games
+Open-source shooter video games
+Open-source software hosting facilities
+Open-source strategy video games
+Open-source typefaces
+Open-source video games
+OpenStack components
+Open standards
+Open standards covered by patents
+OpenStreetMap
+OpenStreetMap maps
+OpenTravel Alliance
+Open universities in India
+Open University
+OpenVMS
+OpenVMS software
+OpenVMS text editors
+Operating systems using GPE
+ORDBMS software for Linux
+OS X
+OW2 Consortium
+Package management software that uses GTK+
+Pacman-based Linux distributions
+People associated with the Open University
+Perl people
+PHP frameworks
+PIM-software for Linux
+Plan 9 from Bell Labs
+Planetarium software for Linux
+Platform-specific Linux distributions
+Portuguese-language Linux distributions
+POSIX
+Postal (video game series)
+PostgreSQL
+Proprietary commercial software for Linux
+Proprietary freeware for Linux
+Proprietary software for Linux
+Proxy server software for Linux
+Public commons
+Public copyright licenses
+Public domain databases
+Public domain software
+Public Library of Science
+Qt (framework)
+Quake (series)
+Raster graphics editors for Linux
+RDBMS software for Linux
+Recipients of the Sakharov Prize
+Red Hat
+Remote administration software for Linux
+Remote desktop software for Linux
+Rendering APIs available on Linux
+RenderMan
+Ren'Py games and visual novels
+ResidualVM supported games
+RPM-based Linux distributions
+R (programming language)
+Science software for Linux
+SCO–Linux controversies
+Scorewriters for Linux
+Screenshots of Linux games
+ScummVM supported games
+Single-board computers
+Single-platform free software
+Slackware
+Software forks
+Software synthesizers for Linux
+Software using the Academic Free License
+Software using the Apache license
+Software using the Apple Public Source License
+Software using the Artistic license
+Software using the Boost license
+Software using the CDDL license
+Software using the CPL license
+Software using the Eclipse license
+Software using the GPL license
+Software using the GPL linking exception
+Software using the LGPL license
+Software using the MIT license
+Software using the Mozilla license
+Software using the NCSA license
+Software using the PSF license
+Software using the W3C license
+Software using the zlib license
+Source-based Linux distributions
+Spanish-language Linux distributions
+SQLite
+State-sponsored Linux distributions
+Stena Line
+Subversion
+SUSE Linux
+Tag editors that use GTK+
+Third-party Linux kernel modules
+Tizen-based devices
+Tor (anonymity network)
+Touch typing tutors for Linux
+Translatewiki.net
+Turkish-language Linux distributions
+TYPO3
+Ubuntu (operating system)
+Ubuntu (operating system) derivatives
+Ubuntu (operating system) people
+Utilities for Linux
+Vector graphics editors for Linux
+Vi
+Video acceleration APIs available on Linux
+Videoconferencing software for Linux
+Video editing software for Linux
+Video editing software that uses GTK+
+Video game development software for Linux
+Virtualization-related software for Linux
+Virtualization-related software that uses GTK+
+Voice over IP clients for Linux
+Wayland
+Web-based email clients for Linux
+Web browsers for Linux
+Web browsers that use GTK+
+Web browsers that use Qt
+Web Gallery of Art
+WebGL
+Web server software for Linux
+Web server software programmed in Java
+Website article topics with .gov domain names
+Wikia
+Wikimedia Foundation
+Wikimedia projects
+WikiProject Open Access
+Wikis about geography
+WordPress
+Works about free software
+WxWidgets
+X86-64 Linux distributions
+Xfce
+Xiph.Org projects
+XMPP
+X Window System
+Zope

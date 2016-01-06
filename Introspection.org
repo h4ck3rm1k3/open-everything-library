@@ -1,5 +1,19 @@
 * Requirements 
+** Data
+
+data about a project 
+
 ** access
+
+access to the data is key to deep understanding of it.
+
+Commercial providers limit access to web services behind
+the terms of service https://github.com/tosdr/tosdr.org.
+
+** able to copy
+
+We need to be able to legally copy the data and redistribute it.
+
 *** Source code
 *** Metadata
 **** Documentation
