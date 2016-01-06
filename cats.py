@@ -31,18 +31,17 @@ import codecs
 import os.path
 
 
-seen = {}
+seen = {
+    'NASA Open Source Agreement.data' :1, # skip
+    'NASA Open Source Agreement' :1, # skip
+}
 
 def WikipediaResult(n,d=None):
     n = n + ".data"
     if not d:
-        return
+        saw(n)
     if n not in seen :
-        #print "adding existing article:" + n
-        seen[n] = 1
-
-        
-
+        saw(n)
 
 
 # from http://stackoverflow.com/questions/3627793/best-output-type-and-encoding-practices-for-repr-functions
@@ -51,13 +50,36 @@ def stdout_encode(u, default='UTF8'):
 
 import codecs
 
-def wp(x):
-    if  x + ".data" not in seen :
-        print  "load Page:" + x
-    else:
-        return
+def saw(x):
+
+    x = x.decode('utf-8')
     
-    print "loading:" + x
+    y = x.encode('ascii', 'ignore')
+    if x not in seen :
+        seen[x]=1
+        print "saw", x
+
+    if y not in seen :
+        seen[y]=1
+        print "saw", y
+
+def saw2(x):
+
+    #x = x.decode('utf-8')
+    
+    y = x.encode('ascii', 'ignore')
+    if x not in seen :
+        seen[x]=1
+        print "saw", x
+
+    if y not in seen :
+        seen[y]=1
+        print "saw", y
+
+
+def dowp(x):
+    print "loading from WP:" + x
+    #return
     f = codecs.open("data/results_wikipedia_data.py",mode="a", encoding="utf-8")
     print( "#" + x)
     #f.write( "#" + x + "\n")
@@ -93,15 +115,35 @@ def wp(x):
     #print d
     f.write(d)
     f.write( ")\n")
-    f.close()  
+    f.close()
+    print "zzz"
+    time.sleep(2)
+
+def wp(x):
+    if  x + ".data" not in seen :
+        print  "load Page:" + x
+        saw2(x + ".data")
+        #return # skip for now
+        dowp(x)
+    else:      
+        return
+
+def wp2(x): # ascii name
+    if  x + ".data" not in seen :
+        print  "load Page:" + x
+        saw(x + ".data")
+        #return # skip for now
+        dowp(x)
+    else:      
+        return
 
    
 
 def WikipediaResultSubcat(n,d):
     if n not in seen :
         #print  "Existing Cat head: " + n
-        seen[ n] = 1
-        wp(n)
+        saw(n)
+        wp2(n)
     
     for x in d['query']['categorymembers']:
         t =  x['title']
@@ -111,14 +153,12 @@ def WikipediaResultSubcat(n,d):
             pass
         #seen[ t ] = 1
            
-        seen[ 'Category:' + t ] = 1
+        saw2( 'Category:' + t)
 
 def WikipediaResultPages(n,d):
     if n not in seen :
         #print  "Existing Cat head: " + n
-        seen[ n] = 1
-
-    seen[ n] = 1
+        saw(n)
     for x in d['query']['categorymembers']:
         t =  x['title']
         if  t not in seen :
@@ -126,8 +166,7 @@ def WikipediaResultPages(n,d):
             pass
         
         wp(t)
-        
-        seen[ t ] = 1
+        saw2( t)
 
 
 def process(filename, prefix):
@@ -143,11 +182,11 @@ def process(filename, prefix):
             if prefix in l:
                 if count > 0 : # dont eval first line
                     #print "Eval:" + c
-                    try:
-                        d = eval (c)
-                    except Exception as e:
-                        print c
-                        raise e
+                    #try:
+                    d = eval (c)
+                    #except Exception as e:
+                    #    print c
+                    #    raise e
 
                 # reset
                 count = count + 1
@@ -180,7 +219,7 @@ def subcat(category):
     return categorymembers('subcat',category)
 
 def data(name,x,d):
-    seen[name]=1
+    saw(name)
     fname = "data/results_%s.py" % name
     term = "WikipediaResult%s" % name   
     f = open(fname,"a")
@@ -199,14 +238,13 @@ def search (x):
     data("Pages",x, pages(x))
     data("Subcat",x, subcat(x))
 
-
+process("data/results_wikipedia_data.py", "WikipediaResult") # new
+#pprint.pprint(seen)
 
 # load the existing articles
 process("data/results_wikipedia_data2.py", "WikipediaResult") # old
 #pprint.pprint(seen)
 
-process("data/results_wikipedia_data.py", "WikipediaResult") # new
-#pprint.pprint(seen)
 
 load("Pages")
 #pprint.pprint(seen)
