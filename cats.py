@@ -83,7 +83,7 @@ def dowp(x):
     f = codecs.open("data/results_wikipedia_data.py",mode="a", encoding="utf-8")
     print( "#" + x)
     #f.write( "#" + x + "\n")
-    f.write(    "WikipediaResult('%s'," % x)
+    f.write(    "WikipediaResult(\"\"\"%s\"\"\"," % x)
     try :
         results = wikipedia.page(x)
         #d = pprint.pformat(results.content)
