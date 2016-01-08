@@ -1,3 +1,4 @@
+
 cats4:
 	python cats.py allcats.txt
 
@@ -22,3 +23,6 @@ test:
 
 *.md : *.org
 	pandoc -i %< -o %>
+
+cats5:
+	python cats.py opencat4.txt
