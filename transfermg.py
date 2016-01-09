@@ -25,7 +25,7 @@ def lookup(memcache, database, key, obj):
     else:
         memcache[key]=1
         database.insert(obj)
-        print 'adding new new', key, obj
+        #print 'adding new new', key, obj
         return False
 
 def load(d,field):
@@ -34,21 +34,42 @@ def load(d,field):
     for c in d.find():
         #pprint.pprint(c)
         if field not in c:
-            pprint.pprint(c)
+            print "Missing", field, "in", pprint.pformat(c)
         else:
             cn = c[field]
-        #_id = c['_id']
-        res[cn]=c
+            res[cn]=c
     return res
 
-all_pages = load(db.pages,"name")
-all_subcats = load(db.subcats,"name")
+all_pages_data = load(db.page_data,"title")
 
-#pprint.pprint(all_pages)
+all_pages = load(db.pages,"name")
+wanted_pages ={}
+
+for p in all_pages :
+    d = all_pages[p]
+    if 'data' in d:
+        c = d['data'] 
+        for pg in c:
+            wanted_pages[pg]=1
+
+
+merged_cats = {}
+
+all_subcats = load(db.subcats,"name")
+#pprint.pprint(all_subcats)
+for p in all_subcats :
+    d = all_subcats[p]
+    if 'data' in d:
+        c = d['data'] 
+        for pg in c:
+            merged_cats[pg]=1    
 
 all_cats  = load(db.interesting_categories,"category")
+#pprint.pprint(all_cats)
+for p in all_cats :
+    merged_cats[p]=1    
 
-
+#exit(0)
 
 sys.path.append('libs/Wikipedia/')# #git clone git@github.com:goldsmith/Wikipedia.git
 import wikipedia
@@ -56,16 +77,29 @@ import wikipedia
 seen = {}
 
 def WikipediaResult(n,d=None):
+    name = n
     n = n + ".data"
     #if not d:
     #    saw(n)
-    #if n not in seen :
-    #    saw(n)
+
+        #    saw(n)
     if n not in seen:
         seen[n]=d
-    else:
-        if not seen[n]:
-            seen[n]=d
+        if name not in wanted_pages :
+            #print "Skip", n
+            pass
+        else:
+            print "want page", name
+            # save the page data
+            lookup(all_pages_data, db.page_data, name, d)
+
+
+    if "Category:" in name :
+        if name not in merged_cats:
+            #print "missing", name
+            pass
+        else:
+            print "wanted cat", name
 
 
 # from http://stackoverflow.com/questions/3627793/best-output-type-and-encoding-practices-for-repr-functions
@@ -187,8 +221,9 @@ def process(filename, prefix):
                     try:
                         d = eval (c)
                     except Exception as e:
-                        print c
-                        raise e
+                        #print c
+                        d = eval (c)
+                        #raise e
 
                 # reset
                 count = count + 1
@@ -290,5 +325,5 @@ for line in fileinput.input():
     transfer(c, all_subcats,db.subcats,"subcats",subcats)
     transfer(c, all_pages,db.pages,"pages",allpages)
 
-
 # now finally transfer all the pages to mongo
+

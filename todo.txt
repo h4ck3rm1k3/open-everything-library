@@ -5,7 +5,7 @@ Ansible
 Anti-Spam SMTP 
 Apache Cloudstack
 Apache Cordova
-Apache OpenOffice/Libre Office
+
 Artifact, metadata, and information repository
 Aspects of Openness
 Atom package

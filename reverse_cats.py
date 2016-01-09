@@ -88,6 +88,9 @@ def WikipediaResultSubcat(n,d):
     if n not in seen :
         saw(n)
         wp2(n)
+
+    if 'query' not in d:
+        return
     
     for x in d['query']['categorymembers']:
         t =  x['title']
@@ -99,6 +102,8 @@ def WikipediaResultSubcat(n,d):
 def WikipediaResultPages(n,d):
     if n not in seen :
         saw(n)
+    if 'query' not in d:
+        return
     for x in d['query']['categorymembers']:
         t =  x['title']      
         wp(t)

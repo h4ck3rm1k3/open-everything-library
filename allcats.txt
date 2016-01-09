@@ -11,7 +11,6 @@ Albums free for download by copyright owner
 Amateur radio software for Linux
 Android (operating system)
 Android (operating system) devices
-Android (operating system) games
 Antivirus software for Linux
 Antivirus software that uses GTK+
 Antivirus software that uses Qt
@@ -21,8 +20,11 @@ Apache Software Foundation projects
 Apache httpd modules
 Applications using D-Bus
 Arduino
+Articles with imported Creative Commons Attribution 3.0 text
+Articles with imported Creative Commons Attribution-ShareAlike 3.0 text
 Assistant Deputy Director of National Intelligence for Open Source
 Asterisk (PBX)
+Open Content
 Audio editing software for Linux
 Audio editing software that uses GTK+
 Audio editing software that uses Qt
@@ -35,7 +37,7 @@ Audio streaming software for Linux
 BSD people
 BSD software
 Backup software for Linux
-Bada games
+Benchmarking software for Linux
 Berkeley Open Infrastructure for Network Computing projects
 Berkeley Software Distribution
 BitTorrent clients for Linux
@@ -70,8 +72,18 @@ Concept- and mind-mapping software that uses Qt
 Copyleft
 Copyleft media
 Creative Commons
+Creative Commons Attribution-licensed journals
+Creative Commons-licensed albums
+Creative Commons-licensed books
 Creative Commons-licensed databases
+Creative Commons-licensed documentary films
 Creative Commons-licensed films
+Creative Commons-licensed journals
+Creative Commons-licensed podcasts
+Creative Commons-licensed science fiction films
+Creative Commons-licensed video games
+Creative Commons-licensed websites
+Creative Commons-licensed works
 Cross-platform free software
 Cross-platform web browsers
 CyanogenMod
@@ -111,7 +123,6 @@ Embedded Linux distributions
 Enterprise Linux distributions
 Enterprise resource planning software for Linux
 FTP server software for Linux
-Fangames
 Fedora Project
 File hosting for Linux
 File sharing software for Linux
@@ -124,7 +135,6 @@ Firefox
 Firefox OS
 Firefox OS devices
 Firefox OS games
-Flash games
 Floppy-based Linux distributions
 Formerly proprietary software
 Free 2D animation software
@@ -151,6 +161,7 @@ Free Pascal
 Free QDA software
 Free R (programming language) software
 Free Software Foundation
+Free software
 Free TeX editors
 Free TeX software
 Free UML tools
@@ -176,6 +187,7 @@ Free bioinformatics software
 Free biology software
 Free biosimulation software
 Free biovisualization software
+Free books
 Free boot loaders
 Free business software
 Free calendaring software
@@ -197,11 +209,13 @@ Free content management systems
 Free culture
 Free culture movement
 Free customer relationship management software
+Free daily newspapers
 Free data analysis software
 Free data compression software
 Free data recovery software
 Free data visualization software
 Free database management systems
+Free defragmentation software
 Free desktop environments
 Free desktop publishing software
 Free device drivers
@@ -225,8 +239,10 @@ Free file managers
 Free file sharing software
 Free file transfer software
 Free finance software
+Free font editors
 Free game engines
 Free genealogy software
+Free goods and services
 Free graphics software
 Free groupware
 Free healthcare software
@@ -234,10 +250,6 @@ Free human resource management software
 Free image galleries
 Free image organizers
 Free image viewers
-Free improvisation
-Free improvisation albums
-Free improvisation ensembles
-Free improvising musicians
 Free industrial software
 Free installation software
 Free instant messaging clients
@@ -249,11 +261,13 @@ Free learning management systems
 Free learning support software
 Free library and information science software
 Free linguistic software
+Free magazines
 Free mailing list software
 Free mathematics software
 Free media players
 Free medical software
 Free memory debuggers
+Free memory management software
 Free mobile software
 Free multilingual software
 Free multimedia codecs, containers, and splitters
@@ -270,6 +284,7 @@ Free operating system technology
 Free optical disc authoring software
 Free package management systems
 Free panorama software
+Free partitioning software
 Free password managers
 Free personal information managers
 Free photo software
@@ -286,6 +301,7 @@ Free reference management software
 Free reporting software
 Free routing software
 Free science software
+Free screen readers
 Free search engine software
 Free security software
 Free server software
@@ -306,6 +322,7 @@ Free software only Linux distributions
 Free software operating systems
 Free software people
 Free software primarily written in assembly language
+Free software programmed in .NET
 Free software programmed in Ada
 Free software programmed in BASIC
 Free software programmed in C
@@ -404,6 +421,7 @@ Geeknet
 Gentoo Linux
 Gentoo Linux derivatives
 Gentoo Linux people
+Geology software for Linux
 GitHub
 Government services portals
 Government services web portals in the United Kingdom
@@ -443,6 +461,7 @@ KDE games
 KDE software
 KDE stubs
 LXDE
+Language software for Linux
 Language-specific Linux distributions
 Lego Mindstorms
 Libre art
@@ -452,6 +471,7 @@ Linspire
 Linux
 Linux APIs
 Linux CD ripping software
+Linux CD/DVD writing software
 Linux DVD players
 Linux Foundation
 Linux Foundation projects
@@ -461,6 +481,7 @@ Linux Terminal Server Project
 Linux archivers and compression-related utilities
 Linux audio podcasts
 Linux audio video-related software
+Linux authentication-related software
 Linux co-op games
 Linux companies
 Linux conferences
@@ -503,7 +524,9 @@ Linux network-related software
 Linux organizations
 Linux package management-related software
 Linux people
+Linux process and task management-related software
 Linux programming tools
+Linux remote administration software
 Linux security software
 Linux software
 Linux software projects
@@ -527,6 +550,7 @@ Mathematics software for Linux
 MediaWiki
 MeeGo
 MeeGo devices
+Members of the Creative Commons Board of Directors
 Members of the Free Software Foundation board of directors
 Members of the Open Source Initiative board of directors
 Minesweeper (video game)
@@ -558,6 +582,7 @@ Open Group standards
 Open Humanities Press academic journals
 Open Mobile Alliance standards
 Open Publication License-licensed works
+Open Source Software events
 Open Source computer aided engineering applications
 Open University
 Open access (publishing)
@@ -622,6 +647,7 @@ Open-source role-playing video games
 Open-source shooter video games
 Open-source software hosting facilities
 Open-source strategy video games
+Open-source tabletop games
 Open-source typefaces
 Open-source video games
 OpenBSD
@@ -663,8 +689,12 @@ Proxy server software for Linux
 Public Library of Science
 Public commons
 Public copyright licenses
+Public domain
+Public domain books
 Public domain databases
+Public domain music
 Public domain software
+Public domain typefaces
 Qt (framework)
 Quake (series)
 R (programming language)
@@ -673,12 +703,14 @@ RPM-based Linux distributions
 Raster graphics editors for Linux
 Recipients of the Sakharov Prize
 Red Hat
+Reference works in the public domain
 Remote administration software for Linux
 Remote desktop software for Linux
 Ren'Py games and visual novels
 RenderMan
 Rendering APIs available on Linux
 ResidualVM supported games
+SCO/Linux controversies
 SCO–Linux controversies
 SQLite
 SUSE Linux
@@ -752,6 +784,8 @@ Website article topics with .gov domain names
 Wikia
 Wikimedia Foundation
 Wikimedia projects
+Wikipedia culture
+Wikipedia-derived encyclopedias
 Wikis about geography
 Windows-only free software
 WordPress
@@ -763,4 +797,3 @@ XMPP
 Xfce
 Xiph.Org projects
 Zope
-

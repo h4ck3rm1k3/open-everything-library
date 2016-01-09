@@ -1,4 +1,10 @@
 
+merge_mongo:
+	python merge_mongo.py
+
+transfermongo:
+	python transfermg.py allcats.txt
+
 cats4:
 	python cats.py allcats.txt
 
