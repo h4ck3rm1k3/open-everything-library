@@ -1,5 +1,8 @@
+links:
+	./Opencontent_links.py
+
 Opencontent:
-	python Opencontent.py
+	python3 Opencontent.py
 
 process_mongo:
 	python process_pages_mongo.py
