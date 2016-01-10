@@ -797,3 +797,169 @@ XMPP
 Xfce
 Xiph.Org projects
 Zope
+Category:PLoS academic journals
+Category:PLoS Computational Biology articles
+Category:Public Library of Science people
+Category:BioMed Central academic journals
+Category:Creative Commons Attribution-ShareAlike-licensed journals
+Category:Paid-inclusion open access journals
+Category:Creative Commons-licensed fiction books
+Category:Creative Commons-licensed comics
+Category:Creative Commons-licensed games
+Category:TWiT podcasts
+Category:GNUstep
+Category:Social Desktop
+Category:GNOME Accessibility
+Category:GNOME Applications
+Category:GNOME libraries
+Category:GNOME Mobile
+Category:GNOME obsolete
+Category:GNOME Theming
+Category:Operating systems using GNOME
+Category:Window managers that use GTK+
+Category:GTK+
+Category:Wikipedia
+Category:Fangames
+Category:Emacs modes
+Category:Software that uses SQLite
+Category:Kdepim
+Category:KDE Extragear
+Category:Software that uses wxWidgets
+Category:Web programming
+Category:Free software programmed in THINK C
+Category:MediaWiki extensions
+Category:MediaWiki Help
+Category:MediaWiki icons
+Category:MediaWiki translators
+Category:MediaWiki sites
+Category:EFL
+Category:Software that uses QML
+Category:Software that uses Qt
+Category:Wayland compositors
+Category:Wayland extensions
+Category:Free Computer-aided manufacturing software
+Category:TeX SourceForge projects
+Category:FreePBX
+Category:Firefox add-ons
+Category:Web browsers based on Firefox
+Category:Tor hidden services
+Category:Tor Network stubs
+Category:Software based on WebKit
+Category:Inferno (operating system) people
+Category:Slashdot
+Category:Red Hat people
+Category:Red Hat-related templates
+Category:Debian Project leaders
+Category:Knoppix
+Category:Edubuntu
+Category:Ubuntu Touch (operating system) devices
+Category:Android cameras with optical zoom
+Category:Android Wear devices
+Category:Android media players
+Category:MyTouch
+Category:Samsung Galaxy
+Category:Samsung Galaxy Note series
+Category:Google Nexus
+Category:Smartphone patent wars
+Category:Android (operating system) software
+Category:SLAX-based distributions
+Category:Firefox OS software
+Category:MeeGo software
+Category:All-in-one desktop computers
+Category:Handheld game consoles
+Category:Laptops
+Category:Nettop
+Category:Linux viruses
+Category:Linux administration
+Category:Audio player software that uses Qt
+Category:Bada software
+Category:Cross-platform software
+Category:Oracle Database
+Category:Engineering software for Linux
+Category:Android (operating system) games
+Category:Bada games
+Category:Dota 2 competitions
+Category:Dota players
+Category:Dota 2 teams
+Category:Flash games
+Category:Machinima based on a Quake series engine
+Category:Quake (series) players
+Category:Quake mods
+Category:Quake II mods
+Category:Quake III Arena mods
+Category:Quake 4 mods
+Category:Quake teams
+Category:SVGAlib programs
+Category:Remote desktop software that uses GTK+
+Category:Videoconferencing software programmed in Java
+Category:Videoconferencing software that uses GTK+
+Category:Videoconferencing software that uses Qt
+Category:Voice over IP clients programmed in Java
+Category:Voice over IP clients that use GTK+
+Category:Voice over IP clients that use Qt
+Category:Google Chrome
+Category:Java platform software
+Category:Machine translation software for Linux
+Category:Motion picture software for Linux
+Category:GNOME CD ripping software
+Category:Optical disc-related software that uses GTK+
+Category:Optical disc-related software that uses Qt
+Category:Packet analyzer software for Linux
+Category:Screenshots of Linux software
+Category:Software that uses FLTK
+Category:Software that uses Tk
+Category:Dictionary software that uses GTK+
+Category:Dictionary software that uses Qt
+Category:Typography-related software for Linux
+Category:File managers for Linux
+Category:Text editors for Linux
+Category:Video software for Linux
+Category:NetBSD people
+Category:Web browsers for Plan 9
+Category:Plan 9 people
+Category:Operating systems that offer the LXDE desktop
+Category:Operating systems that offer the Xfce desktop
+Category:Software that uses Motif
+Category:X display managers
+Category:X servers
+Category:X Window extensions
+Category:X window managers
+Category:X Window programs
+Category:X Window System people
+Category:X-based libraries
+Category:Bitcoin exchanges
+Category:Blockchains
+Category:People associated with Bitcoin
+Category:Creative Commons License
+Category:E-Government
+Category:KDE-related templates
+Category:Formerly free software
+Category:Perl writers
+Category:Books by Donald Knuth
+Category:Literate programming
+Category:TeX
+Category:Mozilla add-ons
+Category:Mozilla Application Suite
+Category:Gecko-based software
+Category:Mozilla logos
+Category:Mozilla-related templates
+Category:Netscape
+Category:Mozilla people
+Category:Mozilla Thunderbird
+Category:Common land
+Category:Community gardening
+Category:Enclosures
+Category:Tool libraries
+Category:Tragedy of the commons
+Category:C POSIX library
+Category:POSIX web browsers
+Category:Unix signals
+Category:XMPP clients
+Category:Books about Perl
+Category:Magazines about free software
+Category:Essays by Eric S. Raymond
+Category:WikiProject Open Access
+Category:Files copyrighted by the Wikimedia Foundation
+Category:Wikimedia Foundation people
+Category:Wikibooks
+Category:Wikimedia Foundation stubs

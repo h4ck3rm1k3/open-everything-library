@@ -1,3 +1,8 @@
+Opencontent:
+	python Opencontent.py
+
+process_mongo:
+	python process_pages_mongo.py
 
 merge_mongo:
 	python merge_mongo.py
