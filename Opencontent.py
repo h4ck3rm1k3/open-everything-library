@@ -24,19 +24,6 @@ seen = {
     'Category:Citizen media' : 1, 
     'Category:Linux software' : 1  # dont process this because it is full of non free software
 }
-import logging
-
-# # these two lines enable debugging at httplib level (requests->urllib3->httplib)
-# # you will see the REQUEST, including HEADERS and DATA, and RESPONSE with HEADERS but without DATA.
-# # the only thing missing will be the response.body which is not logged.
-# import httplib
-# httplib.HTTPConnection.debuglevel = 1
-
-# logging.basicConfig() # you need to initialize logging, otherwise you will not see anything from requests
-# logging.getLogger().setLevel(logging.DEBUG)
-# requests_log = logging.getLogger("requests.packages.urllib3")
-# requests_log.setLevel(logging.DEBUG)
-# requests_log.propagate = True
 
 def recurse(n, p):
     if n not in seen:
@@ -45,8 +32,9 @@ def recurse(n, p):
         return
     
     if n not in c.cats.data:
-        c.add_cat(n,p)       
-        #xit(0)
+        print "going to add", n
+        c.add_cat(n,p)
+        #exit(0)
     else:
         s = c.cats.data[n]
         #print.pprint(s)
