@@ -46,5 +46,16 @@ def recurse(n, p):
                 p2.append(n)
                 recurse(sc, p2)
 
+        pages = s['pages']
+        if pages:
+            #pprint.pprint(pages)
+            for pg in pages:
+                p2 = list(p)
+                p2.append(n)
+                if pg not in c.pages.pages.data:
+                    print "TODO", pg, p, n
+                    c.pages.get(pg)
+        # pages
+    
 #Category:Open Content and all subcats.
 recurse(cname + name,[])
