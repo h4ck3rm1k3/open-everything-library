@@ -14,7 +14,7 @@ import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error,
 from filelock import FileLock
 import pymongo
 import funcs
-
+import re
 refs = {}
 links = {}
 
@@ -65,29 +65,109 @@ seen = {
     'Category:X Window programs':1,
 }
 
-def  catpage(data):
+def  catpage(data, n, p):
     #pprint.pprint(data)
     #print( "cat",data['title'])
     #pprint.pprint(data.keys())
     pass
+
+
+def extern(url):
+    if url  in c.extern.data:
+        print ("exists",url)
+        return
     
-def page(data):
-    return
-    print( "page",data['title']) 
+    print ("loading link",url)
+
+    try:
+        resp = requests.head(url, timeout=1)
+        head = {
+            'code': resp.status_code,
+            'text' : resp.text,
+            'hdrs' :  resp.headers
+        };
+
+    except Exception as e:
+        pprint.pprint(e)
+        c.extern.add(url,
+                     {
+                         'data': None,
+                         'url': url,
+                         #'head' : head,
+                         'error' : str(e),
+                     })
+        return None
+    
+    clen = 0
+    tlen = 0
+    if not 'Content-Length' in resp.headers:
+        pprint.pprint(resp.headers)
+    else:
+        tlen = resp.headers['Content-Length']
+        g = re.match('(\d+)', tlen)
+        clen = 0
+        if  g:
+            tp = g.groups()[0]
+            print(tp, tlen)
+            clen = int(tp)        
+
+    print("getting size", url, clen, tlen, pprint.pformat(resp.headers))
+        
+    if clen < 10000:
+        try:
+            html = requests.get(url, timeout=1).text
+            head = {
+                'code': resp.status_code,
+                'text' : resp.text,
+                'hdrs' :  resp.headers
+            };
+
+            c.extern.add(url,
+                         {
+                             'data':html,
+                             'url': url,
+                             'head' : head
+                         })
+
+        except Exception as e:
+            pprint.pprint(e)
+            c.extern.add(url,
+                         {
+                             'data': None,
+                             'url': url,
+                             #'head' : head,
+                             'error' : str(e),
+                         } )
+            return
+        
+        else:
+            print("too big", clen)
+            pprint.pprint(head)
+            
+            c.extern.add(url,
+                         {
+                             'data': None,
+                             'url': url,
+                             'head' : head
+                        }
+            )
+            
+            
+def page(data, n, p ):
+    print( "page",n,p ) 
 
     for l in data['links']:
         if 'http' in l:
             if l not in links :
                 links[l]=1
-                print ("link",l)
-
+                extern(l)
+                
     for l in data['references']:
         if 'http' in l:
             if l not in links :
                 links[l]=1
-                print ("ref",l)
+                extern(l)
 
-    #   pprint.pprint(data['references'])
 
 def recurse(n, p):
     if n not in seen:
@@ -102,7 +182,7 @@ def recurse(n, p):
         pass
     else:
         data = c.pages.pages.data[n]
-        catpage(data)
+        catpage(data, n, p )
                     
     if n not in c.cats.data:
         print("Missing cat", n)
@@ -132,10 +212,10 @@ def recurse(n, p):
                             c.pages.get(pg)
                         else:
                             data = c.pages.pages.data[pg]
-                            page(data)
+                            page(data, pg, p)
                 else:
                     data = c.pages.pages.data[pg]
-                    page(data)
+                    page(data, pg, p)
         # pages
     
 #Category:Open Content and all subcats.
