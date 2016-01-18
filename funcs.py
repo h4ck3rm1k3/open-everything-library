@@ -194,6 +194,8 @@ class Context :
         self.extern = BigWrapper(self.db.external_pages,"url")
         self.pages = PageWrapper(self.page_data, self.redirs)
 
+        self.npm = BigWrapper(self.db.npm,"id")
+
 
     def add_cat(self, n, p):
         print("add:",n, "Parents:", ",".join(p))
