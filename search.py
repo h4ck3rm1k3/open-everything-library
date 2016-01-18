@@ -29,7 +29,6 @@ from extraction import Extractor
 import codecs
 import os.path
 
-
 def extract(x):
 
     y = re.sub(r'\W',"_",x)    

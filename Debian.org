@@ -1,6 +1,0 @@
-* bugs 
-* intent to package 
-  * news group : linux.debian.bugs.dist
-  accessible via server in emacs :
-  (setq gnus-select-method '(nntp "nntp.aioe.org"))
-

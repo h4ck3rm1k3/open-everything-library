@@ -1,8 +1,0 @@
-* Openness
-
--  [[Aspects%20of%20Openness][Aspects]]
--  [[Enablers%20of%20Openness][Enablers]]
--  [[Infrastructure%20of%20Openness][Infrastructures]]
--  [[Practices%20of%20Openness][Practices]]
--  [[Products%20of%20Openness][Products]]
--  [[Domains%20of%20Openness][Domains]]
