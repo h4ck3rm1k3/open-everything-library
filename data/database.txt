@@ -1,0 +1,18 @@
+
+mongo open_everything_library
+
+db.page_data.ensureIndex({title:1}, {unique:true, dropDups:true})
+db.pages.ensureIndex({name:1}, {unique:true, dropDups:true})
+db.redirs.ensureIndex({from:1}, {unique:true, dropDups:true})
+db.interesting_categories.ensureIndex({name:1}, {unique:true, dropDups:true})
+
+db.page_data.createIndex( { title: 1 }, { unique: true } )
+db.redirs.createIndex( { from: 1 }, { unique: true } )
+db.categories.createIndex( { name: 1 }, { unique: true } )
+db.pages.createIndex( { name: 1 }, { unique: true } )
+db.subcats.createIndex( { name: 1 }, { unique: true } )
+db.interesting_categories.createIndex( { name: 1 }, { unique: true } )
+
+
+db.getCollectionNames()
+        
