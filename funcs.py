@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from urllib.parse import urlparse, urlunparse
 import codecs
 import fileinput
@@ -13,12 +12,276 @@ import time
 import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error, urllib.parse
 from filelock import FileLock
 import pymongo
-import funcs
-import re
-refs = {}
-links = {}
 
-from multiprocessing import Process, Pool
+#sys.path.append('libs/Wikipedia/')# #git clone git@github.com:goldsmith/Wikipedia.git
+import wikipedia
+
+
+def lookup(memcache, database, key, obj):
+    #pprint.pprint(key)
+    #pprint.pprint(obj)
+    if key in memcache:
+        return True
+    else:
+        memcache[key]=1
+        database.insert(obj)
+        print('adding new new', key)
+        return False
+
+def load(d,field, alt_fields=None):
+    #d = db.pages
+    res = {}
+    for c in d.find():
+        #pprint.pprint(c)
+        if field not in c:
+            #print "Missing", field, "in", pprint.pformat(c)
+            pass
+        else:
+            cn = c[field]
+            res[cn]=c
+
+        if alt_fields:
+            for field2 in alt_fields:
+                if field2 in c:
+                    cn = c[field2]
+                    res[cn]=c
+    return res
+
+def load_data(db, field, target):
+    for p in db :
+        d = db[p]
+        if field in d:
+            c = d[field]
+            for pg in c:
+                target[pg]=1
+
+# fetch a page from wp and store in the database
+def fetch_page(x, pages, redirs):
+    x = x.replace("Category:Category:","Category:")
+
+    if x in  pages.data:
+        print("Wait, we have this:" + x)
+        return pages.data[x]
+            
+    print("loading from WP:" + x)
+    print(( "#" + x))
+    #try :
+    c = None
+    #pprint.pprint(redirs.data)
+    if x in redirs.data:
+        r = redirs.data[x] # redirect
+        print("reusing the redirect", x, "to ",  r)
+        x = r
+
+    try :
+        results = wikipedia.page(x, auto_suggest=False, redirect=False)
+        c = results.content
+    except wikipedia.exceptions.RedirectError as r:
+        r = r.redirect
+        print("got redirect", r)
+        redirs.db.insert({ "from":  x, "to": r })
+        redirs.data[x]=r
+        if r not in pages.data:
+            results = wikipedia.page(r, auto_suggest=False, redirect=False)
+        else:
+            return pages.data[r]
+        
+    except requests.exceptions.ReadTimeout as e:
+        print("Timeout", x)
+        return
+
+    #d = pprint.pformat(results.content)
+    #pprint.pprint(results.__dict__)
+    #pprint.pprint(dir(results))
+    o = {
+        'name' : x,
+        'content': c,
+        'categories' : results.categories,
+        #'coordinates' : results.coordinates(),
+        'images' : results.images,
+        'images' : results.images,
+        'links' : results.links,
+        'original_title' : results.original_title,
+        'pageid' : results.original_title,
+        'references' : results.references,
+        'revision_id' :results.revision_id,
+        #'section' :results.section,
+        'sections' :results.sections,
+        'summary' :results.summary,
+        'title': results.title,
+        'url' : results.url,
+    }
+    #pprint.pprint(o)
+    #d = json.dumps(o)
+    r = pages.db.insert(o)
+    pages.data[x]=o # cache
+    print("after insert", r)
+    #except Exception as e:
+    #    print "error:", e
+
+    print("zzz")
+    time.sleep(1)
+
+
+class Wrapper:
+    def __init__(self, db , key, alt_fields=None):
+        self.db   = db
+        self.data = {}
+
+    def load(self):
+        self.data = load(db,key,alt_fields)
+        
+    def add(self,k,v):
+        return lookup(self.data, self.db, k, v)
+
+class BigWrapper:
+    def __init__(self, db , field, alt_fields=None):
+        self.db = db
+        self.data = {}
+        self.field = field
+        self.alt_fields = alt_fields
+
+    def load(self):
+        for c in db.find({},{field : 1}):
+            if field in c:
+                cn = c[field]
+                self.data[cn]=c
+
+    def load_one(self, k):
+        print ("loading", k)
+        for c in self.db.find({ self.field : k}):
+            self.data[k]=c
+            return c
+        return None
+
+    def add(self,k,v):
+        lookup(self.data, self.db, k, v)
+
+class PageWrapper:
+    def __init__(self, pages, redirs):
+        self.pages  = pages
+        self.redirs = redirs
+
+    def get(self, p2):
+
+        if p2 in  self.pages.data:
+            pd = self.pages.data[p2]
+            print("found page", p2)
+        else:
+            if p2 in  self.redirs.data:
+                r = self.redirs.data[p2]['to']
+                print("follow redirect to ", r)
+                return self.get(r)
+            else:
+                print("missing page", p2)
+                fetch_page(p2,self.pages, self.redirs)
+            #exit(0)
+
+
+
+class Context :
+    def __init__(self):
+        self.wanted_pages ={}
+        self.merged_cats = {}
+        self.client = pymongo.MongoClient('mongodb://admin:password@127.0.0.1')
+        self.db = self.client.open_everything_library
+        self.cats   = Wrapper(self.db.categories,"name")
+        self.page_data  = Wrapper(
+            self.db.page_data,
+            "title",
+            alt_fields=['name'])
+        self.redirs = Wrapper(self.db.redirs,"from")
+        self.extern = BigWrapper(self.db.external_pages,"url")
+        self.pages = PageWrapper(self.page_data, self.redirs)
+
+
+    def add_cat(self, n, p):
+        print("add:",n, "Parents:", ",".join(p))
+        _pages = pages(n)
+        #pprint.pprint(_pages)
+
+        #n = n.replace( "Category:","") 
+        subcats = subcat(n)
+        #pprint.pprint(subcats)
+
+        new = {
+            'name' : n,
+            'parents' : p,
+            'subcats': subcats,
+            'pages': _pages,
+        }
+        #pprint.pprint(new)
+        self.cats.add(n , new)
+
+
+def categorymembers(cmtype,category):
+    url='https://en.wikipedia.org/w/api.php'
+    params = {
+        'action': 'query',
+        'list': 'categorymembers',
+        'cmtype': cmtype,
+        'cmlimit': 'max',
+        'format': 'json',
+        'cmtitle': category,
+    }
+    
+    r = requests.get(url, params=params)
+    #pprint.pprint(url)
+    #pprint.pprint(params)
+    
+    t = r.text
+    d = json.loads(t)
+    return d
+
+def clean(d):
+    #print "clean"
+    #pprint.pprint(d)
+    if not 'query' in d:
+        return []
+    _pages = []
+    for x in d['query']['categorymembers']:
+        t =  x['title']
+        _pages.append(t)
+    return _pages
+        
+def pages(category):
+    return clean(categorymembers('page',category))
+
+def subcat(category):
+    return clean(categorymembers('subcat',category))
+
+
+# old = c.db.categories.find_one(
+#     {'_id':
+#      _id
+#     })
+
+# pprint.pprint(old)
+
+# def update():
+#     c.db.categories.update(
+#         {'_id':
+#          _id
+#         },
+#         {
+#             '$set':
+#             {
+#                 'done': False
+#         }
+#         }
+#     )
+
+
+# {u'_id': ObjectId('56911021570fd4017fc6c99e'),
+#  u'name': u'Category:Open content',
+#  u'pages': [u'Open content',
+#             u'Openness',
+#             u'360Learning',
+#],
+#  u'subcats': [u'Category:Open access (publishing)',
+#]}
+
+import re
 skip = (       
     '3dml',
     '3g2',
@@ -156,7 +419,7 @@ skip = (
     'emma',
     'eol',
     'eot',
-    'epub',
+#    'epub',
     'es',
     'es3',
     'esf',
@@ -373,7 +636,7 @@ skip = (
     'odm',
     'odp',
     'ods',
-    'odt',
+#    'odt',
     'oga',
     'ogg',
     'ogv',
@@ -667,14 +930,14 @@ skip = (
     'zir',
     'zmm',
 )
+# build a res
+skip_y = ("\." + x for x in skip)
+skip_res = '.+(' +  "|".join( skip_y)  + ")+$"
+skip_resre = re.compile(skip_res)
 
-def extern(url):
+#seen = {}
 
-    for x in skip:
-        if url.endswith("." + x):
-            print ("skip",url)
-            return
-        
+def extern(c, url, timeout = 1):
     if url  in c.extern.data:
         print ("exists",url)
         return
@@ -682,7 +945,7 @@ def extern(url):
     print ("loading link",url)
 
     try:
-        resp = requests.head(url, timeout=1)
+        resp = requests.head(url, timeout=timeout)
         head = {
             'code': resp.status_code,
             'text' : resp.text,
@@ -745,139 +1008,3 @@ def extern(url):
                          'error' : str(e),
                      } )
         return
-
-pool = Pool(processes=20)
-
-c = funcs.Context()
-cname = 'Category:'
-name = 'Open content'
-seen = {
-    # dont care about open access right now
-    'Category:Creative Commons-licensed journals':1,
-    'Category:Android (operating system) games':1,
-    'Category:Android (operating system) software' :1,
-    'Category:Articles with imported Creative Commons Attribution 2.5 text':1,
-    'Category:Articles with imported Creative Commons Attribution 3.0 text' :1,
-    'Category:Citizen media' : 1,
-    'Category:Debian people' :1 ,
-    'Category:Firefox OS software' :1,
-    'Category:Free software companies' : 1,
-    'Category:Free software people': 1,
-    'Category:FreeBSD people': 1,
-    'Category:FreeDOS people': 1,
-    'Category:GNOME companies' :1,
-    'Category:GNU people':1,
-    'Category:Inferno (operating system) people' : 1,
-    'Category:Linux companies': 1,
-    'Category:Linux people': 1,
-    'Category:Linux software' : 1,  # dont process this because it is full of non free software
-    'Category:Mozilla people' : 1,
-    'Category:NetBSD people': 1,
-    'Category:Netscape people': 1,
-    'Category:Open access (publishing)' :1,
-    'Category:Open content activists':1,
-    'Category:Open hardware organizations and companies': 1,
-    'Category:Open source people': 1,
-    'Category:OpenBSD people' : 1,
-    'Category:People associated with Bitcoin': 1,
-    'Category:Perl people': 1,
-    'Category:Plan 9 people': 1,
-    'Category:Public commons' : 1,
-    'Category:Public domain books' :1,
-    'Category:Public domain music' :1,
-    'Category:Red Hat people': 1,
-    'Category:Single-board computers':1,
-    'Category:Ubuntu (operating system) people' :1,
-    'Category:WikiProject Open Access articles':1, # tons of articles, not relevant
-    'Category:WikiProject Open Access' :1,
-    'Category:Wikimedia Foundation people': 1,
-    'Category:Wikipedia people':1,
-    'Category:X Window System people': 1,
-    'Category:X Window programs':1,
-}
-
-def  catpage(data, n, p):
-    #pprint.pprint(data)
-    #print( "cat",data['title'])
-    #pprint.pprint(data.keys())
-    pass
-
-
-
-
-                
-
-def page(data, n, p ):
-    #print( "page",n,p ) 
-    todo = []
-    
-    for l in data['links']:
-        if 'http' in l:
-            if l not in links :
-                links[l]=1
-                todo.append(l)
-                
-    for l in data['references']:
-        if 'http' in l:
-            if l not in links :
-                links[l]=1
-                todo.append(l)
-
-    pool.apply_async(extern, todo)   
-
-
-def recurse(n, p):
-    if n not in seen:
-        seen[n]=1
-    else:
-        return
-
-    #print("Process:", n, p)
-    if n not in c.pages.pages.data:
-        print("TODO1 add :", n, p)      
-        c.pages.get(n)
-        pass
-    else:
-        data = c.pages.pages.data[n]
-        catpage(data, n, p )
-                    
-    if n not in c.cats.data:
-        print("Missing cat", n)
-        exit(0)
-    else:
-        s = c.cats.data[n]
-        subcats = s['subcats']
-        if subcats:
-            for sc in subcats:
-                p2 = list(p)
-                p2.append(n)
-                recurse(sc, p2)
-
-        pages = s['pages']
-        if pages:
-            for pg in pages:
-                p2 = list(p)
-                p2.append(n)
-                if pg not in c.pages.pages.data:
-                    if pg not in c.redirs.data:
-                        print("TODO2", pg, p, n)
-                        c.pages.get(pg)
-                    else:
-                        pg = c.redirs.data[pg]['to']
-                        if pg not in c.pages.pages.data:
-                            print("TODO3", pg, p, n)
-                            c.pages.get(pg)
-                        else:
-                            data = c.pages.pages.data[pg]
-                            page(data, pg, p)
-                else:
-                    data = c.pages.pages.data[pg]
-                    page(data, pg, p)
-        # pages
-    
-#Category:Open Content and all subcats.
-recurse(cname + name,[])
-pool.close()
-
-print ("waiting")
-pool.join()

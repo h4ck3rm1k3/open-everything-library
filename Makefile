@@ -1,3 +1,10 @@
+links3:
+	chmod +x ./Opencontent_netloc.py
+	./Opencontent_netloc.py
+
+links2:
+	./Opencontent_retry.py
+
 links:
 	./Opencontent_links.py
 

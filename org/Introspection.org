@@ -1,0 +1,26 @@
+* Requirements 
+** Data
+
+data about a project 
+
+** access
+
+access to the data is key to deep understanding of it.
+
+Commercial providers limit access to web services behind
+the terms of service https://github.com/tosdr/tosdr.org.
+
+** able to copy
+
+We need to be able to legally copy the data and redistribute it.
+
+*** Source code
+*** Metadata
+**** Documentation
+**** Bug reports
+**** Mailing lists
+     We need to be able to download and scan the mailing list archives for a
+     deeper understanding.
+     There are mail box archives of many groups that can be downloaded.
+**** News group interface
+     Debian provides access to 
