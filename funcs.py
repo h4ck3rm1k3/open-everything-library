@@ -112,6 +112,7 @@ def fetch_page(x, pages, redirs):
         'url' : results.url,
     }
     #pprint.pprint(o)
+
     #d = json.dumps(o)
     r = pages.db.insert(o)
     pages.data[x]=o # cache
@@ -195,6 +196,7 @@ class Context :
         self.pages = PageWrapper(self.page_data, self.redirs)
 
         self.npm = BigWrapper(self.db.npm,"id")
+        self.fsd = BigWrapper(self.db.fsd,"__source__")
 
 
     def add_cat(self, n, p):
