@@ -4,7 +4,6 @@ import pymongo
 import pprint 
 import funcs
 import json
-d = json.load(open("sources/npm/.cache.json"))
 c = funcs.Context()
 
 import rdflib
@@ -73,7 +72,7 @@ for l in f.readlines():
             else:
                 ob[p] = [o]
         #pprint.pprint(ob)
-        c.npm.add(s,ob)
+        c.fsd.add(s,ob)
         data =  l
         
     else:

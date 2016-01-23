@@ -143,9 +143,9 @@ class BigWrapper:
         self.alt_fields = alt_fields
 
     def load(self):
-        for c in db.find({},{field : 1}):
-            if field in c:
-                cn = c[field]
+        for c in self.db.find({},{self.field : 1}):
+            if self.field in c:
+                cn = c[self.field]
                 self.data[cn]=c
 
     def load_one(self, k):
@@ -194,6 +194,10 @@ class Context :
         self.redirs = Wrapper(self.db.redirs,"from")
         self.extern = BigWrapper(self.db.external_pages,"url")
         self.pages = PageWrapper(self.page_data, self.redirs)
+        self.wikidata = BigWrapper(self.db.wiki_data, "__subject__")
+
+        self.github = BigWrapper(self.db.github,"full_name")
+        self.ruby = BigWrapper(self.db.ruby,"name")
 
         self.npm = BigWrapper(self.db.npm,"id")
         self.fsd = BigWrapper(self.db.fsd,"__source__")
