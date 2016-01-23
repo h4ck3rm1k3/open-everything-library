@@ -1,6 +1,9 @@
 #set -x
 set -e
-page=1
+page=$1
+: ${page:=1}
+# max was 67156
+
 while :
 do
     OUT="projects_${page}.html"
