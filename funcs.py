@@ -47,6 +47,23 @@ def load(d,field, alt_fields=None):
                     res[cn]=c
     return res
 
+def load_ids(d,field, alt_fields=None):
+    res = {}
+    flds = { field :1 }
+    if alt_fields:
+        for field2 in alt_fields:
+            flds[field2] =1
+
+    for c in d.find({},flds):
+        cn = c[field]
+        res[cn]=c
+        if alt_fields:
+            for field2 in alt_fields:
+                if field2 in c:
+                    cn = c[field2]
+                    res[cn]=c
+    return res
+
 def load_data(db, field, target):
     for p in db :
         d = db[p]
@@ -62,7 +79,7 @@ def fetch_page(x, pages, redirs):
     if x in  pages.data:
         print("Wait, we have this:" + x)
         return pages.data[x]
-            
+
     print("loading from WP:" + x)
     print(( "#" + x))
     #try :
@@ -85,7 +102,7 @@ def fetch_page(x, pages, redirs):
             results = wikipedia.page(r, auto_suggest=False, redirect=False)
         else:
             return pages.data[r]
-        
+
     except requests.exceptions.ReadTimeout as e:
         print("Timeout", x)
         return
@@ -131,7 +148,7 @@ class Wrapper:
 
     def load(self):
         self.data = load(db,key,alt_fields)
-        
+
     def add(self,k,v):
         return lookup(self.data, self.db, k, v)
 
@@ -147,6 +164,46 @@ class BigWrapper:
             if self.field in c:
                 cn = c[self.field]
                 self.data[cn]=c
+
+    def load_ids(self):
+        res = {}
+        flds = { self.field :1 }
+        if self.alt_fields:
+            for field2 in self.alt_fields:
+                flds[field2] =1
+
+        for c in self.db.find({},flds):
+            cn = c[self.field]
+            res[cn]=1
+            if self.alt_fields:
+                for field2 in self.alt_fields:
+                    if field2 in c:
+                        cn = c[field2]
+                        res[cn]=1
+        return res
+
+    def load_last_ids(self):
+        res = {}
+        flds = { self.field :1 ,
+                 "_id" : 1,
+        }
+
+        if self.alt_fields:
+            for field2 in self.alt_fields:
+                flds[field2] =1
+
+                #
+        for c in self.db.find({},flds).sort([('_id',-1)]).limit(1):
+            cn = c[self.field]
+            print ("found last id",cn, pprint.pformat(cn))
+            res[cn]=1
+            if self.alt_fields:
+                for field2 in self.alt_fields:
+                    if field2 in c:
+                        cn = c[field2]
+                        res[cn]=1
+        return res
+
 
     def load_one(self, k):
         print ("loading", k)
@@ -208,7 +265,7 @@ class Context :
         _pages = pages(n)
         #pprint.pprint(_pages)
 
-        #n = n.replace( "Category:","") 
+        #n = n.replace( "Category:","")
         subcats = subcat(n)
         #pprint.pprint(subcats)
 
@@ -232,11 +289,11 @@ def categorymembers(cmtype,category):
         'format': 'json',
         'cmtitle': category,
     }
-    
+
     r = requests.get(url, params=params)
     #pprint.pprint(url)
     #pprint.pprint(params)
-    
+
     t = r.text
     d = json.loads(t)
     return d
@@ -251,7 +308,7 @@ def clean(d):
         t =  x['title']
         _pages.append(t)
     return _pages
-        
+
 def pages(category):
     return clean(categorymembers('page',category))
 
@@ -290,7 +347,7 @@ def subcat(category):
 #]}
 
 import re
-skip = (       
+skip = (
     '3dml',
     '3g2',
     '3gp',
@@ -949,7 +1006,7 @@ def extern(c, url, timeout = 1):
     if url  in c.extern.data:
         print ("exists",url)
         return
-    
+
     print ("loading link",url)
 
     try:
@@ -970,7 +1027,7 @@ def extern(c, url, timeout = 1):
                          'error' : str(e),
                      })
         return None
-    
+
     clen = 0
     tlen = 0
     if  'Content-Length' in resp.headers:
@@ -980,11 +1037,11 @@ def extern(c, url, timeout = 1):
         if  g:
             tp = g.groups()[0]
             print(tp, tlen)
-            clen = int(tp)        
+            clen = int(tp)
 
     print("getting size", url, clen, tlen)
           #, pprint.pformat(resp.headers))
-        
+
 
     try:
         html = requests.get(url, timeout=1,verify=False, stream=True).text
@@ -997,14 +1054,14 @@ def extern(c, url, timeout = 1):
         if len(html) <  20000:
             print ("Truncating html",len(html), url)
             html = None
-            
+
         c.extern.add(url,
                      {
                          'data':html,
                          'url': url,
                          'head' : head
                      })
-        
+
 
     except Exception as e:
         pprint.pprint(e)

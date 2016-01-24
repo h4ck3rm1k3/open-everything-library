@@ -1,3 +1,6 @@
+test123:
+	python openhub_extract.py
+
 parse:
 	chmod +x extract_html.py
 	./extract_html.py sources/data2/python/pypi.python.org/example2.html

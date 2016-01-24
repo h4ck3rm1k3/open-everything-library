@@ -14,5 +14,10 @@ db.subcats.createIndex( { name: 1 }, { unique: true } )
 db.interesting_categories.createIndex( { name: 1 }, { unique: true } )
 
 
+
+db.github.ensureIndex({full_name:1}, {unique:true, dropDups:true})
+db.github.createIndex( { full_name: 1 }, { unique: true } )
+
 db.getCollectionNames()
         
+
