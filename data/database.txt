@@ -18,6 +18,18 @@ db.interesting_categories.createIndex( { name: 1 }, { unique: true } )
 db.github.ensureIndex({full_name:1}, {unique:true, dropDups:true})
 db.github.createIndex( { full_name: 1 }, { unique: true } )
 
+
+db.ruby.ensureIndex({name:1}, {unique:true, dropDups:true})
+db.ruby.createIndex( { name: 1 }, { unique: true } )
+
+db.gitlab.ensureIndex({full_name:1}, {unique:true, dropDups:true})
+db.gitlab.createIndex( { full_name: 1 }, { unique: true } )
+
+db.bb.ensureIndex({full_name:1}, {unique:true, dropDups:true})
+db.bb.createIndex( { full_name: 1 }, { unique: true } )
+
+
+
 db.getCollectionNames()
         
 

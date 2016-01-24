@@ -85,13 +85,16 @@ def process_file(fn):
                 del d['metadata'][m]
                 d['metadata'][m2]=t
         #print ("check",n)
-        c.ruby.add(n,d)
+        try:
+            c.ruby.add(n,d)
+        except pymongo.errors.DuplicateKeyError as e:
+            pass # dont care
         
 def process_files():
     for f in scan_files():
         process_file(f)
 
-c.ruby.load()
+#c.ruby.load()
 process_files()
 
 
