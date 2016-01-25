@@ -2,7 +2,7 @@
 *.html
 *.json
 *.bz2
-
+secrets.py
 
 # Created by https://www.gitignore.io/api/vim,emacs,android
 

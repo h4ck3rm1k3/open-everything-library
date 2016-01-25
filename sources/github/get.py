@@ -1,9 +1,11 @@
+#!/usr/bin/python3
+
 import requests
 import os.path
 import json
 import time
 import codecs
-access_token='2611e35ee48db6f47777b749b8075a9de41a0b7d'
+from secrets import access_token
 access = '&access_token=' + access_token
 import sys
 start  = int(sys.argv[1])
@@ -25,7 +27,7 @@ def get(s):
         r = requests.get(u)
         t = r.text
         f.write(t)
-        time.sleep(2)
+        time.sleep(1)
 
     try:
         d= json.loads(t)

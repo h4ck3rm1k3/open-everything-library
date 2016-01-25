@@ -27,7 +27,6 @@ do
     then
         echo get $OUT
         curl --output $OUT  "http://sourceforge.net/directory/os%3Alinux/?page=${page}"
-        #wget --output-file $OUT  "http://sourceforge.net/directory/os%3Alinux/?page=${page}"
         sleep 2
     fi
     
