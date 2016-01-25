@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-        #!/usr/bin/python3
 
 import pymongo
 import pprint 
@@ -45,7 +44,7 @@ c = funcs.Context()
 sink = funcs.BigWrapper(c.db.sfnet,"dc_title")
 sink.db.create_index("dc_title")
 
-filename_pattern = re.compile(r'.+')
+filename_pattern = re.compile(r'.+.doap$')
             
 def scan_files():
     dirname = 'sources/sf.net/doap/'
