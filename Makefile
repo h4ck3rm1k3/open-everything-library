@@ -1,3 +1,7 @@
+import_git:
+	#max id:	repositories.50342805.json
+	./import_gh2.py
+
 test123:
 	python openhub_extract.py
 
