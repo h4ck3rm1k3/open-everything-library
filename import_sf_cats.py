@@ -14,7 +14,6 @@ import funcs
 c = funcs.Context()
 sink = funcs.BigWrapper(c.db.sfcats,"s")
 sink.db.create_index("s")
-
 ids = sink.load_ids()
 
 def paths(doc, xpath):
@@ -75,9 +74,6 @@ def catfile(f):
             if '&sort=' not in h:
                 h = h.replace('?source=directory','')
                 if h not in seen:
-                    h = h.replace('&amp;','&')
-                    h = h.replace('&amp=&','&')
-                    
                     seen[h]=1
                     #print(("\t\t"+h))
                     if h.startswith("/projec") :
@@ -85,71 +81,34 @@ def catfile(f):
                     elif h.startswith("/directory") :
                         obj['d'].append(h)
             else:
-                #if obj['s'] != '':                
+                #if obj['s'] != '':
                 if 'sort=score' in h:
-                    #s = urllib.parse.unquote(h)
-                    #print ("Source in:" +h)
-                    #print ("Source in:" +s)
-                    h = h.replace('&amp;','&')
-                    h = h.replace('&amp=&','&')
                     h = h.replace('&sort=score','')
                     obj['s'] = h
-                    print ("Source:" +h)
+                    #print ("Source:" +h)
 
-    s = obj['s']
+        #pprint.pprint(obj)
 
-    # pprint.pprint(
-    #         {
-    #             'dirs'  : obj['d'],
-    #             'projects' :obj['p']
-    #         }
-    #     )
+        s = obj['s']
         
-    if s not in ids:
-        try :
-            sink.add(obj['s'],obj)
-        except pymongo.errors.DuplicateKeyError as e:
-            print ("skip" + obj['s'])
-            pass # dont care
-        except Exception as e:
-            print ("Error",s)
-            print (e)
-            raise e
+        if s not in ids:
+            try :
+                sink.add(obj['s'],obj)
+            except pymongo.errors.DuplicateKeyError as e:
+                print ("skip" + obj['s'])
+                pass # dont care
+            except Exception as e:
+                print ("Error",s)
+                print (e)
+                raise e
+            else:
+                print ("added " + obj['s'])        
+
+print ("Going to look for new pages")
+for d in sink.db.find({},{'d' : 1}):
+    #pprint.pprint(d)
+    for d2 in d['d']:
+        if d2 not in ids:
+            print ("TODO:" + d2)
         else:
-            print ("added " + obj['s'])
-    else:
-        print ("update existing" + obj['s'])        
-        #sink.update(obj)
-            
-def scan():
-    #d = Path('./pages/')
-    print ('going to scan')
-    p = subprocess.Popen(
-        [
-            '/usr/bin/find',
-            'sources/sf.net/cats/pages' ,
-            '-maxdepth' , '1',
-            '-type','f',
-        ],
-        stdout=subprocess.PIPE,
-        bufsize = 1,
-        universal_newlines = True
-    )
-
-    while p.poll:
-        if p.stdout:
-            #print ("got out")
-            for f in iter(p.stdout.readline, ''):
-                f = f.replace("\n","")
-                #print( "Check:" + f)
-                catfile(f)
-        else:
-            print ("no out")
-            time.sleep(1)
-
-    #for f in d.files('*.html'):
-
-def test():
-    catfile('sources/sf.net/cats/pages/_directory__q_fps&amp;amp_&amp;page_10.html')
-scan()
-#test()
+            print ("Found:" + d2)

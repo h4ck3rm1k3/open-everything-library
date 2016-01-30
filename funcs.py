@@ -25,7 +25,7 @@ def lookup(memcache, database, key, obj):
     else:
         memcache[key]=1
         database.insert(obj)
-        print('adding new new', key)
+        print('adding new:', key)
         return False
 
 def load(d,field, alt_fields=None):
@@ -214,6 +214,19 @@ class BigWrapper:
 
     def add(self,k,v):
         lookup(self.data, self.db, k, v)
+
+    def update(self, obj):
+        key = obj[self.field]
+        self.data[key]=1
+        self.db.update(
+            {
+                self.field : key
+            },
+            obj,
+            upsert=True            
+        )
+        print('updated', key)
+        return True
 
 class PageWrapper:
     def __init__(self, pages, redirs):

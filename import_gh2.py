@@ -88,8 +88,20 @@ def process_file(fn):
             n = x['full_name']
             # now we
             #print ("Start flagged", n)
+            y = {
+                "id": x['id'],
+                "name": x['name'],
+                "full_name": x['full_name'],
+                "owner": x['owner']['id'],
+                "owner_name": x['owner']['login'],
+                "owner_type": x['owner']['type'],
+                "html_url": x["html_url"],
+                "url": x["url"],
+                "fork": x["fork"],                 
+                "description": x["description"],
+            }
             try :
-                c.github.add(n,x)
+                c.github.add(n,y)
             except pymongo.errors.DuplicateKeyError as e:
                 pass # dont care
             except Exception as e:
