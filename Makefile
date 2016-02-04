@@ -1,3 +1,11 @@
+testwd2 :
+	python3 load_cat_pages_into_wikidata.py
+
+
+testwd :
+	python3 create_request.py 'https://www.wikidata.org/w/api.php?action=wbcreateclaim&entity={{{2}}}&property=P31&snaktype=value&value=Q4167836'
+	
+
 import_git:
 	#max id:	repositories.50342805.json
 	./import_gh2.py

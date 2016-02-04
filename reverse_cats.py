@@ -1,23 +1,23 @@
+#
+# This has been canbalized for the wikipedia cat functions
+# 
 import sys
-sys.path.append('libs/Wikipedia/')# #git clone git@github.com:goldsmith/Wikipedia.git
+#sys.path.append('libs/Wikipedia/')# #git clone git@github.com:goldsmith/Wikipedia.git
 
-from urlparse import urlparse, urlunparse
+from urllib.parse import urlparse, urlunparse
 import codecs
 import fileinput
 import json
 import os.path
 import pprint 
 import requests
-import results
+#import results
 import six
 import time
-import urllib, urllib2
-import wikipedia
+import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error, urllib.parse
+#import wikipedia
 
-seen = {
-    'NASA Open Source Agreement.data' :1, # skip
-    'NASA Open Source Agreement' :1, # skip
-}
+seen = {}
 
 def WikipediaResult(n,d=None):
     n = n + ".data"
@@ -33,7 +33,7 @@ def WikipediaResult(n,d=None):
         for c in d['categories']:
             cn = "Category:%s"  % c
             if  cn not in seen :
-                print cn
+                print (cn)
                 saw(cn)
         saw(n)
 
@@ -72,7 +72,7 @@ def saw2(x):
 
 
 def dowp(x):
-    print "not loading from WP:" + x
+    print("not loading from WP:" + x)
     
 def wp(x):
     if  x + ".data" in seen :
@@ -179,17 +179,19 @@ def search (x):
     data("Pages",x, pages(x))
     data("Subcat",x, subcat(x))
 
+def main():
+    load("Pages")
+    #pprint.pprint(seen)
 
-load("Pages")
-#pprint.pprint(seen)
+    load("Subcat")
+    #pprint.pprint(seen)
 
-load("Subcat")
-#pprint.pprint(seen)
+    process("data/results_wikipedia_data.py", "WikipediaResult") # new
+    #pprint.pprint(seen)
 
-process("data/results_wikipedia_data.py", "WikipediaResult") # new
-#pprint.pprint(seen)
+    # load the existing articles
+    process("data/results_wikipedia_data2.py", "WikipediaResult") # old
+    #pprint.pprint(seen)
 
-# load the existing articles
-process("data/results_wikipedia_data2.py", "WikipediaResult") # old
-#pprint.pprint(seen)
-
+if __name__ == "__main__":
+    main()
