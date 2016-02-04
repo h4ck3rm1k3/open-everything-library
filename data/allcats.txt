@@ -24,7 +24,7 @@ Articles with imported Creative Commons Attribution 3.0 text
 Articles with imported Creative Commons Attribution-ShareAlike 3.0 text
 Assistant Deputy Director of National Intelligence for Open Source
 Asterisk (PBX)
-Open Content
+Open content
 Audio editing software for Linux
 Audio editing software that uses GTK+
 Audio editing software that uses Qt
@@ -187,14 +187,12 @@ Free bioinformatics software
 Free biology software
 Free biosimulation software
 Free biovisualization software
-Free books
 Free boot loaders
 Free business software
 Free calendaring software
 Free chemistry software
 Free chess software
 Free codecs
-Free codecs hardware
 Free collaborative software
 Free communication software
 Free compilers and interpreters
@@ -206,7 +204,6 @@ Free container formats
 Free content
 Free content licenses
 Free content management systems
-Free culture
 Free culture movement
 Free customer relationship management software
 Free daily newspapers
@@ -582,7 +579,6 @@ Open Group standards
 Open Humanities Press academic journals
 Open Mobile Alliance standards
 Open Publication License-licensed works
-Open Source Software events
 Open Source computer aided engineering applications
 Open University
 Open access (publishing)
@@ -599,7 +595,6 @@ Open content projects
 Open content short films
 Open data
 Open data by location
-Open data centers
 Open design
 Open educational resources
 Open formats
@@ -659,7 +654,6 @@ OpenGL
 OpenOffice
 OpenSolaris
 OpenSolaris-derived software distributions
-OpenStack components
 OpenStreetMap
 OpenStreetMap maps
 OpenTravel Alliance
@@ -696,7 +690,6 @@ Public domain music
 Public domain software
 Public domain typefaces
 Qt (framework)
-Quake (series)
 R (programming language)
 RDBMS software for Linux
 RPM-based Linux distributions
@@ -797,169 +790,157 @@ XMPP
 Xfce
 Xiph.Org projects
 Zope
-Category:PLoS academic journals
-Category:PLoS Computational Biology articles
-Category:Public Library of Science people
-Category:BioMed Central academic journals
-Category:Creative Commons Attribution-ShareAlike-licensed journals
-Category:Paid-inclusion open access journals
-Category:Creative Commons-licensed fiction books
-Category:Creative Commons-licensed comics
-Category:Creative Commons-licensed games
-Category:TWiT podcasts
-Category:GNUstep
-Category:Social Desktop
-Category:GNOME Accessibility
-Category:GNOME Applications
-Category:GNOME libraries
-Category:GNOME Mobile
-Category:GNOME obsolete
-Category:GNOME Theming
-Category:Operating systems using GNOME
-Category:Window managers that use GTK+
-Category:GTK+
-Category:Wikipedia
-Category:Fangames
-Category:Emacs modes
-Category:Software that uses SQLite
-Category:Kdepim
-Category:KDE Extragear
-Category:Software that uses wxWidgets
-Category:Web programming
-Category:Free software programmed in THINK C
-Category:MediaWiki extensions
-Category:MediaWiki Help
-Category:MediaWiki icons
-Category:MediaWiki translators
-Category:MediaWiki sites
-Category:EFL
-Category:Software that uses QML
-Category:Software that uses Qt
-Category:Wayland compositors
-Category:Wayland extensions
-Category:Free Computer-aided manufacturing software
-Category:TeX SourceForge projects
-Category:FreePBX
-Category:Firefox add-ons
-Category:Web browsers based on Firefox
-Category:Tor hidden services
-Category:Tor Network stubs
-Category:Software based on WebKit
-Category:Inferno (operating system) people
-Category:Slashdot
-Category:Red Hat people
-Category:Red Hat-related templates
-Category:Debian Project leaders
-Category:Knoppix
-Category:Edubuntu
-Category:Ubuntu Touch (operating system) devices
-Category:Android cameras with optical zoom
-Category:Android Wear devices
-Category:Android media players
-Category:MyTouch
-Category:Samsung Galaxy
-Category:Samsung Galaxy Note series
-Category:Google Nexus
-Category:Smartphone patent wars
-Category:Android (operating system) software
-Category:SLAX-based distributions
-Category:Firefox OS software
-Category:MeeGo software
-Category:All-in-one desktop computers
-Category:Handheld game consoles
-Category:Laptops
-Category:Nettop
-Category:Linux viruses
-Category:Linux administration
-Category:Audio player software that uses Qt
-Category:Bada software
-Category:Cross-platform software
-Category:Oracle Database
-Category:Engineering software for Linux
-Category:Android (operating system) games
-Category:Bada games
-Category:Dota 2 competitions
-Category:Dota players
-Category:Dota 2 teams
-Category:Flash games
-Category:Machinima based on a Quake series engine
-Category:Quake (series) players
-Category:Quake mods
-Category:Quake II mods
-Category:Quake III Arena mods
-Category:Quake 4 mods
-Category:Quake teams
-Category:SVGAlib programs
-Category:Remote desktop software that uses GTK+
-Category:Videoconferencing software programmed in Java
-Category:Videoconferencing software that uses GTK+
-Category:Videoconferencing software that uses Qt
-Category:Voice over IP clients programmed in Java
-Category:Voice over IP clients that use GTK+
-Category:Voice over IP clients that use Qt
-Category:Google Chrome
-Category:Java platform software
-Category:Machine translation software for Linux
-Category:Motion picture software for Linux
-Category:GNOME CD ripping software
-Category:Optical disc-related software that uses GTK+
-Category:Optical disc-related software that uses Qt
-Category:Packet analyzer software for Linux
-Category:Screenshots of Linux software
-Category:Software that uses FLTK
-Category:Software that uses Tk
-Category:Dictionary software that uses GTK+
-Category:Dictionary software that uses Qt
-Category:Typography-related software for Linux
-Category:File managers for Linux
-Category:Text editors for Linux
-Category:Video software for Linux
-Category:NetBSD people
-Category:Web browsers for Plan 9
-Category:Plan 9 people
-Category:Operating systems that offer the LXDE desktop
-Category:Operating systems that offer the Xfce desktop
-Category:Software that uses Motif
-Category:X display managers
-Category:X servers
-Category:X Window extensions
-Category:X window managers
-Category:X Window programs
-Category:X Window System people
-Category:X-based libraries
-Category:Bitcoin exchanges
-Category:Blockchains
-Category:People associated with Bitcoin
-Category:Creative Commons License
-Category:E-Government
-Category:KDE-related templates
-Category:Formerly free software
-Category:Perl writers
-Category:Books by Donald Knuth
-Category:Literate programming
-Category:TeX
-Category:Mozilla add-ons
-Category:Mozilla Application Suite
-Category:Gecko-based software
-Category:Mozilla logos
-Category:Mozilla-related templates
-Category:Netscape
-Category:Mozilla people
-Category:Mozilla Thunderbird
-Category:Common land
-Category:Community gardening
-Category:Enclosures
-Category:Tool libraries
-Category:Tragedy of the commons
-Category:C POSIX library
-Category:POSIX web browsers
-Category:Unix signals
-Category:XMPP clients
-Category:Books about Perl
-Category:Magazines about free software
-Category:Essays by Eric S. Raymond
-Category:WikiProject Open Access
-Category:Files copyrighted by the Wikimedia Foundation
-Category:Wikimedia Foundation people
-Category:Wikibooks
-Category:Wikimedia Foundation stubs
+PLoS academic journals
+PLoS Computational Biology articles
+Public Library of Science people
+BioMed Central academic journals
+Creative Commons Attribution-ShareAlike-licensed journals
+Paid-inclusion open access journals
+Creative Commons-licensed fiction books
+Creative Commons-licensed comics
+Creative Commons-licensed games
+TWiT podcasts
+GNUstep
+Social Desktop
+GNOME Accessibility
+GNOME Applications
+GNOME libraries
+GNOME Mobile
+GNOME obsolete
+GNOME Theming
+Operating systems using GNOME
+Window managers that use GTK+
+GTK+
+Wikipedia
+Fangames
+Emacs modes
+Software that uses SQLite
+Kdepim
+KDE Extragear
+Software that uses wxWidgets
+Web programming
+Free software programmed in THINK C
+MediaWiki extensions
+MediaWiki Help
+MediaWiki icons
+MediaWiki translators
+MediaWiki sites
+EFL
+Software that uses QML
+Software that uses Qt
+Wayland compositors
+Wayland extensions
+Free Computer-aided manufacturing software
+TeX SourceForge projects
+FreePBX
+Firefox add-ons
+Web browsers based on Firefox
+Tor hidden services
+Tor Network stubs
+Software based on WebKit
+Inferno (operating system) people
+Slashdot
+Red Hat people
+Red Hat-related templates
+Debian Project leaders
+Knoppix
+Edubuntu
+Ubuntu Touch (operating system) devices
+Android cameras with optical zoom
+Android Wear devices
+Android media players
+MyTouch
+Smartphone patent wars
+Android (operating system) software
+SLAX-based distributions
+Firefox OS software
+MeeGo software
+All-in-one desktop computers
+Handheld game consoles
+Laptops
+Nettop
+Linux viruses
+Linux administration
+Audio player software that uses Qt
+Bada software
+Cross-platform software
+Engineering software for Linux
+Android (operating system) games
+Bada games
+Dota 2 competitions
+Dota players
+Dota 2 teams
+SVGAlib programs
+Remote desktop software that uses GTK+
+Videoconferencing software programmed in Java
+Videoconferencing software that uses GTK+
+Videoconferencing software that uses Qt
+Voice over IP clients programmed in Java
+Voice over IP clients that use GTK+
+Voice over IP clients that use Qt
+Google Chrome
+Java platform software
+Machine translation software for Linux
+Motion picture software for Linux
+GNOME CD ripping software
+Optical disc-related software that uses GTK+
+Optical disc-related software that uses Qt
+Packet analyzer software for Linux
+Screenshots of Linux software
+Software that uses FLTK
+Software that uses Tk
+Dictionary software that uses GTK+
+Dictionary software that uses Qt
+Typography-related software for Linux
+File managers for Linux
+Text editors for Linux
+Video software for Linux
+NetBSD people
+Web browsers for Plan 9
+Plan 9 people
+Operating systems that offer the LXDE desktop
+Operating systems that offer the Xfce desktop
+Software that uses Motif
+X display managers
+X servers
+X Window extensions
+X window managers
+X Window programs
+X Window System people
+X-based libraries
+Bitcoin exchanges
+Blockchains
+People associated with Bitcoin
+Creative Commons License
+E-Government
+KDE-related templates
+Formerly free software
+Perl writers
+Books by Donald Knuth
+Literate programming
+TeX
+Mozilla add-ons
+Mozilla Application Suite
+Gecko-based software
+Mozilla logos
+Mozilla-related templates
+Netscape
+Mozilla people
+Mozilla Thunderbird
+Common land
+Community gardening
+Enclosures
+Tool libraries
+Tragedy of the commons
+C POSIX library
+POSIX web browsers
+Unix signals
+XMPP clients
+Books about Perl
+Magazines about free software
+Essays by Eric S. Raymond
+WikiProject Open Access
+Files copyrighted by the Wikimedia Foundation
+Wikimedia Foundation people
+Wikibooks
+Wikimedia Foundation stubs
