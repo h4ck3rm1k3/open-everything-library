@@ -1,16 +1,15 @@
-3D computer graphics software for Linux
-3D modeling software for Linux
-3D rendering software for Linux
+A-Class Open access articles
 ACD hub software for Linux
 ADC clients for Linux
 ARM Linux distributions
 Access to Knowledge activists
 Accounting software for Linux
 Advanced Linux Sound Architecture
+Agricultural Research Service images
 Albums free for download by copyright owner
 Amateur radio software for Linux
 Android (operating system)
-Android (operating system) devices
+Animal WikiLove templates
 Antivirus software for Linux
 Antivirus software that uses GTK+
 Antivirus software that uses Qt
@@ -19,45 +18,67 @@ Apache Software Foundation members
 Apache Software Foundation projects
 Apache httpd modules
 Applications using D-Bus
+Architect of the Capitol images
+Archive managers that use GTK+
 Arduino
+Articles with imported Creative Commons Attribution 2.5 text
 Articles with imported Creative Commons Attribution 3.0 text
 Articles with imported Creative Commons Attribution-ShareAlike 3.0 text
+Articles with imported Creative Commons licensed text
 Assistant Deputy Director of National Intelligence for Open Source
 Asterisk (PBX)
-Open content
 Audio editing software for Linux
 Audio editing software that uses GTK+
 Audio editing software that uses Qt
 Audio player software for Linux
 Audio player software that uses GTK+
+Audio player software that uses Qt
 Audio software for Linux
 Audio software that uses GTK+
+Audio software that uses Qt
 Audio software with JACK support
 Audio streaming software for Linux
+B-Class Open access articles
 BSD people
 BSD software
 Backup software for Linux
+Bacon WikiCup
+Barnstar award templates
+Barnstars of National Merit templates
+Barnstars with alternative versions
 Benchmarking software for Linux
 Berkeley Open Infrastructure for Network Computing projects
 Berkeley Software Distribution
+BibTeX
+BioMed Central academic journals
 BitTorrent clients for Linux
 BitTorrent tracker for Linux
 Bitcoin
+Bitcoin exchanges
 Blender Foundation
-Books about Linux
-Books about free software
+Blockchains
+Bureau of Land Management images
+Bureau of Reclamation images
 Business software for Linux
+C POSIX library
+C standard library
+C standard library headers
+C-Class Open access articles
 Calligra Suite
 Cancelled Linux games
 Canonical Ltd.
-Catalan-language Linux distributions
+Centers for Disease Control and Prevention images
+Central Intelligence Agency images
 Chemistry software for Linux
 Chinese-language Linux distributions
-Citizen media
+Chinese-language Wikipedias
+Clipboard utilities that use GTK+
+Clutter (software)
 Collaborative software for Linux
 Column-oriented DBMS software for Linux
 Commercial video games with freely available source code
 Computer algebra system software for Linux
+Computer games that use GTK+
 Computer-aided design software for Linux
 Computer-aided engineering software for Linux
 Computer-aided manufacturing software for Linux
@@ -69,21 +90,31 @@ Concept- and mind-mapping software for Linux
 Concept- and mind-mapping software programmed in Java
 Concept- and mind-mapping software that uses GTK+
 Concept- and mind-mapping software that uses Qt
+Conflict-of-interest editing on Wikipedia
+Conflict-of-interest editing on Wikipedia
 Copyleft
 Copyleft media
 Creative Commons
+Creative Commons Attribution-ShareAlike-licensed journals
 Creative Commons Attribution-licensed journals
+Creative Commons License
 Creative Commons-licensed albums
 Creative Commons-licensed books
+Creative Commons-licensed comics
 Creative Commons-licensed databases
 Creative Commons-licensed documentary films
+Creative Commons-licensed fiction books
 Creative Commons-licensed films
+Creative Commons-licensed games
 Creative Commons-licensed journals
+Creative Commons-licensed novels
 Creative Commons-licensed podcasts
 Creative Commons-licensed science fiction films
 Creative Commons-licensed video games
 Creative Commons-licensed websites
 Creative Commons-licensed works
+Critics of Wikipedia
+Crofting
 Cross-platform free software
 Cross-platform web browsers
 CyanogenMod
@@ -91,28 +122,40 @@ DC clients for Linux
 DC hub software for Linux
 DMOZ
 DNS server software for Linux
+Daily newspapers published by Community Newspaper Holdings
 Database-related software for Linux
 Debian
+Debian Project leaders
 Debian people
 Debian-based distributions
 Delayed open access journals
+Desktop environments based on GTK+
 Desktop publishing software for Linux
 Device mapper
+Dictionary software that uses GTK+
+Dictionary software that uses Qt
 Digital audio editors for Linux
 Direct Rendering Infrastructure
 Discontinued Linux distributions
 Discontinued open-source software hosting facilities
 Documentary films about free software
 Donald Knuth
-Dota 2
 Dpkg
+Drink WikiLove templates
+E-democracy
 E-democracy
 EDonkey Clients for Linux
+EFL
+Early keyboard works by Wolfgang Amadeus Mozart
+Economics and Statistics Administration images
+Editors with a demented sense of humor
+Edubuntu
 Educational software for Linux
 Educational software that uses GTK+
 Educational software that uses Qt
 Electronic design automation software for Linux
 Emacs
+Emacs modes
 Email client software for Linux
 Email clients that use GTK+
 Email clients that use Qt
@@ -120,22 +163,47 @@ Email server software for Linux
 Email-related software for Linux
 Embedded Linux
 Embedded Linux distributions
+Emoticon insertion templates
+Engineering software for Linux
+Engineering software that uses GTK+
+Engineering software that uses Qt
 Enterprise Linux distributions
 Enterprise resource planning software for Linux
+Essays by Eric S. Raymond
+Executive Office of the President of the United States images
+FA-Class Open access articles
+FBI images
+FL-Class Open access articles
 FTP server software for Linux
+Fangames
+Farm Security Administration images
+Federal Aviation Administration images
+Federal Communications Commission images
+Federal Emergency Management Agency images
+Federal Reserve System images
 Fedora Project
 File hosting for Linux
+File managers for Linux
+File managers that use GTK+
 File sharing software for Linux
 File sharing software that uses GTK+
 File sharing software that uses Qt
 File sharing software that uses wxWidgets
+Files copyrighted by the Wikimedia Foundation
+Films about Wikipedia
 Finite element software for Linux
 Firebird
 Firefox
 Firefox OS
 Firefox OS devices
 Firefox OS games
+Firefox OS software
+Firefox add-ons
 Floppy-based Linux distributions
+Food WikiLove templates
+Food and Drug Administration images
+Foreign Agricultural Service images
+Formerly free software
 Formerly proprietary software
 Free 2D animation software
 Free 3D graphics software
@@ -143,6 +211,7 @@ Free BIOS implementations
 Free Bayesian statistics software
 Free BibTeX software
 Free BitTorrent clients
+Free Computer-aided manufacturing software
 Free DICOM server software
 Free DICOM software
 Free DVD burning software
@@ -161,7 +230,6 @@ Free Pascal
 Free QDA software
 Free R (programming language) software
 Free Software Foundation
-Free software
 Free TeX editors
 Free TeX software
 Free UML tools
@@ -206,7 +274,6 @@ Free content licenses
 Free content management systems
 Free culture movement
 Free customer relationship management software
-Free daily newspapers
 Free data analysis software
 Free data compression software
 Free data recovery software
@@ -219,7 +286,6 @@ Free device drivers
 Free diagramming software
 Free dictionary software
 Free documentation generators
-Free e-books
 Free e-commerce software
 Free econometrics software
 Free editing software
@@ -239,7 +305,6 @@ Free finance software
 Free font editors
 Free game engines
 Free genealogy software
-Free goods and services
 Free graphics software
 Free groupware
 Free healthcare software
@@ -304,6 +369,7 @@ Free security software
 Free server software
 Free simulation software
 Free software
+Free software
 Free software BOINC projects
 Free software Unicode typefaces
 Free software application servers
@@ -344,6 +410,7 @@ Free software programmed in Ruby
 Free software programmed in Scala
 Free software programmed in Smalltalk
 Free software programmed in Swift
+Free software programmed in THINK C
 Free software programmed in Tcl
 Free software programmed in Vala
 Free software programmers
@@ -388,79 +455,129 @@ Free wiki software
 Free windowing systems
 Free word processors
 Free-content websites
-Free-divers
-Free-diving
 Free-software awards
 Free-software conferences
 Free-software events
 FreeBSD
 FreeBSD people
 FreeDOS people
+FreePBX
 Freedesktop.org
 Freedesktop.org libraries
-Freedom of information
-Freedom of information activists
-Freedom of information in the United Kingdom
+GA Cup
+GA-Class Open access articles
 GNOME
+GNOME Accessibility
+GNOME Applications
+GNOME CD ripping software
 GNOME Core Applications
+GNOME Developer Tools
 GNOME Games
 GNOME Kids
+GNOME Mobile
+GNOME Theming
 GNOME companies
 GNOME developers
+GNOME libraries
+GNOME obsolete
 GNOME stubs
 GNU GRUB
 GNU Project
 GNU Project software
 GNU people
+GNUstep
 GSM standard
+GTK+
+GTK+ language bindings
 Game engines for Linux
+Games barnstar award templates
+Garden of Eden
+Gaudiya Vaisnava philosophical concepts
+Gecko-based software
 Geeknet
+General Services Administration images
 Gentoo Linux
 Gentoo Linux derivatives
 Gentoo Linux people
+Geography of the Odyssey
 Geology software for Linux
 GitHub
+Government Accountability Office images
 Government services portals
 Government services web portals in the United Kingdom
 Government services web portals in the United States
+Government services web portals in the United States
+Government services web portals in the United States
+Graphical shells that use GTK+
+Graphics software that uses GTK+
+Graphics software that uses Qt
 Graphics-related software for Linux
+Hackathons
 Hadoop
 Hadoop cluster administration
 Haiku (operating system)
 Hardware in Linux
 Healthcare software for Linux
+Heinrich Hoffmann in NARA public domain images
 Heretic and Hexen
+Heritage Documentation Programs images
 High priority free software projects
+High-importance Open access articles
+History of Wikipedia
 History of free and open-source software
+History of the Quran
+Horn concertos by Wolfgang Amadeus Mozart
+Humorous Wikipedia essays
+Humorous userboxes
 Hybrid open access journals
 IA-32 Linux distributions
 IBM ESA/390 Linux distributions
 Id Tech
-Indira Gandhi National Open University
+Images in the public domain in the United States
+Images in the public domain in the United States but not in their source countries
+Images needing PD-US verification
+Images of United States military awards
+Images of United States military badges
+Images of the United States Congress
+Images published abroad that are in the public domain in the United States
+Independent Media Center
+India quiz
 Inferno (operating system)
+Inferno (operating system) people
+Information published by WikiLeaks
 Instant messaging clients for Linux
 Instant messaging clients programmed in Java
 Instant messaging clients that use GTK+
 Instant messaging clients that use Qt
 Institutional repository software
+Integrated development environments that use GTK+
 Interbase
 Interfaces of the Linux kernel
 Internet software for Linux
 Japanese-language Linux distributions
+Java (programming language) libraries
+Java decompilers
+Java development tools
 Java platform games
+Java platform software
 Joomla extensions
 KDE
 KDE Education Project
+KDE Extragear
 KDE Frameworks
 KDE Platform
 KDE Software Compilation
 KDE games
 KDE software
 KDE stubs
+Kdepim
+KDE-related templates
+Knoppix
 LXDE
 Language software for Linux
 Language-specific Linux distributions
 Lego Mindstorms
+Library of Congress-verified public domain images
 Libre art
 Libre culture
 LibreOffice
@@ -475,6 +592,7 @@ Linux Foundation projects
 Linux PMS graphical front-ends
 Linux TeX software
 Linux Terminal Server Project
+Linux administration
 Linux archivers and compression-related utilities
 Linux audio podcasts
 Linux audio video-related software
@@ -492,9 +610,7 @@ Linux embedded-related software
 Linux emulation software
 Linux file system-related software
 Linux file systems
-Linux game covers
 Linux game porters
-Linux games
 Linux image viewers
 Linux installation software
 Linux integrated development environments
@@ -516,7 +632,6 @@ Linux magazines
 Linux malware
 Linux media creation distributions
 Linux media players
-Linux multimedia software
 Linux network-related software
 Linux organizations
 Linux package management-related software
@@ -532,65 +647,120 @@ Linux templates
 Linux text editors
 Linux text-related software
 Linux user groups
+Linux user management and support-related utilities
+Linux viruses
 Linux websites
 Linux windowing system-related software
 Linux word processors
 Linux-based devices
 Linux-only software
+List-Class Open access articles
+Lists about Wikipedia
+Lists of Wikipedian humor
+Lists of compositions by Wolfgang Amadeus Mozart
+Literate programming
+Low-importance Open access articles
+Machine translation software for Linux
+Maemo
 Maemo games
+Magazines about free software
 Mailing list software for Linux
 Mandriva Linux
-Mandriva based devices
-Marathon (video game)
+Mapping software that uses GTK+
 MariaDB
 Mathematics software for Linux
 MediaWiki
+MediaWiki Help
+MediaWiki extensions
+MediaWiki icons
+MediaWiki sites
+MediaWiki sites of the United States government
+MediaWiki translators
+MediaWiki websites
 MeeGo
 MeeGo devices
+MeeGo software
+Melchizedek
 Members of the Creative Commons Board of Directors
 Members of the Free Software Foundation board of directors
 Members of the Open Source Initiative board of directors
+Mid-importance Open access articles
+Million Award
+Minerals Management Service images
 Minesweeper (video game)
 Mini Linux distributions
+Miniclip games
 Mobile Linux
 Modular design
+Mono (software)
+Mono project applications
 Motif
 Motion graphics software for Linux
+Motion graphics software that uses GTK+
+Motion picture software for Linux
 Mozilla
+Mozilla Application Suite
+Mozilla Thunderbird
+Mozilla add-ons
 Mozilla developers
+Mozilla logos
+Mozilla people
+Mozilla-related templates
 Multilingual Linux distributions
 Multimedia software for Linux
 Music software for Linux
 MySQL
 MySociety
+MyTouch
+NA-Class Open access articles
+NA-importance Open access articles
+NASA TV
+NASA images
+NCBI Science Primer images
 NSLU2-Linux
 Nagios
+National Endowment for the Arts images
+National Institutes of Health images
+National Oceanic and Atmospheric Administration images
+National Park Service images
+National Science Foundation images
+National Transportation Safety Board images
+National Weather Service images
+Natural Resources Conservation Service images
 NetBSD
-Neverwinter Nights
+NetBSD people
+Netscape
+Netscape litigation
+Netscape people
+News aggregators that use GTK+
+Note-taking software that uses GTK+
+Nuclear Regulatory Commission images
 Numerical analysis software for Linux
-ORDBMS software for Linux
-OS X
 OS X-only free software
-OW2 Consortium
 Office Open XML
+Office software that uses GTK+
 Office suites for Linux
+One Laptop per Child
 Open Geospatial Consortium
 Open Group standards
 Open Humanities Press academic journals
 Open Mobile Alliance standards
 Open Publication License-licensed works
 Open Source computer aided engineering applications
-Open University
 Open access (publishing)
 Open access activists
+Open access articles by importance
+Open access articles by quality
 Open access journals
 Open access projects
 Open access publications
 Open access publishers
 Open computers
 Open content
+Open content
 Open content activists
 Open content films
+Open content people
 Open content projects
 Open content short films
 Open data
@@ -598,13 +768,6 @@ Open data by location
 Open design
 Open educational resources
 Open formats
-Open government
-Open government activists
-Open government by location
-Open government in Canada
-Open government in India
-Open government in the United Kingdom
-Open government in the United States
 Open hardware and software organizations and companies
 Open hardware electronic devices
 Open hardware licenses
@@ -618,7 +781,6 @@ Open source people
 Open source philosophy
 Open standards
 Open standards covered by patents
-Open universities in India
 Open-access archives
 Open-source 3D video games
 Open-source cloud applications
@@ -627,6 +789,7 @@ Open-source computing hardware
 Open-source educational video games
 Open-source games
 Open-source hardware
+Open-source hardware people
 Open-source hosted development tools
 Open-source intelligence
 Open-source intelligence in the United States
@@ -656,66 +819,131 @@ OpenSolaris
 OpenSolaris-derived software distributions
 OpenStreetMap
 OpenStreetMap maps
-OpenTravel Alliance
 OpenVMS
 OpenVMS software
 OpenVMS text editors
 Openmoko
+Operating systems that offer the LXDE desktop
+Operating systems that offer the Xfce desktop
+Operating systems using GNOME
 Operating systems using GPE
+Optical disc-related software that uses GTK+
+Optical disc-related software that uses Qt
+Oratorios by George Frideric Handel
+PD US not renewed
 PHP frameworks
 PIM-software for Linux
+PLoS Computational Biology articles
+PLoS academic journals
 POSIX
+POSIX error codes
+POSIX web browsers
 Package management software that uses GTK+
+Package management software that uses Qt
+Package management software that uses Qt
+Packet analyzer software for Linux
+Packet analyzer software that uses GTK+
 Pacman-based Linux distributions
-People associated with the Open University
+Pages on the Bounty board
+Paid-inclusion open access journals
+Parodies of Wikipedia
+Patents placed into the public domain
+People associated with Bitcoin
 Perl people
+Perl writers
 Photo software for Linux
 Plan 9 from Bell Labs
+Plan 9 people
 Planetarium software for Linux
+Platform virtualization software
+Platform-sensitive development
 Platform-specific Linux distributions
+Plays by Plautus
+Poetry by Catullus
+Poetry by Horace
+Poetry by Statius
+Poetry by Virgil
+Polonaises by Frédéric Chopin
 Portuguese-language Linux distributions
+Possible Wikipedia four award articles
 Postal (video game series)
 PostgreSQL
-Proprietary commercial software for Linux
-Proprietary freeware for Linux
-Proprietary software for Linux
+Proposed or rejected barnstars
 Proxy server software for Linux
 Public Library of Science
-Public commons
+Public Library of Science people
 Public copyright licenses
-Public domain
-Public domain books
 Public domain databases
-Public domain music
+Public domain images ineligible for copyright in the United States but not in their source countries
+Public domain in the United States
 Public domain software
+Public domain software with source code
 Public domain typefaces
 Qt (framework)
 R (programming language)
 RDBMS software for Linux
 RPM-based Linux distributions
 Raster graphics editors for Linux
-Recipients of the Sakharov Prize
 Red Hat
+Red Hat employees
+Red Hat people
+Red Hat-related templates
 Reference works in the public domain
 Remote administration software for Linux
 Remote desktop software for Linux
-Ren'Py games and visual novels
+Remote desktop software that uses GTK+
 RenderMan
 Rendering APIs available on Linux
 ResidualVM supported games
+Rouge editors
+Rust (programming language)
+S60 (software platform)
 SCO/Linux controversies
 SCO–Linux controversies
+SLAX-based distributions
 SQLite
 SUSE Linux
+SVGAlib programs
 Science software for Linux
+Science software that uses GTK+
+Science software that uses Qt
+Scientific software that uses GTK+
 Scorewriters for Linux
-Screenshots of Linux games
+Screenshots of Linux software
+Screenshots of Netscape software
 ScummVM supported games
-Single-board computers
+Serenades and divertimenti by Wolfgang Amadeus Mozart
+Service award templates
+Seven Military Classics
 Single-platform free software
 Slackware
+Slashdot
+Smartphone patent wars
+Smithsonian Institution images
+Social Desktop
+Social Security Administration images
+Software based on WebKit
 Software forks
+Software programmed in Java (programming language)
 Software synthesizers for Linux
+Software that uses Clutter
+Software that uses FLTK
+Software that uses GNUstep
+Software that uses GTK+
+Software that uses LessTif
+Software that uses Mono
+Software that uses Motif
+Software that uses PyGTK
+Software that uses QML
+Software that uses Qt
+Software that uses SQLite
+Software that uses Tk
+Software that uses wxGTK
+Software that uses wxPython
+Software that uses wxWidgets
+Software that was ported from GTK+ to Qt
+Software that was ported from Qt to Mono
+Software using the AGPL license
 Software using the Academic Free License
 Software using the Apache license
 Software using the Apple Public Source License
@@ -736,22 +964,86 @@ Software using the zlib license
 Software/Free Software articles needing expert attention
 Source-based Linux distributions
 Spanish-language Linux distributions
+Stamp images published abroad that are in the public domain in the United States
+Start-Class Open access articles
 State-sponsored Linux distributions
-Stena Line
 Stop-motion software for Linux
+Stub-Class Open access articles
 Subversion
+TWiT podcasts
 TYPO3
 Tag editors for Linux
 Tag editors that use GTK+
+TeX
+TeX SourceForge projects
+TeX editors
+TeX editors that use GTK+
+TeX editors that use Qt
+TeX software for OS X
+TeX software for Windows
+Terminal emulator software that uses GTK+
+Terminal emulator software that uses Qt
+Text editors for Linux
+Text editors programmed in Java
+Text editors that use GTK+
 Third-party Linux kernel modules
-Tizen-based devices
+Times that 100 Wikipedians supported something
+Times that 1000 Wikipedians supported something
+Times that 200 Wikipedians supported something
+Times that 300 Wikipedians supported something
+Times that 400 Wikipedians supported something
+Times that large groups of Wikipedians supported something
+Tool libraries
+Top-importance Open access articles
 Tor (anonymity network)
+Tor Network stubs
 Touch typing tutors for Linux
+Tragedy of the commons
 Translatewiki.net
 Turkish-language Linux distributions
+Typography-related software for Linux
+U.S. Securities and Exchange Commission images
 Ubuntu (operating system)
 Ubuntu (operating system) derivatives
 Ubuntu (operating system) people
+Ubuntu Touch (operating system) devices
+Unassessed Open access articles
+United States Air Force images
+United States Army Center of Military History documents and images
+United States Army Corps of Engineers images
+United States Army Institute of Heraldry images
+United States Army images
+United States Census Bureau images
+United States Coast Guard images
+United States Coast Guard images
+United States Department of Agriculture images
+United States Department of Commerce images
+United States Department of Education images
+United States Department of Energy images
+United States Department of Health and Human Services images
+United States Department of Homeland Security images
+United States Department of Justice images
+United States Department of Labor images
+United States Department of State images
+United States Department of Transportation images
+United States Department of Veterans Affairs images
+United States Department of the Interior images
+United States Department of the Treasury images
+United States Environmental Protection Agency images
+United States Fish and Wildlife Service images
+United States Forest Service images
+United States Geological Survey images
+United States Government Publishing Office images
+United States Marine Corps images
+United States Navy images
+United States Office of War Information images
+United States Public Health Service images
+United States diplomatic cables leak
+United States federal court images
+United States government images
+United States military images
+Unix signals
+Unknown-importance Open access articles
 Utilities for Linux
 Utility software for Linux
 Vector graphics editors for Linux
@@ -759,188 +1051,181 @@ Vi
 Video acceleration APIs available on Linux
 Video editing software for Linux
 Video editing software that uses GTK+
+Video game barnstar award templates
 Video game development software for Linux
+Video player software that uses GTK+
+Video software for Linux
+Video software that uses GTK+
+Video software that uses Qt
 Videoconferencing software for Linux
+Videoconferencing software programmed in Java
+Videoconferencing software that uses GTK+
+Videoconferencing software that uses Qt
 Virtualization-related software for Linux
 Virtualization-related software that uses GTK+
+Voice of America images
 Voice over IP clients for Linux
+Voice over IP clients programmed in Java
+Voice over IP clients that use GTK+
+Voice over IP clients that use Qt
 Wayland
+Wayland compositors
+Wayland extensions
 Web Gallery of Art
+Web browsers based on Firefox
 Web browsers for Linux
+Web browsers for Plan 9
 Web browsers that use GTK+
 Web browsers that use Qt
+Web programming
 Web server software for Linux
 Web server software programmed in Java
 Web-based email clients for Linux
 WebGL
 Website article topics with .gov domain names
+Websites which mirror Wikipedia
+Websites which use Wikipedia
+WikiLove templates
+WikiProject Christianity/Contests
+WikiProject Japan barnstar templates
+WikiProject Military history award templates
+WikiProject Open Access
+WikiProject Open Access articles
 Wikia
+Wikibooks
+Wikibooks administrators
+Wikibooks link templates
+Wikibooks reviewers
+Wikibooks templates
+Wikidiaries
+Wikifun archives
+Wikimania
 Wikimedia Foundation
+Wikimedia Foundation Advisory Board members
+Wikimedia Foundation Board of Trustees members
+Wikimedia Foundation people
+Wikimedia Foundation stubs
 Wikimedia projects
+Wikipe-tan
+Wikipedia
+Wikipedia 10
+Wikipedia 15
+Wikipedia 15 events in Australia
+Wikipedia April Fools' Day
+Wikipedia April Fools' Day 2004
+Wikipedia April Fools' Day 2005
+Wikipedia April Fools' Day 2006
+Wikipedia April Fools' Day 2007
+Wikipedia April Fools' Day 2008
+Wikipedia April Fools' Day 2009
+Wikipedia April Fools' Day 2010
+Wikipedia April Fools' Day 2011
+Wikipedia April Fools' Day 2012
+Wikipedia April Fools' Day 2013
+Wikipedia April Fools' Day 2014
+Wikipedia April Fools' Day 2015
+Wikipedia Bad Jokes and Other Deleted Nonsense
+Wikipedia Barnstars
+Wikipedia Cabal decrees
+Wikipedia Day
+Wikipedia Day 2010
+Wikipedia Day 2012
+Wikipedia Day 2013
+Wikipedia Kindness Campaign
+Wikipedia Magic: The Gathering cards
+Wikipedia Triple Crown
+Wikipedia WikiCup
+Wikipedia WikiCup 2009
+Wikipedia WikiCup 2009 submissions
+Wikipedia WikiCup by year
+Wikipedia WikiCup history
+Wikipedia WikiCup navigational boxes
+Wikipedia WikiCup newsletters
+Wikipedia WikiCup submissions
+Wikipedia WikiCup submissions round 1 2009
+Wikipedia Wikipediology
+Wikipedia Word Association
+Wikipedia Word Association
+Wikipedia administrators open to trout slapping
+Wikipedia articles incorporating text from Citizendium
+Wikipedia articles incorporating text from Citizendium needing updating
+Wikipedia articles incorporating text from Culture.si
+Wikipedia articles incorporating text from Kremlin.ru
+Wikipedia articles incorporating text from open access publications
+Wikipedia articles incorporating text from the Department of Foreign Affairs and Trade
+Wikipedia articles rejected for Four awards
+Wikipedia award master templates
+Wikipedia award templates
+Wikipedia awards
+Wikipedia competitions
+Wikipedia controversies
 Wikipedia culture
+Wikipedia emoticons
+Wikipedia fauna
+Wikipedia four award articles
+Wikipedia games
+Wikipedia holidays
+Wikipedia humor
+Wikipedia lamest edit wars
+Wikipedia people
+Wikipedia pools
+Wikipedia reliability
+Wikipedia terminology
 Wikipedia-derived encyclopedias
+Wikipedia:Treatment of wikipediholism
+Wikipedia:Wikipediholism
+Wikipedian Hyphen Luddites
+Wikipedians attending Wikimania
+Wikipedians in the Kindness Campaign
+Wikipedians of the year
+Wikipedians owned by cats
+Wikipedians who contribute to Wikibooks
+Wikipedians who contribute to the English Wikibooks
+Wikipedians who edit Wikipedia
+Wikipedians whose talkpages are decorated by Hafspajen
+Wikipedians with way too much time on their hands
+Wikipedias by language
 Wikis about geography
+Window managers that use GTK+
 Windows-only free software
 WordPress
 Works about free software
+World War I posters in the Library of Congress
+WorldWind images
 WxWidgets
 X Window System
+X Window System people
+X Window extensions
+X Window programs
+X display managers
+X servers
+X window managers
+X window managers extensible by scripting
+X-based libraries
 X86-64 Linux distributions
 XMPP
+XMPP clients
 Xfce
 Xiph.Org projects
 Zope
-PLoS academic journals
-PLoS Computational Biology articles
-Public Library of Science people
-BioMed Central academic journals
-Creative Commons Attribution-ShareAlike-licensed journals
-Paid-inclusion open access journals
-Creative Commons-licensed fiction books
-Creative Commons-licensed comics
-Creative Commons-licensed games
-TWiT podcasts
-GNUstep
-Social Desktop
-GNOME Accessibility
-GNOME Applications
-GNOME libraries
-GNOME Mobile
-GNOME obsolete
-GNOME Theming
-Operating systems using GNOME
-Window managers that use GTK+
-GTK+
-Wikipedia
-Fangames
-Emacs modes
-Software that uses SQLite
-Kdepim
-KDE Extragear
-Software that uses wxWidgets
-Web programming
-Free software programmed in THINK C
-MediaWiki extensions
-MediaWiki Help
-MediaWiki icons
-MediaWiki translators
-MediaWiki sites
-EFL
-Software that uses QML
-Software that uses Qt
-Wayland compositors
-Wayland extensions
-Free Computer-aided manufacturing software
-TeX SourceForge projects
-FreePBX
-Firefox add-ons
-Web browsers based on Firefox
-Tor hidden services
-Tor Network stubs
-Software based on WebKit
-Inferno (operating system) people
-Slashdot
-Red Hat people
-Red Hat-related templates
-Debian Project leaders
-Knoppix
-Edubuntu
-Ubuntu Touch (operating system) devices
-Android cameras with optical zoom
-Android Wear devices
-Android media players
-MyTouch
-Smartphone patent wars
-Android (operating system) software
-SLAX-based distributions
-Firefox OS software
-MeeGo software
-All-in-one desktop computers
-Handheld game consoles
-Laptops
-Nettop
-Linux viruses
-Linux administration
-Audio player software that uses Qt
-Bada software
-Cross-platform software
-Engineering software for Linux
-Android (operating system) games
-Bada games
-Dota 2 competitions
-Dota players
-Dota 2 teams
-SVGAlib programs
-Remote desktop software that uses GTK+
-Videoconferencing software programmed in Java
-Videoconferencing software that uses GTK+
-Videoconferencing software that uses Qt
-Voice over IP clients programmed in Java
-Voice over IP clients that use GTK+
-Voice over IP clients that use Qt
-Google Chrome
-Java platform software
-Machine translation software for Linux
-Motion picture software for Linux
-GNOME CD ripping software
-Optical disc-related software that uses GTK+
-Optical disc-related software that uses Qt
-Packet analyzer software for Linux
-Screenshots of Linux software
-Software that uses FLTK
-Software that uses Tk
-Dictionary software that uses GTK+
-Dictionary software that uses Qt
-Typography-related software for Linux
-File managers for Linux
-Text editors for Linux
-Video software for Linux
-NetBSD people
-Web browsers for Plan 9
-Plan 9 people
-Operating systems that offer the LXDE desktop
-Operating systems that offer the Xfce desktop
-Software that uses Motif
-X display managers
-X servers
-X Window extensions
-X window managers
-X Window programs
-X Window System people
-X-based libraries
-Bitcoin exchanges
-Blockchains
-People associated with Bitcoin
-Creative Commons License
-E-Government
-KDE-related templates
-Formerly free software
-Perl writers
-Books by Donald Knuth
-Literate programming
-TeX
-Mozilla add-ons
-Mozilla Application Suite
-Gecko-based software
-Mozilla logos
-Mozilla-related templates
-Netscape
-Mozilla people
-Mozilla Thunderbird
-Common land
-Community gardening
-Enclosures
-Tool libraries
-Tragedy of the commons
-C POSIX library
-POSIX web browsers
-Unix signals
-XMPP clients
+Books about free software
+CIA World Factbook images
+3D graphics software that uses GTK+
+Books about Linux
 Books about Perl
-Magazines about free software
-Essays by Eric S. Raymond
-WikiProject Open Access
-Files copyrighted by the Wikimedia Foundation
-Wikimedia Foundation people
-Wikibooks
-Wikimedia Foundation stubs
+Books about Wikipedia
+Books about free software
+OW2 Consortium
+Recipients of the Sakharov Prize
+Pre-1996 PD in home country US public domain images
+Pre-1978 without copyright notice US public domain images
+Four Award
+United States Census Bureau maps of New York
+Army National Guard images
+3D computer graphics software for Linux
+Air National Guard images
+3D graphics software that uses Qt
+Books by Donald Knuth
+3D modeling software for Linux
+3D rendering software for Linux
+Catalan-language Linux distributions

@@ -202,7 +202,94 @@ def check_claims(d):
                 else:
                     #pprint.pprint(ed)
                     #print ("Ok"+ x)
-                    return None
+                    return 1
+
+def wbeditentity_new_item (
+        token,
+        cookie,
+        name,
+):
+    action = 'wbeditentity'
+    bot = '1'
+    maxlag = '5'
+    _format = 'json'
+    _assert = 'user'
+    new = 'item',
+    summary = 'Bot: New item with sitelink from [[wikipedia:en:{name}]]'.format(name=name)
+    data = {
+        "labels": 
+        {
+            "en": 
+            {
+                "value": name, 
+                "language": "en"
+            }
+        }, 
+        "sitelinks": 
+        {
+            "enwiki": 
+            {
+                "site": "enwiki", 
+                "title": name
+            }
+        }
+    }
+
+    url = 'https://www.wikidata.org/w/api.php'
+    params = {
+        'action' : action,
+        'maxlag' : maxlag,
+        'format' : _format,
+        'new' : new,
+        'assert' : _assert,
+        'bot' : bot,
+        'token' : token,
+        'summary' : summary,
+        'data' : json.dumps(data)
+    }
+    #return process(url,params)
+    return post(url,params, cookie)
+
+def get_token():
+    (token,cookies) = dologin()
+    #pprint.pprint(cookies)
+    (crsft,cookies2) = query_tokens(cookies)
+    #pprint.pprint(cookies2)
+    edit_cookie = cookies.copy()
+    edit_cookie.update(cookies2)
+    #pprint.pprint(edit_cookie)
+    #pprint.pprint(crsft['query']['tokens'])
+    csrftoken = crsft['query']['tokens']['csrftoken']
+    return (csrftoken,edit_cookie)
+
+
+def add_instance(x):
+    if x not in sd:
+        print ("fetch new " + x)
+        (d,c) = wbgetentities(x)
+        time.sleep(1)
+        sd[x]=d
+    else:
+        d=sd[x]
+    e = check_claims(d)
+    if e and e != 1:
+        print ("fetch check: " + x)
+        (d,c) = wbgetentities(x)
+        sd[x]=d
+        time.sleep(1)
+        e= check_claims(d) # check again after fetch
+        if e and e != 1:
+            print ("To Fix: "+ x)
+            wbcreateclaim_instance_of_Wikimedia_category(e,csrftoken,edit_cookie)
+            (d,c) = wbgetentities(x)
+            sd[x]=d
+            time.sleep(10)
+            return d
+        else:
+            return d
+    else:
+        print ("Ok:"+ x)
+        return d
 
 
 def main():
@@ -227,13 +314,13 @@ def main():
         else:
             d=sd[x]
         e = check_claims(d)
-        if e :
+        if e and e != 1:
             print ("fetch check: " + x)
             (d,c) = wbgetentities(x)
             sd[x]=d
             time.sleep(1)
             e= check_claims(d) # check again after fetch
-            if e:
+            if e and e != 1:
                 print ("To Fix: "+ x)
                 wbcreateclaim_instance_of_Wikimedia_category(e,csrftoken,edit_cookie)
                 (d,c) = wbgetentities(x)

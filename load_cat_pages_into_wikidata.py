@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 #
 import wikidatabase_lookup as wb
 import reverse_cats as wp
@@ -6,7 +9,7 @@ import requests
 import json
 import shelve
 import os.path
-
+import pprint
 
 def cache_list(name,f):
     fn = name+"_shelve"
@@ -18,6 +21,13 @@ def cache_list(name,f):
     else:
         return shelve.open(fn)
 
+def read_list(name,f):
+    d = {}
+    for x in f():
+        d[x]=1
+    return d
+
+
 class CatPage :
     def __init__(self, pages, subcats) :
         self.pages=pages
@@ -25,6 +35,9 @@ class CatPage :
         self.processcats(subcats)
 
     def processcats(self, d):
+        if d is None :
+            return
+        #pprint.pprint(d)
         if 'query' not in d:
             return None
         for x in d['query']['categorymembers']:
@@ -47,7 +60,7 @@ class Cache :
             self.names[name] = self.open_cache(name)
         data =self.names[name]         
         if x not in data:
-            print ("fetch: " + name + " : "+ x )
+            print ("#fetch: " + name + " : "+ x )
             t = d(x) # call the function
             data[x]= t 
         else:
@@ -61,16 +74,73 @@ class Cache :
         #    # check if they are in the cache
         return CatPage(pages, subcats)
 
+def ignore():
+    d = {}
+    filename = 'data/ignore.txt'
+    f = open(filename)
+    count = 0
+    for l in f.readlines():
+        l = l.replace("\n","")
+        if l.startswith("#"):
+            next
+        else:
+            d["Category:" +l]=1
+    f.close()
+    return d
+
+def check_cats(sc,cookie, token):
+    #print ("Check" + sc)
+
+    if sc in wb.sd:
+        e = 1  # skip processing
+    else:
+        (d,cookie2) = wb.wbgetentities(sc)
+        e = wb.check_claims(d)
+
+    if e is None:
+        print ("#Missing, adding: " + sc )
+        pprint.pprint(d)
+
+        wb.sd[sc]=d # save it
+        cookie.update(cookie2)
+        try :
+            r = wb.wbeditentity_new_item(token,cookie, sc)
+        except Exception as e:
+            print ("Error" + sc, e)
+
+        time.sleep(10)
+
+    # now
 
 def main():
+    ing = ignore()
     dc = Cache()
-    cats = cache_list("cats",wb.wanted)
+    
+    (token,cookie) = wb.get_token()
+
+    cats = read_list("cats",wb.wanted)
     for c in cats:
-        print (c)
+        check_cats(c,cookie,token)
+        
+
+        if c in ing:
+            print ("Ignoring"+ c)
+            continue
+
         p = dc.search(c)
         for sc in p.subcats:
+
             if sc not in cats:
-                print (" Missing" + sc )
+                if sc in ing:
+                    print ("Ignoring"+ sc)
+                    continue
+                print ("#Reading main Cat"+ c)        
+                print ("#     new subcat "+sc)
+                print (sc.replace("Category:",""))
+                check_cats(sc,cookie,token)
+            else:
+                #print ("#     seen subcat "+sc)
+                pass
 
 if __name__ == "__main__":
     main()
