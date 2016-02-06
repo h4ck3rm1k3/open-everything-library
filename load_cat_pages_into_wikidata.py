@@ -27,9 +27,15 @@ def read_list(name,f):
         d[x]=1
     return d
 
+class Session:
+    def __init__(self) :
+        (token,cookie) = wb.get_token()
+        self.token=token
+        self.cookie=cookie
 
 class CatPage :
-    def __init__(self, pages, subcats) :
+    def __init__(self, name, pages, subcats) :
+        self.name = name
         self.pages=pages
         self.subcats = {}
         self.processcats(subcats)
@@ -43,6 +49,47 @@ class CatPage :
         for x in d['query']['categorymembers']:
             t =  x['title']
             self.subcats[t]=x
+
+    def proc_subcats(self, cats, ing):
+        for sc in self.subcats:
+            if sc not in cats:
+                if sc in ing:
+                    print ("Ignoring"+ sc)
+                    continue
+                print ("#Reading main Cat"+ c)        
+                print ("#     new subcat "+sc)
+                print (sc.replace("Category:",""))
+                self.check_entity(sc,s)
+            else:
+                #print ("#     seen subcat "+sc)
+                pass
+
+    def check_entity(self, sc,s):
+        print ("Check" + sc)
+        if sc in wb.sd:
+            e = 1  # skip processing
+        else:
+            (d,cookie2) = wb.wbgetentities(sc)
+            e = wb.check_claims(d)
+
+        if e is None:
+            print ("#Missing, adding: " + sc )
+            pprint.pprint(d)
+
+            wb.sd[sc]=d # save it
+            s.cookie.update(cookie2)
+            try :
+                r = wb.wbeditentity_new_item(s.token,s.cookie, sc)
+            except Exception as e:
+                print ("Error" + sc, e)
+            time.sleep(15)
+
+    def proc_pages(self, s):
+        print ("Cat " + self.name)
+        print (self.pages['batchcomplete'])
+        for p in self.pages['query']['categorymembers']:
+            print ("    page: "+ p['title'] )
+            self.check_entity(p['title'],s)
 
 
 class Cache :
@@ -72,7 +119,7 @@ class Cache :
         #pprint s
         #for sc in subcats:
         #    # check if they are in the cache
-        return CatPage(pages, subcats)
+        return CatPage(x, pages, subcats)
 
 def ignore():
     d = {}
@@ -88,59 +135,23 @@ def ignore():
     f.close()
     return d
 
-def check_cats(sc,cookie, token):
-    #print ("Check" + sc)
-
-    if sc in wb.sd:
-        e = 1  # skip processing
-    else:
-        (d,cookie2) = wb.wbgetentities(sc)
-        e = wb.check_claims(d)
-
-    if e is None:
-        print ("#Missing, adding: " + sc )
-        pprint.pprint(d)
-
-        wb.sd[sc]=d # save it
-        cookie.update(cookie2)
-        try :
-            r = wb.wbeditentity_new_item(token,cookie, sc)
-        except Exception as e:
-            print ("Error" + sc, e)
-
-        time.sleep(10)
-
-    # now
 
 def main():
     ing = ignore()
     dc = Cache()
-    
-    (token,cookie) = wb.get_token()
-
+    s = Session()
     cats = read_list("cats",wb.wanted)
     for c in cats:
-        check_cats(c,cookie,token)
         
-
         if c in ing:
             print ("Ignoring"+ c)
             continue
 
         p = dc.search(c)
-        for sc in p.subcats:
+        p.check_entity(c,s)
 
-            if sc not in cats:
-                if sc in ing:
-                    print ("Ignoring"+ sc)
-                    continue
-                print ("#Reading main Cat"+ c)        
-                print ("#     new subcat "+sc)
-                print (sc.replace("Category:",""))
-                check_cats(sc,cookie,token)
-            else:
-                #print ("#     seen subcat "+sc)
-                pass
+        p.proc_subcats(cats, ing) # process the subcats
+        p.proc_pages(s) # process the subcats
 
 if __name__ == "__main__":
     main()
