@@ -11,6 +11,8 @@ import shelve
 import os.path
 import pprint
 
+dry_run = True
+
 def cache_list(name,f):
     fn = name+"_shelve"
     if not os.path.isfile(fn) :
@@ -65,7 +67,14 @@ class CatPage :
                 pass
 
     def check_entity(self, sc,s):
-        print ("Check" + sc)
+
+        if sc.startswith("Wikipedia:"):
+            print ("Not adding WP stuff: " + sc)
+
+        if sc.startswith("User:"):
+            print ("Not adding User stuff: " + sc)
+
+        print ("Check" + sc)        
         if sc in wb.sd:
             e = 1  # skip processing
         else:
@@ -79,10 +88,15 @@ class CatPage :
             wb.sd[sc]=d # save it
             s.cookie.update(cookie2)
             try :
-                r = wb.wbeditentity_new_item(s.token,s.cookie, sc)
+                if not dry_run:
+                    r = wb.wbeditentity_new_item(s.token,s.cookie, sc)
+                    time.sleep(15)
+                else:
+                    print ("#skipping in dry run: " + sc )
+
             except Exception as e:
                 print ("Error" + sc, e)
-            time.sleep(15)
+
 
     def proc_pages(self, s):
         print ("Cat " + self.name)
