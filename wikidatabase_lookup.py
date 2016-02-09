@@ -161,6 +161,15 @@ def wbcreateclaim (entity,token,cookies,
 
     return post(url,params, cookies)
 
+def wbcreateclaim_instance_of_FreeSoftware (
+        entity,
+        token,
+        cookies,
+        _property = 'P31',
+        snaktype = 'value',
+        value = 341): # Q341 is free software
+    return wbcreateclaim (entity,token,cookies, _property,snaktype,value)
+
 def wbcreateclaim_instance_of_Wikimedia_category (
         entity,
         token,
@@ -176,6 +185,17 @@ def wbgetentities(x):
         'action': 'wbgetentities',
         'sites' : 'enwiki',
         'titles' : x,
+        'redirects': 'yes',
+        'format' : 'json',
+        'props': 'info|sitelinks|aliases|labels|descriptions|claims|datatype'
+    }
+    return process(url,params)
+
+def wbgetentities_by_id(x):
+    url='https://www.wikidata.org/w/api.php'
+    params = {
+        'action': 'wbgetentities',
+        'ids' : x,
         'redirects': 'yes',
         'format' : 'json',
         'props': 'info|sitelinks|aliases|labels|descriptions|claims|datatype'
