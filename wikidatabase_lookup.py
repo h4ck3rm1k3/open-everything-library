@@ -9,8 +9,6 @@ import shelve
 import pprint
 import secrets;
 import time
-sd = shelve.open("wikidatacats_shelve")
-
 import logging
 
 debug = 0
@@ -281,6 +279,29 @@ def get_token():
     #pprint.pprint(crsft['query']['tokens'])
     csrftoken = crsft['query']['tokens']['csrftoken']
     return (csrftoken,edit_cookie)
+
+def query_external (euquery, cont = None, namespace=None, _list = 'exturlusage'):
+    action = 'query'
+    url = 'https://en.wikipedia.org/w/api.php'
+    params = {
+        'action' : action,
+        'list' : _list,
+
+        'format' : 'json',
+        'eulimit': 500,
+        'euexpandurl' : 1,
+        'euquery' : euquery,
+        'generator' : 'allpages'
+
+        #&format=jsonfm
+    }
+    if namespace :
+        params['apnamespace']=namespace
+
+    if cont :
+        params.update(cont)
+
+    return process(url,params)
 
 
 def add_instance(x):

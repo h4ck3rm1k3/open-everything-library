@@ -1,3 +1,7 @@
+
+exturl:
+	python3 create_request.py 'https://en.wikipedia.org/w/api.php?action=query&list=exturlusage&euquery=slashdot.org'
+
 create_item:
 	python3 create_request.py 'https://www.wikidata.org/w/api.php?maxlag=5&format=json&bot=1&summary=Bot%3A+New+item+with+sitelink+from+%5B%5Bwikipedia%3Aen%3AThe+Audience+Engine%5D%5D&assert=user&action=wbeditentity&new=item&data=%7B%22labels%22%3A+%7B%22en%22%3A+%7B%22value%22%3A+%22The+Audience+Engine%22%2C+%22language%22%3A+%22en%22%7D%7D%2C+%22sitelinks%22%3A+%7B%22enwiki%22%3A+%7B%22site%22%3A+%22enwiki%22%2C+%22title%22%3A+%22The+Audience+Engine%22%7D%7D%7D&token=25e4d8bd369df40f89963679e983758a56b48fbd%2B%5C'
 
