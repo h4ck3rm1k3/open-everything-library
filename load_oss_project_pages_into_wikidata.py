@@ -143,16 +143,7 @@ def main():
         if len(name) == 0:
             print(d)
             #continue
-        if 'User:' in name :
-            continue
-        if 'File:' in name:
-            continue
-        if 'Template:' in name:
-            continue
-        if 'Help:' in name:
-            continue
-
-        if 'Wikipedia:' in name:
+        if ':' in name :
             continue
 
         if "creativecommons.org/licenses" in url :
