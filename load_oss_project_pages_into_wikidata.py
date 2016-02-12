@@ -11,7 +11,8 @@ import shelve
 import os.path
 import pprint
 
-dry_run = False
+#dry_run = False
+dry_run = True
 
 def cache_list(name,f):
     fn = name+"_shelve"
@@ -44,7 +45,7 @@ def check_entity(sc,s):
     if sc.startswith("User:"):
         print ("Not adding User stuff: " + sc)
 
-    print ("Check: " + sc)        
+    #print ("Check: " + sc)        
     if sc in sd:
         e = 1  # skip processing
     else:
@@ -144,6 +145,7 @@ def main():
             print(d)
             #continue
         if ':' in name :
+            print ("Skipping" + name)
             continue
 
         if "creativecommons.org/licenses" in url :
