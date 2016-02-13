@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-
-import pymongo
+import sys
+sys.path.append("../rdflib/")
+#import pymongo
 import pprint 
 import funcs
 import json
-c = funcs.Context()
+#c = funcs.Context()
 
 import rdflib
 from rdflib import URIRef, Graph, Namespace

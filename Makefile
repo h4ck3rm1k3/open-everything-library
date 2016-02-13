@@ -1,4 +1,7 @@
 
+test:
+	./repo_projects_de.py 
+
 exturl:
 	python3 create_request.py 'https://en.wikipedia.org/w/api.php?action=query&list=exturlusage&euquery=slashdot.org'
 
@@ -67,7 +70,7 @@ test3:
 test2:
 	python search.py
 
-test:
+testold:
 	python parse.py
 
 *.md : *.org

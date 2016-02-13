@@ -10,11 +10,9 @@ import six
 import sys
 import time
 import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error, urllib.parse
-from filelock import FileLock
-import pymongo
+#from filelock import FileLock
+#import pymongo
 
-#sys.path.append('libs/Wikipedia/')# #git clone git@github.com:goldsmith/Wikipedia.git
-import wikipedia
 
 
 def lookup(memcache, database, key, obj):
@@ -72,73 +70,6 @@ def load_data(db, field, target):
             for pg in c:
                 target[pg]=1
 
-# fetch a page from wp and store in the database
-def fetch_page(x, pages, redirs):
-    x = x.replace("Category:Category:","Category:")
-
-    if x in  pages.data:
-        print("Wait, we have this:" + x)
-        return pages.data[x]
-
-    print("loading from WP:" + x)
-    print(( "#" + x))
-    #try :
-    c = None
-    #pprint.pprint(redirs.data)
-    if x in redirs.data:
-        r = redirs.data[x] # redirect
-        print("reusing the redirect", x, "to ",  r)
-        x = r
-
-    try :
-        results = wikipedia.page(x, auto_suggest=False, redirect=False)
-        c = results.content
-    except wikipedia.exceptions.RedirectError as r:
-        r = r.redirect
-        print("got redirect", r)
-        redirs.db.insert({ "from":  x, "to": r })
-        redirs.data[x]=r
-        if r not in pages.data:
-            results = wikipedia.page(r, auto_suggest=False, redirect=False)
-        else:
-            return pages.data[r]
-
-    except requests.exceptions.ReadTimeout as e:
-        print("Timeout", x)
-        return
-
-    #d = pprint.pformat(results.content)
-    #pprint.pprint(results.__dict__)
-    #pprint.pprint(dir(results))
-    o = {
-        'name' : x,
-        'content': c,
-        'categories' : results.categories,
-        #'coordinates' : results.coordinates(),
-        'images' : results.images,
-        'images' : results.images,
-        'links' : results.links,
-        'original_title' : results.original_title,
-        'pageid' : results.original_title,
-        'references' : results.references,
-        'revision_id' :results.revision_id,
-        #'section' :results.section,
-        'sections' :results.sections,
-        'summary' :results.summary,
-        'title': results.title,
-        'url' : results.url,
-    }
-    #pprint.pprint(o)
-
-    #d = json.dumps(o)
-    r = pages.db.insert(o)
-    pages.data[x]=o # cache
-    print("after insert", r)
-    #except Exception as e:
-    #    print "error:", e
-
-    print("zzz")
-    time.sleep(1)
 
 
 class Wrapper:
@@ -249,47 +180,6 @@ class PageWrapper:
             #exit(0)
 
 
-
-class Context :
-    def __init__(self):
-        self.wanted_pages ={}
-        self.merged_cats = {}
-        self.client = pymongo.MongoClient('mongodb://admin:password@127.0.0.1')
-        self.db = self.client.open_everything_library
-        self.cats   = Wrapper(self.db.categories,"name")
-        self.page_data  = Wrapper(
-            self.db.page_data,
-            "title",
-            alt_fields=['name'])
-        self.redirs = Wrapper(self.db.redirs,"from")
-        self.extern = BigWrapper(self.db.external_pages,"url")
-        self.pages = PageWrapper(self.page_data, self.redirs)
-        self.wikidata = BigWrapper(self.db.wiki_data, "__subject__")
-
-        self.github = BigWrapper(self.db.github,"full_name")
-        self.ruby = BigWrapper(self.db.ruby,"name")
-
-        self.npm = BigWrapper(self.db.npm,"id")
-        self.fsd = BigWrapper(self.db.fsd,"__source__")
-
-
-    def add_cat(self, n, p):
-        print("add:",n, "Parents:", ",".join(p))
-        _pages = pages(n)
-        #pprint.pprint(_pages)
-
-        #n = n.replace( "Category:","")
-        subcats = subcat(n)
-        #pprint.pprint(subcats)
-
-        new = {
-            'name' : n,
-            'parents' : p,
-            'subcats': subcats,
-            'pages': _pages,
-        }
-        #pprint.pprint(new)
-        self.cats.add(n , new)
 
 
 def categorymembers(cmtype,category):
