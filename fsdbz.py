@@ -248,7 +248,8 @@ def main():
             if homepage:
                 homepage = homepage.replace("https://","").replace("http://","")
                 print ("\tcheck homepage" + homepage + " for project " + name)
-                process_link(api, wapi, opt, homepage, seen, sd, wd)
+                #process_link(api, wapi, opt, homepage, seen, sd, wd)
+                process_link(wapi, wapi, opt, homepage, seen, sd, wd)
   
 
 if __name__ == "__main__":
