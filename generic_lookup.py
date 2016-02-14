@@ -201,7 +201,7 @@ class WikimediaApi :
         lastContinue = {'continue': ''}
     
         while True :
-            #print ("#Going to process " + x)
+            print ("#Going to process " + x)
             (r,c) = self.query_external("*."+x, lastContinue, namespace=0)
 
             count = 0

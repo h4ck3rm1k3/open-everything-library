@@ -62,6 +62,8 @@ def main():
     wd.session.get_token()
     seen = {}
     sd =  shelve.open("wikientities" + opt['lang'] + 'shelve')
+    for x in sd:
+        print ("Stored"+x)
 
     for p in projects():
         for k in api.query_all(p):
@@ -71,19 +73,19 @@ def main():
                     name = k['title']
                     seen[name] = 1
 
-
                     if name in sd:
                         print ("Processed " + name)
                         continue
                     else:
                         print ("NEW " + name)
+                        sd[name]=1
 
                     (langs,c) = api.query_langlinks(k['pageid'])
                     #pprint.pprint(langs)
                     site = wapi.langlookup[opt['lang']]
                     (wikidata,cookie2) = wd.wbgetentities( name , site)
                     wd.session.cookie.update(cookie2)
-                    sd[name]=1
+
                     entities = {}
                     for e in wikidata['entities']:
                         print ("\tFound Entity" + e)
@@ -125,7 +127,7 @@ def main():
                                                     print (e)
                                                 #exit(0)
                                                 time.sleep(10)
-                time.sleep(1)
+                
 
 if __name__ == "__main__":
     main()
