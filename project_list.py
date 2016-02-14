@@ -111,7 +111,6 @@ openoffice.org
 opensource.org
 opensourcemac.org
 opensourcewindows.org
-openstreetmap.org
 opensuse.org
 oreports.com
 oscommerce.com
@@ -163,7 +162,6 @@ unlicense.org
 videolan.org
 vim.org
 walking-papers.org
-wikimedia.org
 wildbit.com
 wordpress.org
 wtfpl.net
@@ -174,3 +172,6 @@ ow2.org
 x.org
 xfce.org
 xfree86.org""".split()
+
+#openstreetmap.org
+#wikimedia.org

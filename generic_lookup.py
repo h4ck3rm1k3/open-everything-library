@@ -10,7 +10,12 @@ import pprint
 import secrets;
 import time
 import logging
+import sitematrix
 
+langlookup = sitematrix.getnames()
+#pprint.pprint(langlookup)
+
+dry_run = True
 debug = 0
 if debug:
     # Enabling debugging at http.client level (requests->urllib3->http.client)
@@ -29,22 +34,8 @@ if debug:
     requests_log.propagate = True
 
 class Session:
-    def __init__(self) :
-        (token,cookie) = wb.get_token()
-        self.token=token
-        self.cookie=cookie
-
-class WikimediaApi :
-    
-    DEFAULT_BASE_URL2='http://directory.fsf.org/w/api.php'
-    DEFAULT_BASE_URL='https://www.wikidata.org/w/api.php'
-    def __init__(self, baseurl=DEFAULT_BASE_URL):
-        self.baseurl=baseurl
-        self.session = None
-        
 
     def login(self, user, passw, token=None, cookies=None):
-
         params = {
             'action': 'login',
             'format' : 'json',
@@ -54,29 +45,59 @@ class WikimediaApi :
         if token :
             params['lgtoken']=token
         if cookies:
-            r = requests.post(self.base_url, params=params, cookies=cookies)
+            r = requests.post(self.source.baseurl, params=params, cookies=cookies)
         else:
-            r = requests.post(self.base_url, params=params)
+            r = requests.post(self.source.baseurl, params=params)
         t = r.text
         #print ("login text: " + t)
         d = json.loads(t)
         #print ("logged: ")
         #pprint.pprint(d)
-        self.session = Session(d,r.cookies)
+        return (d,r.cookies)
 
     def dologin(self):
-        d = login (
-            secrets.generic[self.baseurl]['user'],
-            secrets.generic[self.baseurl]['password'],
+        d = self.login (
+            secrets.generic[self.source.baseurl]['user'],
+            secrets.generic[self.source.baseurl]['password'],
         )
         token=d[0]
         cookies=d[1]
-        self.login (
-            secrets.generic[self.baseurl]['user'],
-            secrets.generic[self.baseurl]['password'],
+        d = self.login (
+            secrets.generic[self.source.baseurl]['user'],
+            secrets.generic[self.source.baseurl]['password'],
             token['login']['token'],
             cookies,
         )
+        self.token = d[0]['login']['lgtoken']
+        self.cookie = d[1]
+
+    def get_token(self):
+        self.dologin()
+        #pprint.pprint(cookies)
+        (crsft,cookies2) = self.source.query_tokens()
+        #pprint.pprint(cookies2)
+        edit_cookie = self.cookie.copy()
+        edit_cookie.update(cookies2)
+        #pprint.pprint(edit_cookie)
+        pprint.pprint(crsft)
+        #pprint.pprint(crsft['query']['tokens'])
+        csrftoken = crsft['query']['tokens']['csrftoken']
+        print ("CRSF token" + csrftoken)
+        self.cookie=edit_cookie
+        self.token =csrftoken
+
+    def __init__(self, source) :
+        self.source=source
+        self.cookie = None
+        self.token = None
+        
+class WikimediaApi :
+    
+    DEFAULT_BASE_URL2='http://directory.fsf.org/w/api.php'
+    DEFAULT_BASE_URL='https://www.wikidata.org/w/api.php'
+    def __init__(self, baseurl=DEFAULT_BASE_URL):
+        self.baseurl = baseurl
+        self.session = Session(self)
 
     def pprocess(self,r):
         t = r.text
@@ -91,21 +112,26 @@ class WikimediaApi :
             print ("error: " + t + " Err "+ str(e))
             raise e
 
-    def process(self, params, cookies=None):
-        return self.pprocess(requests.get(self.baseurl, params=params, cookies=cookies))
+    def process(self, params):
+        return self.pprocess(
+            requests.get(
+                self.baseurl, 
+                params=params, 
+                cookies=self.session.cookie))
 
 
-    def post(self, body, cookies):
+    def post(self, body):
         try:
             #print("Cookies")
             #pprint.pprint(cookies)
-            rs= requests.post(self.baseurl,
-                              #headers = {
-                              #    'content-type': 'application/json'
-                              #},
-                              data=body,
-                              #json=body,
-                              cookies=cookies)
+            rs= requests.post(
+                self.baseurl,
+                #headers = {
+                #    'content-type': 'application/json'
+                #},
+                data=body,
+            #json=body,
+                cookies=self.session.cookie)
             return self.pprocess(rs)
             #cookies.update(rs.cookies)
             #return r
@@ -113,7 +139,7 @@ class WikimediaApi :
             pprint.pprint(body)
             raise e
 
-    def query_tokens (self, cookies, meta = 'tokens'):
+    def query_tokens (self, meta = 'tokens'):
         action = 'query'
 
         params = {
@@ -122,30 +148,38 @@ class WikimediaApi :
             'action' : action,
             'meta' : meta,
         }
-        return self.process(self.base_url,params,cookies)
+        return self.process(params)
 
 
-    def get_token(self):
-        self.dologin()
-        #pprint.pprint(cookies)
-        (crsft,cookies2) = query_tokens(self.cookies)
-        #pprint.pprint(cookies2)
-        edit_cookie = cookies.copy()
-        edit_cookie.update(cookies2)
-        #pprint.pprint(edit_cookie)
-        #pprint.pprint(crsft['query']['tokens'])
-        csrftoken = crsft['query']['tokens']['csrftoken']
-        self.session.cookie=edit_cookie
-        self.session.token =csrftoken
 
+    def query_langlinks (self, pageids, 
+                         #meta = 'siteinfo',
+               prop = 'langlinks'):
+        action = 'query'
+        params = {
+            'action' : action,
+            'format' : 'json',
+            #'meta' : meta,
+            'pageids' : pageids,
+            'prop' : prop,
+        }
+        return self.process(params)
 
     def query_external (self, euquery, cont = None, namespace=None, _list = 'exturlusage'):
         action = 'query'
-
         params = {
             'action' : action,
             'list' : _list,
-
+            # 'prop' : "|".join(
+            #     [
+            #         'extlinks', 
+            #         'iwlinks', 
+            #         'langlinks', 
+            #         'links', 
+            #         'pageprops', 
+            #         'pageterms'
+            #     ]
+            # ),
             'format' : 'json',
             'eulimit': 500,
             'euexpandurl' : 1,
@@ -161,6 +195,7 @@ class WikimediaApi :
             params.update(cont)
 
         return self.process(params)
+
 
     def query_all (self, x):
         lastContinue = {'continue': ''}
@@ -182,13 +217,15 @@ class WikimediaApi :
             if 'error' in r: raise Error(r['error'])
             if 'warnings' in r: print(r['warnings'])
             lastContinue = r['continue']
-            
-
-
 
 class WikidataApi (WikimediaApi ):
-    def wbcreateclaim (entity,token,cookies,
-                       _property,snaktype,value):
+
+    BASEURL='https://www.wikidata.org/w/api.php'
+
+    def wbcreateclaim (entity,
+                       _property,
+                       snaktype,
+                       value):
         action = 'wbcreateclaim'
 
         params = {
@@ -207,39 +244,34 @@ class WikidataApi (WikimediaApi ):
             'token': token,
         }
 
-        return post(self.base_url,params, cookies)
+        return post(self.baseurl,params)
 
     def wbcreateclaim_instance_of_FreeSoftware (
             entity,
-            token,
-            cookies,
             _property = 'P31',
             snaktype = 'value',
             value = 341): # Q341 is free software
-        return wbcreateclaim (entity,token,cookies, _property,snaktype,value)
+        return wbcreateclaim (entity, _property,snaktype,value)
 
     def wbcreateclaim_instance_of_Wikimedia_category (
             entity,
-            token,
-            cookies,
             _property = 'P31',
             snaktype = 'value',
             value = 4167836):
-        return wbcreateclaim (entity,token,cookies, _property,snaktype,value)
+        return wbcreateclaim (entity, _property,snaktype,value)
 
-    def wbgetentities(x):
-
+    def wbgetentities(self, x, sites = 'enwiki'):
         params = {
             'action': 'wbgetentities',
-            'sites' : 'enwiki',
+            'sites' : sites,
             'titles' : x,
             'redirects': 'yes',
             'format' : 'json',
             'props': 'info|sitelinks|aliases|labels|descriptions|claims|datatype'
         }
-        return process(params)
+        return self.process(params)
 
-    def wbgetentities_by_id(x):
+    def wbgetentities_by_id(self, x):
 
         params = {
             'action': 'wbgetentities',
@@ -248,10 +280,10 @@ class WikidataApi (WikimediaApi ):
             'format' : 'json',
             'props': 'info|sitelinks|aliases|labels|descriptions|claims|datatype'
         }
-        return process(params)
+        return self.process(params)
 
 
-    def check_claims(d):
+    def check_claims(self,d, site):
         if 'entities' in d:
             if '-1' in d['entities']:
                 #print ("todo: " +x)
@@ -273,9 +305,10 @@ class WikidataApi (WikimediaApi ):
                         return 1
 
     def wbeditentity_new_item (
-            token,
-            cookie,
+            self,
             name,
+            lang,
+            site
     ):
         action = 'wbeditentity'
         bot = '1'
@@ -283,26 +316,25 @@ class WikidataApi (WikimediaApi ):
         _format = 'json'
         _assert = 'user'
         new = 'item',
-        summary = 'Bot: New item with sitelink from [[wikipedia:en:{name}]]'.format(name=name)
+        summary = 'Bot: New item with sitelink from [[wikipedia:{lang}:{name}]]'.format(name=name,lang=lang)
         data = {
             "labels": 
             {
-                "en": 
+                lang: 
                 {
                     "value": name, 
-                    "language": "en"
+                    "language": lang
                 }
             }, 
             "sitelinks": 
             {
-                "enwiki": 
+                site: 
                 {
-                    "site": "enwiki", 
+                    "site": site, 
                     "title": name
                 }
             }
         }
-
 
         params = {
             'action' : action,
@@ -311,12 +343,13 @@ class WikidataApi (WikimediaApi ):
             'new' : new,
             'assert' : _assert,
             'bot' : bot,
-            'token' : token,
+            'token' : self.session.token,
             'summary' : summary,
             'data' : json.dumps(data)
         }
-        return self.post(params, cookie)
-    def add_instance(x):
+        return self.post(params)
+
+    def add_instance(self, x):
         if x not in sd:
             print ("fetch new " + x)
             (d,c) = wbgetentities(x)
@@ -333,7 +366,7 @@ class WikidataApi (WikimediaApi ):
             e= check_claims(d) # check again after fetch
             if e and e != 1:
                 print ("To Fix: "+ x)
-                wbcreateclaim_instance_of_Wikimedia_category(e,csrftoken,edit_cookie)
+                wbcreateclaim_instance_of_Wikimedia_category(e)
                 (d,c) = wbgetentities(x)
                 sd[x]=d
                 time.sleep(10)
@@ -343,6 +376,21 @@ class WikidataApi (WikimediaApi ):
         else:
             print ("Ok:"+ x)
             return d
+
+    def check_entity(self, sc, site):
+        e = self.check_claims(d, site)
+        if e is None:
+            print ("#Missing, adding: " + sc )
+            #sd[sc]=d # save it
+            self.session.cookie.update(cookie2)
+            try :
+                if not dry_run:
+                    r = self.wbeditentity_new_item(sc, site)
+                    time.sleep(15)
+                else:
+                    print ("#skipping in dry run: " + sc )
+            except Exception as e:
+                print ("Error" + sc, e)
 
 def main():
     pass
