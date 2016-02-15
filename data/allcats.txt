@@ -1,3 +1,8 @@
+3D computer graphics software for Linux
+3D graphics software that uses GTK+
+3D graphics software that uses Qt
+3D modeling software for Linux
+3D rendering software for Linux
 A-Class Open access articles
 ACD hub software for Linux
 ADC clients for Linux
@@ -6,7 +11,7 @@ Access to Knowledge activists
 Accounting software for Linux
 Advanced Linux Sound Architecture
 Agricultural Research Service images
-Albums free for download by copyright owner
+Air National Guard images
 Amateur radio software for Linux
 Android (operating system)
 Animal WikiLove templates
@@ -21,10 +26,7 @@ Applications using D-Bus
 Architect of the Capitol images
 Archive managers that use GTK+
 Arduino
-Articles with imported Creative Commons Attribution 2.5 text
-Articles with imported Creative Commons Attribution 3.0 text
-Articles with imported Creative Commons Attribution-ShareAlike 3.0 text
-Articles with imported Creative Commons licensed text
+Army National Guard images
 Assistant Deputy Director of National Intelligence for Open Source
 Asterisk (PBX)
 Audio editing software for Linux
@@ -42,7 +44,6 @@ B-Class Open access articles
 BSD people
 BSD software
 Backup software for Linux
-Bacon WikiCup
 Barnstar award templates
 Barnstars of National Merit templates
 Barnstars with alternative versions
@@ -57,6 +58,12 @@ Bitcoin
 Bitcoin exchanges
 Blender Foundation
 Blockchains
+Books about Linux
+Books about Perl
+Books about Wikipedia
+Books about free software
+Books about free software
+Books by Donald Knuth
 Bureau of Land Management images
 Bureau of Reclamation images
 Business software for Linux
@@ -64,9 +71,11 @@ C POSIX library
 C standard library
 C standard library headers
 C-Class Open access articles
+CIA World Factbook images
 Calligra Suite
 Cancelled Linux games
 Canonical Ltd.
+Catalan-language Linux distributions
 Centers for Disease Control and Prevention images
 Central Intelligence Agency images
 Chemistry software for Linux
@@ -90,7 +99,6 @@ Concept- and mind-mapping software for Linux
 Concept- and mind-mapping software programmed in Java
 Concept- and mind-mapping software that uses GTK+
 Concept- and mind-mapping software that uses Qt
-Conflict-of-interest editing on Wikipedia
 Conflict-of-interest editing on Wikipedia
 Copyleft
 Copyleft media
@@ -189,7 +197,6 @@ File sharing software for Linux
 File sharing software that uses GTK+
 File sharing software that uses Qt
 File sharing software that uses wxWidgets
-Files copyrighted by the Wikimedia Foundation
 Films about Wikipedia
 Finite element software for Linux
 Firebird
@@ -205,6 +212,7 @@ Food and Drug Administration images
 Foreign Agricultural Service images
 Formerly free software
 Formerly proprietary software
+Four Award
 Free 2D animation software
 Free 3D graphics software
 Free BIOS implementations
@@ -570,8 +578,8 @@ KDE Software Compilation
 KDE games
 KDE software
 KDE stubs
-Kdepim
 KDE-related templates
+Kdepim
 Knoppix
 LXDE
 Language software for Linux
@@ -737,6 +745,7 @@ Note-taking software that uses GTK+
 Nuclear Regulatory Commission images
 Numerical analysis software for Linux
 OS X-only free software
+OW2 Consortium
 Office Open XML
 Office software that uses GTK+
 Office suites for Linux
@@ -868,6 +877,8 @@ Portuguese-language Linux distributions
 Possible Wikipedia four award articles
 Postal (video game series)
 PostgreSQL
+Pre-1978 without copyright notice US public domain images
+Pre-1996 PD in home country US public domain images
 Proposed or rejected barnstars
 Proxy server software for Linux
 Public Library of Science
@@ -884,6 +895,7 @@ R (programming language)
 RDBMS software for Linux
 RPM-based Linux distributions
 Raster graphics editors for Linux
+Recipients of the Sakharov Prize
 Red Hat
 Red Hat employees
 Red Hat people
@@ -987,12 +999,6 @@ Text editors for Linux
 Text editors programmed in Java
 Text editors that use GTK+
 Third-party Linux kernel modules
-Times that 100 Wikipedians supported something
-Times that 1000 Wikipedians supported something
-Times that 200 Wikipedians supported something
-Times that 300 Wikipedians supported something
-Times that 400 Wikipedians supported something
-Times that large groups of Wikipedians supported something
 Tool libraries
 Top-importance Open access articles
 Tor (anonymity network)
@@ -1014,6 +1020,7 @@ United States Army Corps of Engineers images
 United States Army Institute of Heraldry images
 United States Army images
 United States Census Bureau images
+United States Census Bureau maps of New York
 United States Coast Guard images
 United States Coast Guard images
 United States Department of Agriculture images
@@ -1147,10 +1154,6 @@ Wikipedia Wikipediology
 Wikipedia Word Association
 Wikipedia Word Association
 Wikipedia administrators open to trout slapping
-Wikipedia articles incorporating text from Citizendium
-Wikipedia articles incorporating text from Citizendium needing updating
-Wikipedia articles incorporating text from Culture.si
-Wikipedia articles incorporating text from Kremlin.ru
 Wikipedia articles incorporating text from open access publications
 Wikipedia articles incorporating text from the Department of Foreign Affairs and Trade
 Wikipedia articles rejected for Four awards
@@ -1208,24 +1211,3 @@ XMPP clients
 Xfce
 Xiph.Org projects
 Zope
-Books about free software
-CIA World Factbook images
-3D graphics software that uses GTK+
-Books about Linux
-Books about Perl
-Books about Wikipedia
-Books about free software
-OW2 Consortium
-Recipients of the Sakharov Prize
-Pre-1996 PD in home country US public domain images
-Pre-1978 without copyright notice US public domain images
-Four Award
-United States Census Bureau maps of New York
-Army National Guard images
-3D computer graphics software for Linux
-Air National Guard images
-3D graphics software that uses Qt
-Books by Donald Knuth
-3D modeling software for Linux
-3D rendering software for Linux
-Catalan-language Linux distributions

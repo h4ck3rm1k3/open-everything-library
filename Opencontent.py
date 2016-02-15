@@ -16,7 +16,7 @@ import funcs
 
 c = funcs.Context()
 cname = 'Category:'
-name = 'Open content'
+#name = 'Open content'
 seen = {
     'Category:Linux_software':1,
     'Category:WikiProject Open Access articles':1, # tons of articles, not relevant
@@ -34,6 +34,18 @@ seen = {
     'Category:Citizen media' : 1, 
     'Category:Linux software' : 1  # dont process this because it is full of non free software
 }
+
+def wanted():
+    filename = 'data/allcats.txt'
+    f = open(filename)
+    count = 0
+    for l in f.readlines():
+        l = l.replace("\n","")
+        if l.startswith("#"):
+            next
+        else:
+            yield "Category:" +l
+    f.close()
 
 def recurse(n, p):
     if n not in seen:
@@ -59,7 +71,7 @@ def recurse(n, p):
             for sc in subcats:
                 p2 = list(p)
                 p2.append(n)
-                recurse(sc, p2)
+                #recurse(sc, p2)
 
         pages = s['pages']
         if pages:
@@ -73,4 +85,9 @@ def recurse(n, p):
         # pages
     
 #Category:Open Content and all subcats.
-recurse(cname + name,[])
+for name in wanted():
+    print ("check" + name)
+    if 'Category:' not in name:
+        recurse(cname + name,[])
+    else:
+        recurse(name,[])

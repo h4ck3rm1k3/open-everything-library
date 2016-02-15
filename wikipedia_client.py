@@ -27,7 +27,6 @@ def fetch_page(x, pages, redirs):
     except wikipedia.exceptions.RedirectError as r:
         r = r.redirect
         print("got redirect", r)
-        redirs.db.insert({ "from":  x, "to": r })
         redirs.data[x]=r
         if r not in pages.data:
             results = wikipedia.page(r, auto_suggest=False, redirect=False)
@@ -62,11 +61,7 @@ def fetch_page(x, pages, redirs):
     #pprint.pprint(o)
 
     #d = json.dumps(o)
-    #r = pages.db.insert(o)
     pages.data[x]=o # cache
-    #print("after insert", r)
-    #except Exception as e:
-    #    print "error:", e
 
     print("zzz")
     time.sleep(1)

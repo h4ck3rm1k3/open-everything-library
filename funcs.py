@@ -178,7 +178,7 @@ class PageWrapper:
             print("found page", p2)
         else:
             if p2 in  self.redirs.data:
-                r = self.redirs.data[p2]['to']
+                r = self.redirs.data[p2]
                 print("follow redirect to ", r)
                 return self.get(r)
             else:
