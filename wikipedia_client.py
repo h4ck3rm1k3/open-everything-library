@@ -1,6 +1,8 @@
-#sys.path.append('libs/Wikipedia/')# #git clone git@github.com:goldsmith/Wikipedia.git
+import sys
+sys.path.append('../Wikipedia/')# #git clone git@github.com:goldsmith/Wikipedia.git
+sys.path.append('../beautifulsoup4-4.4.1/build/lib')
 import wikipedia
-
+import time
 # fetch a page from wp and store in the database
 def fetch_page(x, pages, redirs):
     x = x.replace("Category:Category:","Category:")
@@ -60,9 +62,9 @@ def fetch_page(x, pages, redirs):
     #pprint.pprint(o)
 
     #d = json.dumps(o)
-    r = pages.db.insert(o)
+    #r = pages.db.insert(o)
     pages.data[x]=o # cache
-    print("after insert", r)
+    #print("after insert", r)
     #except Exception as e:
     #    print "error:", e
 

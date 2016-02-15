@@ -10,8 +10,8 @@ import six
 import sys
 import time
 import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error, urllib.parse
-from filelock import FileLock
-import pymongo
+#from filelock import FileLock
+#import pymongo
 import funcs
 
 c = funcs.Context()

@@ -13,18 +13,7 @@ import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error,
 #from filelock import FileLock
 #import pymongo
 
-
-
-def lookup(memcache, database, key, obj):
-    #pprint.pprint(key)
-    #pprint.pprint(obj)
-    if key in memcache:
-        return True
-    else:
-        memcache[key]=1
-        database.insert(obj)
-        print('adding new:', key)
-        return False
+import wikipedia_client
 
 def load(d,field, alt_fields=None):
     #d = db.pages
@@ -70,18 +59,36 @@ def load_data(db, field, target):
             for pg in c:
                 target[pg]=1
 
+import shelve
+
+
+def get_shelve(name):
+    return shelve.open("./shelve_data/" + name + '.shelve')
 
 
 class Wrapper:
     def __init__(self, db , key, alt_fields=None):
-        self.db   = db
-        self.data = {}
+        #self.db   = 
+        self.data = get_shelve(db)
+        self.key = key
+        self.alt_fields = alt_fields
 
     def load(self):
         self.data = load(db,key,alt_fields)
 
+    def lookup(self, key, obj):
+        #pprint.pprint(key)
+        #pprint.pprint(obj)
+        if key in self.data:
+            return True
+        else:
+            self.data[key]=obj
+            #database.insert(obj)
+            print('adding new:', key)
+            return False
+
     def add(self,k,v):
-        return lookup(self.data, self.db, k, v)
+        return self.lookup(k, v)
 
 class BigWrapper:
     def __init__(self, db , field, alt_fields=None):
@@ -176,7 +183,7 @@ class PageWrapper:
                 return self.get(r)
             else:
                 print("missing page", p2)
-                fetch_page(p2,self.pages, self.redirs)
+                wikipedia_client.fetch_page(p2,self.pages, self.redirs)
             #exit(0)
 
 
@@ -976,3 +983,44 @@ def extern(c, url, timeout = 1):
                          'error' : str(e),
                      } )
         return
+
+class Context :
+    def __init__(self):
+        self.wanted_pages ={}
+        self.merged_cats = {}
+        #self.client = pymongo.MongoClient('mongodb://admin:password@127.0.0.1')
+        #self.db = self.client.open_everything_library
+        self.cats   = Wrapper("categories","name")
+        self.page_data  = Wrapper(
+            "page_data",
+            "title",
+            alt_fields=['name'])
+        self.redirs = Wrapper("redirs","from")
+        self.extern = BigWrapper("external_pages","url")
+        self.pages = PageWrapper(self.page_data, self.redirs)
+        self.wikidata = BigWrapper("wiki_data", "__subject__")
+
+        self.github = BigWrapper("github","full_name")
+        self.ruby = BigWrapper("ruby","name")
+
+        self.npm = BigWrapper("npm","id")
+        self.fsd = BigWrapper("fsd","__source__")
+
+
+    def add_cat(self, n, p):
+        print("add:",n, "Parents:", ",".join(p))
+        _pages = pages(n)
+        pprint.pprint({"Pages": _pages})
+
+        #n = n.replace( "Category:","")
+        subcats = subcat(n)
+        pprint.pprint({"subcats": subcats})
+
+        new = {
+            'name' : n,
+            'parents' : p,
+            'subcats': subcats,
+            'pages': _pages,
+        }
+        #pprint.pprint(new)
+        self.cats.add(n , new)
