@@ -135,10 +135,10 @@ def process_link(api, wapi, opt, link, seen, sd, wd):
                 seen[name] = 1
 
                 if name in sd:
-                    print ("Processed " + name)
+                    print ("\tProcessed " + name + " for " + link)
                     continue
                 else:
-                    print ("NEW " + name)
+                    print ("\tNEW " + name + " for " + link)
                     sd[name]=1
 
                 (langs,c) = api.query_langlinks(k['pageid'])
@@ -175,13 +175,13 @@ def process_link(api, wapi, opt, link, seen, sd, wd):
                                             # ok
                                             pass
                                         else:
-                                            print ("\tTo diff " + x + " : '" + oname + "' != '" + old + "'")
+                                            print ("\t\tTo diff " + x + " : '" + oname + "' != '" + old + "'" + " for " + link)
                                     else:
                                         if "#" in oname:
                                             # some subpage
                                             pass
                                         else:
-                                            print ("\tTo add " + x + " : " + oname + " lang " )
+                                            print ("\t\tDouble Check " + x + " : " + oname + " lang " + olang + " for " + link)
                                             osite = wapi.langlookup[olang]
                                             (owikidata,cookie2) = wd.wbgetentities( oname , osite)
                                             exists = False
@@ -197,6 +197,7 @@ def process_link(api, wapi, opt, link, seen, sd, wd):
 
                                             if not exists :
                                                 try:
+                                                    print ("\tTo add " + x + " : " + oname + " lang " + olang + " for " + link)
                                                     r = wd.wbeditentity_new_item(oname, olang, x)                                         
                                                     time.sleep(10)
                                                 except Exception as e:
@@ -247,9 +248,9 @@ def main():
             homepage = proj.homepage()
             if homepage:
                 homepage = homepage.replace("https://","").replace("http://","")
-                print ("\tcheck homepage" + homepage + " for project " + name)
-                #process_link(api, wapi, opt, homepage, seen, sd, wd)
-                process_link(wapi, wapi, opt, homepage, seen, sd, wd)
+                print ("\tcheck homepage: " + homepage + " for project " + name)
+                process_link(api, wapi, opt, homepage, seen, sd, wd)
+                #process_link(wd, wapi, opt, homepage, seen, sd, wd)
   
 
 if __name__ == "__main__":

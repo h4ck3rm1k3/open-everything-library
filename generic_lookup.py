@@ -202,7 +202,7 @@ class WikimediaApi :
     
         while True :
             print ("#Going to process " + x)
-            (r,c) = self.query_external("*."+x, lastContinue, namespace=0)
+            (r,c) = self.query_external(x, lastContinue, namespace=0)
 
             count = 0
             if 'query' in r:
