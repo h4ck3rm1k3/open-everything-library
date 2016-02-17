@@ -1,0 +1,15 @@
+{
+    "namespace": "github-open-everything-library.avro",
+    "type": "record",
+    "name": "GitHubProject",
+    "fields": [
+        {"name": "id", "type": "int"},
+        {"name": "fork", "type": "boolean"},
+        {"name": "name", "type": "string"},
+        {"name": "description", "type": ["string","null"]},
+        {"name": "full_name", "type": "string"},
+        {"name": "owner_name", "type": "string"},
+        {"name": "owner_type", "type": "string"},        
+        {"name": "html_url",  "type": "string"}
+    ]
+}
