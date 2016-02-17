@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
-import pymongo
 import pprint 
-import funcs
-
+#import funcs
 import re
 import pprint
 import os
@@ -14,14 +12,20 @@ import time
 import codecs
 import sys
 
-c = funcs.Context()
+import avro.schema
+from avro.datafile import DataFileReader, DataFileWriter
+from avro.io import DatumReader, DatumWriter
+
+schema = avro.schema.parse(open("avro-schemas/git-hub-projects.avsc", "rb").read())
+fn = "data/github/github-projects.avro"
+writer = DataFileWriter(open(fn, "wb"), DatumWriter(), schema)
+
 filename_pattern = re.compile(r'repositories\.\d+\.json')
 KEYS= [
     u'id',
     u'name',
     u'full_name',
     u'url',
-
     u'issues_url',
     u'forks_url',
     u'subscription_url',
@@ -31,10 +35,8 @@ KEYS= [
     u'pulls_url',
     u'issue_comment_url',
     u'labels_url',
-
     u'owner',
     u'statuses_url',
-
     u'keys_url',
     u'description',
     u'tags_url',
@@ -69,16 +71,18 @@ def scan_files():
     dirname = 'sources/github/'
     files = os.listdir(dirname)
     
-    for x in files:
-        if filename_pattern.match(x):
-            yield dirname + x
-
-
+    for y in files:
+        #print "Check:" + dirname + y
+        if re.match('\d+',y ):
+            files2 = os.listdir(dirname + y)
+            for x in files2:
+                #print "Check:" + dirname + x
+                if filename_pattern.match(x):
+                    yield dirname + y + "/" + x 
 
 
 def process_file(fn):
-    
-    
+     
     if (os.path.isfile(fn)):
         print("opening",fn)
         f = codecs.open(fn,'r',"utf-8")
@@ -87,30 +91,25 @@ def process_file(fn):
         for x in d:
             n = x['full_name']
             # now we
-            #print ("Start flagged", n)
+            #print ("Start:", n)
             y = {
                 "id": x['id'],
                 "name": x['name'],
                 "full_name": x['full_name'],
-                "owner": x['owner']['id'],
+                #"owner": x['owner']['id'],
                 "owner_name": x['owner']['login'],
                 "owner_type": x['owner']['type'],
                 "html_url": x["html_url"],
-                "url": x["url"],
+                #"url": x["url"],
                 "fork": x["fork"],                 
                 "description": x["description"],
             }
-            try :
-                c.github.add(n,y)
-            except pymongo.errors.DuplicateKeyError as e:
-                pass # dont care
-            except Exception as e:
-                print ("Error",n)
-                print (e)
-                raise e
+            writer.append( y        )
+
 
 def process_files():
     for f in scan_files():
         process_file(f)
 
 process_files()
+writer.close()

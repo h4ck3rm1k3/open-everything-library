@@ -111,4 +111,5 @@ for d in sink.db.find({},{'d' : 1}):
         if d2 not in ids:
             print ("TODO:" + d2)
         else:
-            print ("Found:" + d2)
+            #print ("Found:" + d2)
+            pass
