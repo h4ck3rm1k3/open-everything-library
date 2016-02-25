@@ -18,7 +18,8 @@ from avro.io import DatumReader, DatumWriter
 
 schema = avro.schema.parse(open("avro-schemas/git-hub-projects.avsc", "rb").read())
 fn = "data/github/github-projects.avro"
-writer = DataFileWriter(open(fn, "wb"), DatumWriter(), schema)
+writer = None
+
 
 filename_pattern = re.compile(r'repositories\.\d+\.json')
 KEYS= [
@@ -70,46 +71,52 @@ KEYS= [
 def scan_files():
     dirname = 'sources/github/'
     files = os.listdir(dirname)
-    
+    global writer
     for y in files:
         #print "Check:" + dirname + y
         if re.match('\d+',y ):
+            fn = "data/github/github-projects."+y+".avro"
+            writer = DataFileWriter(open(fn, "wb"), DatumWriter(), schema)
+            print ("processing: "+dirname + y)
             files2 = os.listdir(dirname + y)
             for x in files2:
                 #print "Check:" + dirname + x
                 if filename_pattern.match(x):
-                    yield dirname + y + "/" + x 
+                    yield dirname + y + "/" + x
+            writer.close()
 
 
 def process_file(fn):
      
     if (os.path.isfile(fn)):
-        print("opening",fn)
+        #print("opening",fn)
         f = codecs.open(fn,'r',"utf-8")
         t = f.read()
-        d= json.loads(t)
-        for x in d:
-            n = x['full_name']
-            # now we
-            #print ("Start:", n)
-            y = {
-                "id": x['id'],
-                "name": x['name'],
-                "full_name": x['full_name'],
-                #"owner": x['owner']['id'],
-                "owner_name": x['owner']['login'],
-                "owner_type": x['owner']['type'],
-                "html_url": x["html_url"],
-                #"url": x["url"],
-                "fork": x["fork"],                 
-                "description": x["description"],
-            }
-            writer.append( y        )
-
+        try :
+            d= json.loads(t)
+            for x in d:
+                n = x['full_name']
+                # now we
+                #print ("Start:", n)
+                y = {
+                    "id": x['id'],
+                    "name": x['name'],
+                    "full_name": x['full_name'],
+                    #"owner": x['owner']['id'],
+                    "owner_name": x['owner']['login'],
+                    "owner_type": x['owner']['type'],
+                    "html_url": x["html_url"],
+                    #"url": x["url"],
+                    "fork": x["fork"],                 
+                    "description": x["description"],
+                }
+                writer.append( y        )
+        except Exception as e:
+            print (e, fn)
 
 def process_files():
     for f in scan_files():
         process_file(f)
 
 process_files()
-writer.close()
+
