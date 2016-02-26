@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: setup-virtual-machine
+Version: 0.0.1
+Summary: python-server-setup
+Home-page: https://github.com/rpappalax/python-project-template
+Author: James Michel DuPont
+Author-email: jamesmikedupont@gmail.com
+License: GPL3
+Description: Wikipedia categories are mis used for many things. The category on some abstract topic will then contain people related to it, services implementing it etc. I want to clean up this in wikidata and use clear relationships between the categories. 
+        
+        Focused on free software I want to make sure all the categories are in wikidata with the right relationships.
+        Pages in the categories will be added as well.
+        data/allcats.txt contains the categories I am processing, and data/ignore.txt is the exclusion list.
+        
+Keywords: setup.py,project,tox
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
